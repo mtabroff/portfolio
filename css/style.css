@@ -5,6 +5,43 @@
  box-sizing: border-box;
 }
 
+*, html {
+  -webkit-font-smoothing: antialiased; }
+
+  a {
+  	font-weight: 400;
+  	text-decoration: none;
+  	color: $link-blue;
+  	position: relative;
+  	transition: color 0.3s ease;
+
+  	&.text-link:after {
+  		content: '';
+  		display: block;
+  		color: white;
+  		position: absolute;
+  		bottom: 0px;
+  		left: 0;
+  		width: 0%;
+  		border-bottom: 1px solid $link-blue;
+  		transition: 0.4s ease;
+  	}
+
+  	&:hover {
+  		text-decoration: none;
+  		cursor: pointer;
+  	}
+
+  	&.text-link:hover:after {
+  		width: 100%;
+  		z-index: 100;
+  	}
+  }
+
+
+
+
+
 /*HEADER*/
 
 .hero {
@@ -39,7 +76,7 @@ header ul li {
 
 header ul li a {
  text-decoration: none;
- color: #4C4C4C;
+ color: #AAAAAA;
  font-size: 1em;
  font-weight: lighter;
  font-family: 'Usual', sans-serif;
@@ -51,7 +88,7 @@ li a.active {
 }
 
 li a:hover {
-color: #50E3C2;
+color: #19191A;
 }
 
 
@@ -94,7 +131,7 @@ margin-top: 50px;
  font-weight: 100;
  font-size: 50px;
  font-family: 'Raleway', sans-serif;
- color: #333;
+ color: #19191A;
 }
 
 
@@ -103,7 +140,7 @@ margin-top: 50px;
  margin-bottom: 20px;
  font-weight: normal;
  font-family: 'usual', sans-serif;
- color: #333;
+ color: #19191A;
  text-align: left;
 }
 
@@ -120,19 +157,144 @@ margin-top: 50px;
 .button1 {
   box-sizing: border-box;
   text-decoration: none;
-  padding: 15px 15px;
+  padding: 20px 20px;
   margin: 20px 10px 5px 5px;
-  border: 1px solid #333;
+  border: 1px solid #19191A;
   border-radius: 100px;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 600;
   font-family: 'usual', sans-serif;
-  color: #333;
+  color: #19191A;
+}
+
+.button1:hover {
+  background-color: #3E37E1;
+  border: 1px solid #3E37E1;
+  color: #fff;
 }
 
 .button2 {
   font-size: 16px;
-  font-weight: 100;
+  font-weight: regular;
   font-family: 'Usual', sans-serif;
-  color: #5049E7;
+  color: #3E37E1;
+}
+
+.button2:hover {
+  color: #7670FE;
+}
+
+.main-container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 6%;
+}
+
+
+/*WORK*/
+
+
+.work {
+background-color: #F2F3F5;
+padding: 80px 10px;
+}
+
+.section-header {
+  margin-bottom: 60px;
+  font-size: 40px;
+  text-align: center;
+}
+.project-container {
+    display: flex;
+    flex-grow: 1;
+    height: 386px;
+    width: 100%;
+    margin-bottom: 80px;
+    transition: all 0.4s ease;
+}
+
+.project-container:hover {
+  box-shadow: 0 10px 20px #c7cad1;
+  -webkit-transform: translate(0, -5px);
+          transform: translate(0, -5px);
+}
+
+@media screen and (max-width: 900px) {
+    .project-container {
+      flex-direction: column;
+      height: 100%; } }
+  @media screen and (max-width: 440px) {
+    .project-container {
+      margin-bottom: 60px; } }
+
+.project-container .project-preview {
+    flex-basis: 50%;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+}
+@media screen and (max-width: 900px) {
+      .project-container .project-preview {
+        padding-top: 58.62069%;
+        height: 0; } }
+    .project-container .project-preview img {
+      position: absolute;
+      -o-object-fit: cover;
+         object-fit: cover;
+      width: 100%;
+      height: 100%; }
+      @media screen and (max-width: 900px) {
+        .project-container .project-preview img {
+          top: 0;
+          left: 0; }
+  }
+
+.project-container .project-preview img {
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .project-container .project-details {
+      font-family: "usual", sans-serif;
+      background-color: white;
+      padding: 40px;
+      box-sizing: border-box;
+  }
+
+.project-container .project-details .metadata {
+    font-family: "usual", sans-serif;
+    color: #7D7D80;
+    font-size: 13px;
+    text-align: left;
+    letter-spacing: 1px;
+    margin-bottom: 56px;
+}
+
+.project-container .project-details .title {
+color: #19191A;
+font-size: 28px;
+line-height: 1.2;
+font-weight: 600;
+text-align: left;
+margin-bottom: 3px;
+}
+
+.project-container .project-details .subtitle {
+    color: #646466;
+    font-family: "usual", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+.project-container .project-details .body {
+    color: #646466;
+    font-family: "usual", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: left;
+    text-decoration: none;
 }
