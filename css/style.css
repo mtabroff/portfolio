@@ -249,7 +249,7 @@ padding: 10px 10px;
 
 
 .project-container:hover {
-  box-shadow: 0 10px 20px #E4E5E7;
+  box-shadow: 0 10px 20px #D5D6D8;
   -webkit-transform: translate(0, -5px);
           transform: translate(0, -5px);
 }
