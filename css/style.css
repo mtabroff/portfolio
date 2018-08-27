@@ -49,8 +49,83 @@
 
 /*NAVIGATION*/
 
+.topnav {
+  background-color: black;
+  height: 72px;
+  overflow: hidden;
+}
 
-.primary-nav {
+
+.topnav img {
+  width: 55px;
+  float: left;
+  padding-top: 18px;
+}
+
+.topnav .links {
+  float: right;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'karla', sans-serif;
+    font-size: 16px;
+}
+
+.topnav .links a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'karla', sans-serif;
+    font-size: 16px;
+}
+
+.topnav a:hover {
+    color: #808BF9;
+    font-weight: bold;
+}
+.active {
+    font-weight: bold;
+    color: white;
+}
+
+.topnav .links .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .links a {
+    display: none;
+  }
+  .topnav .links a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.links.responsive a {position: relative;}
+  .links.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.links.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/*.primary-nav {
  background-color: #000;
  height: 70px;
 }
@@ -97,13 +172,14 @@ li a.active {
  color: #19191A;
  font-weight: bold;
 }
+*/
 
 
 
 /*INTRO*/
 
 .hero {
-  height: 400px;
+  height: 550px;
 }
 
 
@@ -129,9 +205,9 @@ li a.active {
 }
 
 .title2 {
- font-size: 28px;
- margin-bottom: 20px;
- font-weight: 600;
+ font-size: 20px;
+ margin-bottom: 6px;
+ font-weight: bold;
  font-family: 'karla', sans-serif;
  color: #19191A;
  text-align: left;
@@ -156,7 +232,7 @@ li a.active {
   border: 1px solid red;
 }
 
-.social-buttons img {
+.social-buttons a img {
     max-width: 50px;
 
 }
@@ -169,7 +245,7 @@ li a.active {
 /*WORK*/
 
 .break {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 100;
     margin-bottom: 40px;
     margin-top: 30px;
@@ -179,14 +255,14 @@ li a.active {
 }
 
 .break .second-color {
-  color: blue;
+  color: black;
 }
 
 
 .work {
 display: flex;
 flex-direction: column;
-background-color: linear-gradient (#161337,#7772E0);
+background-color: #F4F4F4;
 padding: 10px 10px;
 
 }
