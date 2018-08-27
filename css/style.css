@@ -1,18 +1,4 @@
 
-$medium: #646466;
-$light: #7D7D80;
-$link-blue: #4555E6;
-$light-grey: #646466;
-$Raleway: 'Raleway', sans-serif;
-$usual: 'Usual', sans-serif;
-$break-med: 900px;
-$break-sml: 440px;
-
-:root {
-  --secondcolor: #646466;
-  --mainfont: 'Usual', sans-serif;
-  --secondfont: 'Raleway', sans-serif;
-}
 
 
 *{
@@ -76,14 +62,13 @@ $break-sml: 440px;
 .logo img {
  display: block;
  float: left;
- width: 70px;
+ width: 60px;
 }
 
  .nav-items {
   float: right;
   display: flex;
   justify-content: flex-end;
-  border: 1px solid yellow;
     margin: 0 auto;
 }
 
@@ -98,18 +83,19 @@ nav ul li a {
  text-decoration: none;
  color: #fff;
  font-size: 16px;
- font-weight: lighter;
+ font-weight: regular;
  font-family: 'karla', sans-serif;
 }
 
 li a:hover {
-color: #19191A;
+color: #A0A9FF;
+font-weight: bold;
 text-decoration: none;
 }
 
 li a.active {
  color: #19191A;
- font-weight: 600;
+ font-weight: bold;
 }
 
 
@@ -120,6 +106,7 @@ li a.active {
   height: 400px;
 }
 
+
 .main-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -129,21 +116,26 @@ li a.active {
 .title1 {
  padding-top: 1em;
  margin-top: 50px;
- margin-bottom: 28px;
+ margin-bottom: 50px;
  text-align: left;
  font-weight: 600;
- font-size: 52px;
+ font-size: 55px;
  font-family: 'karla', sans-serif;
  color: #19191A;
 }
 
+.title1 .special-shade {
+  color: #CDCDCD;
+}
+
 .title2 {
- font-size: 24px;
- margin-bottom: 40px;
+ font-size: 28px;
+ margin-bottom: 20px;
  font-weight: 600;
  font-family: 'karla', sans-serif;
  color: #19191A;
  text-align: left;
+
 }
 
 .blurb {
@@ -154,21 +146,23 @@ li a.active {
  color: #666566;
  text-align: left;
  line-height: 30px;
- max-width: 800px;
+ max-width: 730px;
 }
 
-@media screen and (max-width : 600px) {
-.intro-container {
-  justify-content: space-between;
-  align-items: center;
-  padding: 5em 0;
-  max-width: 520px;
-  margin: 0 auto;
+.social-buttons {
+  display: flex;
+  flex-direction: row;
+  max-width: 10px;
+  border: 1px solid red;
 }
-.blurb {
-  text-align: left;
+
+.social-buttons img {
+    max-width: 50px;
+
 }
-}
+
+
+
 
 
 
@@ -178,13 +172,14 @@ li a.active {
     font-size: 20px;
     font-weight: 100;
     margin-bottom: 40px;
+    margin-top: 30px;
     font-family: 'karla', sans-serif;
     color: #666566;
     text-align: left;
 }
 
 .break .second-color {
-  color: black;
+  color: blue;
 }
 
 
@@ -432,7 +427,7 @@ margin: 5px 5px;
 
 .title3 {
   font-family: "karla", sans-serif;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 600;
   color: #333;
   padding-top: 30px;
@@ -441,9 +436,9 @@ margin: 5px 5px;
 
 .title3 .lighter-color {
   font-family: "karla", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  color: #9B9B9B;
+  font-size: 28px;
+  font-weight: bold;
+  color: #CDCDCD;
   padding-bottom: 30px;
 
 }
@@ -472,7 +467,7 @@ margin: 5px 5px;
   padding-top: 3em;
   padding-bottom: 2em;
   font-family: "karla", sans-serif;
-  line-height: 42px;
+  line-height: 52px;
   font-size: 32px;
   font-weight: bolder;
   text-align: left;
