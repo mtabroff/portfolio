@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Melanie Tabroff | UX Designer</title>
-    <link rel='stylesheet' href='css/style.css'/>
+    <link rel='stylesheet' href='css/about.css'/>
     <link rel="stylesheet" href="https://use.typekit.net/ftw7zhh.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <meta name=”viewport” content=”width=device-width”>
@@ -11,30 +11,26 @@
 
 <body>
   <!-- NAVIGATION -->
-  <nav class='primary-nav'>
+  <div class="topnav" id="myTopnav">
       <div class='main-container'>
-            <div class='logo'>
-              <a href="index.html" title="Melanie home page">
-                <img src="./images/Logo-white.png" width="50%"></a>
-            </div>
-         <div class='nav-items'>
-            <div class='links'>
-             <ul>
-                <li><a title=”Work”>
-                    <a href="index.html#MT_work">Work</a>
-                    </a></li>
-               <li><a title=”About”><a href="about.html">About</a></li>
-               <li><a title=”Resume”>Resume</a></li>
-             </ul>
-           </div>
-          </div>
-        </div>
-      </div>
-</nav>
+            <a href="#Logo">
+              <a href="index.html">
+              <img src="./images/Logo-white.png"></a>
+          <div class="links">
+              <a href="index.html#MT_work">Work</a>
+              <a href="about.html">About</a>
+              <a href="#resume">Resume</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+         </div>
+    </div>
+  </div>
+
 
 
     <!--ABOUT-->
-    <div class="main-container">
+    <div class="content-container">
           <div class="project-title">Since you're curious...</div>
       <!-- me in a nutshell -->
       <div class="about-section">
@@ -44,7 +40,6 @@
           <p>…actually, what makes me most happy is just being outside whenever I have the chance. When I’m not working on design projects, you can find me running along Hudson River Park, citi-biking, or power walking through my favorite neighborhoods, like a true New-Yorka!</p>
         </div>
       </div>
-    </div>
 
       <div class="img-container">
           <div class="img-item">
@@ -54,9 +49,7 @@
             <img src="./images/mel2.jpg">
           </div>
       </div>
-
       <!-- why ux -->
-    <div class="main-container">
       <div class="about-section">
         <div class="title3">My Journey<span class="lighter-color">—why UX?</span></div>
         <div class="body">
@@ -74,10 +67,15 @@
           <p>If you want to collaborate on a project, feel free to reach out at <a href="https://melanietabroff.typeform.com/to/Vzd1zZ" target='_blank'>mtabroff@gmail.com<a>.</p>
         </div>
       </div>
-    </div>
-
+</div>
+    
       <!--FOOTER-->
-
+      <section class="footer">
+        <div class="main-container">
+        <div class="footer-content">
+          <div class="tiny-text">Designed & Developed by me, with Jack's cold brew by my side</div>
+      </div>
+    </div>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     </body>
 </html>
