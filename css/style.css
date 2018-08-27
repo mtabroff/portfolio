@@ -31,7 +31,7 @@ $break-sml: 440px;
   a {
   	font-weight: 400;
   	text-decoration: none;
-  	color: #4E47E0;
+  	color: #5049E7;
   	position: relative;
   	transition: color 0.3s ease;
 
@@ -61,45 +61,45 @@ $break-sml: 440px;
 
 
 
-/*HEADER*/
-
-.hero {
-  height: 100vh;
-}
+/*NAVIGATION*/
 
 
-.header-container {
- display: flex;
- flex-direction: column;
- align-items: center;
- border-bottom: 1px solid #D0D0D0;
- padding: 1em 0;
+.primary-nav {
+ background-color: #000;
+ height: 70px;
 }
 
 .logo {
- padding: 2em 2.3em;
+  display: block;
 }
 
 .logo img {
  display: block;
+ float: left;
+ width: 70px;
 }
 
-nav {
- margin 1.5em 0 0 5%;
+ .nav-items {
+  float: right;
+  display: flex;
+  justify-content: flex-end;
+  border: 1px solid yellow;
+    margin: 0 auto;
 }
 
-header ul li {
+
+nav ul li {
  display: inline-block;
- padding: 0 2.3em 0 0;
- font-size 0.9em;
+ padding: 0 3em 0 0;
+ font-size: 0.9em;
 }
 
-header ul li a {
+nav ul li a {
  text-decoration: none;
- color: #AAAAAA;
- font-size: 1em;
+ color: #fff;
+ font-size: 16px;
  font-weight: lighter;
- font-family: 'Usual', sans-serif;
+ font-family: 'karla', sans-serif;
 }
 
 li a:hover {
@@ -114,107 +114,47 @@ li a.active {
 
 
 
-@media screen and (min-width : 600px) {
-.header-container {
-  flex-direction: row;
-  justify-content: space-between;
-}
-.logo {
-  margin-left: 2em;
-  padding: 0 2.3em;
-}
-nav {
-  align-self: center;
-  margin: 0 0.8em 0 0;
-}
-}
-
 /*INTRO*/
 
-.intro-container {
- display: flex;
- align-items: flex-start;
- flex-direction: column;
- justify-content: center;
- padding: 0;
- max-width: 600px;
- margin: 0 auto;
+.hero {
+  height: 400px;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 6%;
 }
 
 .title1 {
-Padding-top: 1em;
+ padding-top: 1em;
  margin-top: 50px;
  margin-bottom: 28px;
  text-align: left;
- font-weight: 100;
- font-size: 50px;
- font-family: 'Raleway', sans-serif;
+ font-weight: 600;
+ font-size: 52px;
+ font-family: 'karla', sans-serif;
  color: #19191A;
 }
 
 .title2 {
  font-size: 24px;
  margin-bottom: 40px;
- font-weight: normal;
- font-family: 'usual', sans-serif;
+ font-weight: 600;
+ font-family: 'karla', sans-serif;
  color: #19191A;
  text-align: left;
 }
 
 .blurb {
- font-size: 18px;
+ font-size: 20px;
  font-weight: 100;
  margin-bottom: 40px;
- font-family: 'Usual', sans-serif;
+ font-family: 'karla', sans-serif;
  color: #666566;
  text-align: left;
  line-height: 30px;
-  max-width: 520px;
-}
-
-
-.hero-footer {
-  display: flex;
-  flex-direction: row;
-  border: 1px solid #fff;
-  padding: 0;
-  max-width: 520px;
-}
-
-.button1 {
-  box-sizing: border-box;
-  text-decoration: none;
-  padding: 20px 20px;
-  margin: 20px 10px 0px 0px;
-  border: 1px solid #19191A;
-  border-radius: 100px;
-  font-size: 16px;
-  font-weight: 600;
-  font-family: 'usual', sans-serif;
-  color: #19191A;
-}
-
-.button1:hover {
-  background-color: #3E37E1;
-  border: 1px solid #3E37E1;
-  color: #fff;
-}
-
-.button2 {
-  box-sizing: border-box;
-  text-decoration: none;
-  padding: 20px 20px;
-  margin: 20px 15px 0px 0px;
-  border: 1px solid #fff;
-  border-radius: 100px;
-  font-size: 16px;
-  font-weight: normal;
-  font-family: 'usual', sans-serif;
-  color: #3E37E1;
-}
-
-.button2:hover {
-  text-decoration: underline;
+ max-width: 800px;
 }
 
 @media screen and (max-width : 600px) {
@@ -226,7 +166,7 @@ Padding-top: 1em;
   margin: 0 auto;
 }
 .blurb {
-  text-align: center;
+  text-align: left;
 }
 }
 
@@ -234,19 +174,32 @@ Padding-top: 1em;
 
 /*WORK*/
 
+.break {
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 40px;
+    font-family: 'karla', sans-serif;
+    color: #666566;
+    text-align: left;
+}
+
+.break .second-color {
+  color: black;
+}
+
 
 .work {
 display: flex;
 flex-direction: column;
-background-color: #F2F3F5;
-padding: 80px 10px;
+background-color: linear-gradient (#161337,#7772E0);
+padding: 10px 10px;
 
 }
 
 .main-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 5%;
+  padding: 0 6%;
 }
 
 .section-header {
@@ -313,14 +266,14 @@ padding: 80px 10px;
     }
 
   .project-container .project-details {
-      font-family: "usual", sans-serif;
+      font-family: "karla", sans-serif;
       background-color: white;
       padding: 40px;
       box-sizing: border-box;
   }
 
   .project-container .project-details .metadata {
-    font-family: "usual", sans-serif;
+    font-family: "karla", sans-serif;
     color: #7D7D80;
     font-size: 13px;
     text-align: left;
@@ -339,7 +292,7 @@ padding: 80px 10px;
 
 .project-container .project-details .subtitle {
       color: #646466;
-      font-family: "usual", sans-serif;
+      font-family: "karla", sans-serif;
       font-size: 16px;
       font-weight: 400;
       margin-bottom: 24px;
@@ -348,7 +301,7 @@ padding: 80px 10px;
 
 .project-container .project-details .body {
     color: #646466;
-    font-family: "usual", sans-serif;
+    font-family: "karla", sans-serif;
     font-size: 14px;
     line-height: 24px;
     text-align: left;
@@ -357,66 +310,81 @@ padding: 80px 10px;
 
 /*CONNECT*/
 
+
 .connect {
   background-color: #ffff;
   padding: 80px 10px;
 }
 .section-title {
-  font-family: "usual", sans-serif;
-  font-size: 20px;
+  font-family: "karla", sans-serif;
+  font-size: 24px;
   text-align: center;
   font-weight: normal;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-bottom: 40px;
-}
-
-.tagline1 {
-  font-family: "usual", sans-serif;
-  font-size: 16px;
-  text-align: center;
-  color: #646466;
   padding-bottom: 20px;
 }
 
+.tagline1 {
+  font-family: "karla", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: #646466;
+  padding-bottom: 10px;
+}
+
 .tagline2 {
-  font-family: "usual", sans-serif;
-  font-size: 16px;
+  font-family: "karla", sans-serif;
+  font-size: 18px;
   text-align: center;
   color: #7D7D80;
 }
 
 .footer {
-  width: 60%;
+  width: 100%;
   margin: auto;
-  padding-bottom: 10px;
+  padding: 40px 0px;
+}
+
+.footer-content {
+  height: 100px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding-bottom: 60px;
+  align-items: center;
+  justify-content:center;
+  margin-bottom: 20px;
+  border: 1px solid white;
 }
 
-.social {
-    color: #979797;
-    padding: 5px 10px 5px 10px;
-    text-align: right;
-    border-bottom: 1px solid #979797;
-    width: 100%;
-    style: solid;
+.footer-content .social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 70px;
+  border: 1px solid white;
 }
+
 
 .social img {
-  margin: 0px 5px 10px 10px;
+height: auto;
+width: auto;
+max-height: 60px;
+max-width: 60px;
+margin: 5px 5px;
 }
+
+
 
 .tiny-text {
   color: #979797;
   font-size: 12px;
-  text-align: left;
-  font-family: "usual", sans-serif;
+  text-align: center;
+  font-family: "karla", sans-serif;
   padding: 10px 10px;
 }
+
+
 
 /*ABOUT*/
 
@@ -458,12 +426,12 @@ padding: 80px 10px;
   display: flex;
   align-items:flex-start;
   flex-direction: column;
-  font-family: $Usual;
+  font-family: karla;
   color: #333;
 }
 
 .title3 {
-  font-family: "usual", sans-serif;
+  font-family: "karla", sans-serif;
   font-size: 20px;
   font-weight: 600;
   color: #333;
@@ -472,7 +440,7 @@ padding: 80px 10px;
 }
 
 .title3 .lighter-color {
-  font-family: "usual", sans-serif;
+  font-family: "karla", sans-serif;
   font-size: 20px;
   font-weight: 600;
   color: #9B9B9B;
@@ -482,7 +450,7 @@ padding: 80px 10px;
 
 
 .body {
-  font-family: "Usual", sans-serif;
+  font-family: "karla", sans-serif;
   font-size: 16px;
   padding-bottom: 30px;
   line-height: 24px;
@@ -502,17 +470,18 @@ padding: 80px 10px;
 
 .project-title {
   padding-top: 3em;
-  font-family: "usual", sans-serif;
+  padding-bottom: 2em;
+  font-family: "karla", sans-serif;
   line-height: 42px;
   font-size: 32px;
-  font-weight: 600;
+  font-weight: bolder;
   text-align: left;
   color: #19191A;
 }
 
 .project-title .lighter-color {
   padding-top: 3em;
-  font-family: "usual", sans-serif;
+  font-family: "karla", sans-serif;
   font-size: 32px;
   font-weight: 600;
   text-align: left;
@@ -521,7 +490,7 @@ padding: 80px 10px;
 
 .intro-text {
   padding-top: 2em;
-  font-family: "usual", sans-serif;
+  font-family: "karla", sans-serif;
   font-size: 16px;
   line-height: 28px;
   font-weight: normal;
@@ -531,7 +500,7 @@ padding: 80px 10px;
 
 .protolink {
   padding-top: 4em;
-  font-family: "usual", sans-serif;
+  font-family: "karla", sans-serif;
   font-size: 16px;
   text-decoration: none;
   text-align: left;
@@ -582,7 +551,7 @@ a.text-link:after {
 /*add media query*/
 
 .intro-quote {
-  font-family: 'raleway', sans-serif;
+  font-family: 'karla', sans-serif;
   font-size: 28px;
   color: #5C5C5D;
   line-height: 36px;
