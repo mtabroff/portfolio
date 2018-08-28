@@ -106,16 +106,15 @@
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.links.responsive a {position: relative;}
-  .links.responsive a.icon {
+  .topnav .links .responsive a {position: relative;}
+  .topnav .links .responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-  .topnav.links.responsive a {
-    float: none;
+  .topnav .links .responsive a {
     display: block;
-    text-align: left;
+    float: none;
   }
 }
 
@@ -133,7 +132,7 @@
 
 .project-title {
   padding-top: 2.5em;
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
   font-family: "karla", sans-serif;
   line-height: 52px;
   font-size: 45px;
@@ -142,14 +141,16 @@
   color: #19191A;
 }
 
-.project-title .lighter-color {
-  padding-top: 3em;
-  font-family: "karla", sans-serif;
-  font-size: 32px;
-  font-weight: 600;
-  text-align: left;
-  color: #CDCDCD;
+@media screen and (max-width: 480px){
+.project-title {
+    font-size: 32px;
+    margin-bottom: 0px;
 }
+}
+
+
+
+
 .content-container {
   display: flex;
   align-items: flex-start;
@@ -158,6 +159,16 @@
   max-width: 680px;
   margin: 0 auto;
 }
+
+
+@media screen and (max-width: 480px){
+.content-container {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+}
+
+
 
 .img-container {
   display: flex;
@@ -172,6 +183,17 @@
   position: relative;
 
 }
+
+@media screen and (max-width: 480px){
+.img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+}
+
+
 
 .img-item img {
   min-width: 0;
@@ -191,36 +213,42 @@
   display: flex;
   align-items:flex-start;
   flex-direction: column;
-  font-family: karla;
+  font-family: 'karla', sans-serif;
   color: #333;
 }
 
+
 .title3 {
   font-family: "karla", sans-serif;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 600;
   color: #333;
   padding-top: 30px;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
 }
 
 .title3 .lighter-color {
   font-family: "karla", sans-serif;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: bold;
-  color: #CDCDCD;
-  padding-bottom: 30px;
+  color: #BABABA;
+  padding-bottom: 10px;
 
 }
 
 .body {
   font-family: "karla", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   padding-bottom: 30px;
-  line-height: 24px;
+  line-height: 25px;
   color: #646466;
 }
 
+@media screen and (max-width: 480px){
+.body {
+    font-size: 16px;
+}
+}
 
 /*FOOTER*/
 

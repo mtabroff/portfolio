@@ -144,10 +144,22 @@
  font-size: 55px;
  font-family: 'karla', sans-serif;
  color: #19191A;
+
 }
 
 .title1 .special-shade {
   color: #CDCDCD;
+}
+
+@media screen and (max-width: 480px){
+.title1 {
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+.title1 .special-shade {
+    font-size: 38px;
+    margin-bottom: 30px;
+}
 }
 
 .title2 {
@@ -157,7 +169,13 @@
  font-family: 'karla', sans-serif;
  color: #19191A;
  text-align: left;
+}
 
+ @media screen and (max-width: 480px) {
+   .title2 {
+     font-size: 18px;
+     margin-bottom: 7px;
+ }
 }
 
 .blurb {
@@ -171,7 +189,13 @@
  max-width: 730px;
 }
 
-
+@media screen and (max-width: 480px) {
+  .blurb {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 80px;
+}
+}
 
 .social-buttons img {
     max-width: 40px;
@@ -182,9 +206,10 @@
 }
 
 .social-buttons img:hover {
-  border: 1px solid black;
+  border: 1px solid #5049E7;
   border-radius: 100%;
 }
+
 
 
 
