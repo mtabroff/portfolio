@@ -37,11 +37,10 @@
 
 
 /*NAVIGATION*/
-
-.hero {
-  height: 600px;
+.header {
+  background-color: black;
+  width: 100%;
 }
-
 .Navbar {
   background-color: black;
   width: 100%;
@@ -52,7 +51,7 @@
 }
 .Navbar__Link {
   max-width: 1200px;
-  padding: 0 6%;
+  padding: 0 4%;;
   margin-right: 25px;
 }
 
@@ -83,6 +82,7 @@
   color: #A0A9FF;
 }
 
+
 @media only screen and (max-width: 768px) {
   .Navbar__Items,
   .Navbar {
@@ -104,6 +104,7 @@
     cursor: pointer;
    }
 }
+
 /*MAIN*/
 
 .main-container {
