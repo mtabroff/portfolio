@@ -6,14 +6,3 @@ function classToggle() {
 }
 document.querySelector('.Navbar__Link-toggle')
   .addEventListener('click', classToggle);
-
-
-
-function myFunction() {
-   var x = document.getElementById("myTopnav");
-   if (x.className === "links") {
-       x.className += " responsive";
-   } else {
-       x.className = "links";
-   }
-};

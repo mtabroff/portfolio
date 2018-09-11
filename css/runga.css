@@ -38,89 +38,79 @@
 
 /*NAVIGATION*/
 
-.hero {
-  height: 600px;
-}
 
-.topnav {
+.header {
   background-color: black;
-  height: 60px;
-  overflow: hidden;
+  width: 100%;
 }
-
-
-.topnav img {
+.Navbar {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  padding: 16px;
+  font-family: 'karla',sans-serif;
+  color: white;
+}
+.Navbar__Link {
+  max-width: 1200px;
+  padding: 0 15px;
+}
+.Navbar__Link-logo {
   width: 50px;
-  float: left;
-  padding-top: 15px;
+  margin-left: 0;
+}
+.Navbar__Link-logo img {
+  width: 50px;
+  margin-left: 0px;
+}
+.Navbar__Items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 5px;
+  padding-right: 6%;
 }
 
-.topnav .links {
-  float: right;
-  margin: 0 auto;
-  padding-top: 10px;
-}
-.topnav a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    font-weight: normal;
-    text-decoration: none;
-    font-family: 'karla', sans-serif;
-    font-size: 16px;
-    font-weight: normal;
+.Navbar__Link-toggle {
+  display: none;
 }
 
-.topnav .links a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    font-weight: normal;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: 'karla', sans-serif;
-    font-size: 16px;
+.Navbar__Items--right {
+  margin-left: auto;
 }
 
-.topnav a:hover {
-    color: #808BF9;
-    font-weight: bold;
-}
-.active {
-    font-weight: bold;
-    color: white;
+
+.Navbar__Items a {
+  color: #F2F3F5;
 }
 
-.topnav .links .icon {
-    display: none;
+.Navbar__Items a:hover {
+  color: #A0A9FF;
 }
 
-@media screen and (max-width: 600px) {
-  .topnav .links a {
-    display: none;
+
+@media only screen and (max-width: 768px) {
+  .Navbar__Items,
+  .Navbar {
+    flex-direction: column;
   }
-  .topnav .links a.icon {
-    float: right;
-    display: block;
-  }
-}
 
-@media screen and (max-width: 600px) {
-  .topnav.links.responsive a {position: relative;}
-  .links.responsive a.icon {
+.Navbar__Items {
+    display:none;
+  }
+.Navbar__Items--right {
+    margin-left: 0;
+  }
+.Navbar__ToggleShow {
+    display: flex;
+  }
+.Navbar__Link-toggle {
+    align-self: flex-end;
+    display: initial;
     position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.links.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+    cursor: pointer;
+   }
 }
-
 
 
 
@@ -217,6 +207,7 @@
 .body {
   font-family: "karla", sans-serif;
   font-size: 16px;
+  padding-top: 10px;
   padding-bottom: 30px;
   line-height: 24px;
   color: #646466;
@@ -286,10 +277,117 @@ a.text-link:after {
   margin: 30px auto;
 }
 
-.process-img img{
+.process-img img {
   position: relative;
   object-fit: cover;
   width: 100%;
   height: 100%;
   margin-top: 30px;
 }
+
+.process-img {
+  margin-bottom: 40px;
+}
+
+
+.title4 {
+  font-family: "karla", sans-serif;
+  font-size: 22px;
+  font-style: italic;;
+  font-weight: 400;
+  color: #333;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin-bottom: 10px
+}
+
+ul {
+    list-style-type: circle;
+    margin-right: 10px;
+    padding-right: 30px;
+    padding-left: 40px;
+    margin-bottom: 50px;
+}
+
+.thought {
+  font-family: 'karla', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  color: #7771F4;
+  line-height: 32px;
+  padding-top: 20px;
+  padding-right: 60px;
+  padding-left: 50px;
+  font-style: italic;
+  font-weight: lighter;
+  margin: 30px auto;
+}
+
+.title5 {
+  font-family: 'karla', sans-serif;
+  font-size: 16px;
+  color: #7D7D7D;
+  text-align: center;
+  line-height: 32px;
+  padding-top: 20px;
+  padding-right: 60px;
+  padding-left: 50px;
+}
+
+
+.user-quote {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  color: #7D7D7D;
+  text-align: center;
+  line-height: 28px;
+  padding-top: 60px;
+  padding-right: 60px;
+  padding-left: 50px;
+}
+
+.line-break {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #4E47E0;
+  align-content: center;
+  padding: 0;
+  width: 75px;
+}
+
+hr {
+    unicode-bidi: isolate;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    overflow: hidden;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    border-width: 0;
+}
+
+.personas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+}
+.personas img {
+  padding-right: 15px;
+  width: 450px;
+}
+
+@media screen and (max-width: 900px) {
+    .personas {
+      flex-direction: column;
+      height: 50%;
+      justify-content: center;
+
+      }
+    }
+  @media screen and (max-width: 440px) {
+    .personas {
+      margin-bottom: 60px; } }

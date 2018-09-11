@@ -13,21 +13,29 @@
 <body>
 
   <!--NAVIGATION-->
-  <div class="topnav" id="myTopnav">
-      <div class='main-container'>
-            <a href="#Logo">
-              <a href="index.html">
-              <img src="./images/Logo-white.png"></a>
-          <div class="links">
-              <a href="index.html#MT_work">Work</a>
-              <a href="about.html">About</a>
+  <header>
+    <div class="Navbar">
+           <div class="Navbar__Link Navbar__Link-logo">
+                <a href="index.html">
+                     <img src="./images/Logo-white.png">
+                   </a>
+            </div>
+            <div class="Navbar__Link Navbar__Link-toggle">
+              <i class="fa fa-bars"></i>
+            </div>
+      <nav class="Navbar__Items Navbar__Items--right">
+          <div class="Navbar__Link">
+            <a href="index.html#MT_work">Work</a>
+          </div>
+          <div class="Navbar__Link">
+            <a href="about.html">About</a>
+          </div>
+          <div class="Navbar__Link">
               <a href="#resume">Resume</a>
-              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-              </a>
-         </div>
-    </div>
-  </div>
+          </div>
+        </nav>
+      </div>
+    </header>
 
 
 <!-- CASE STUDY INTRO -->
@@ -38,7 +46,7 @@
           <a href="https://invis.io/ERNP5JG7BQZ" class id="text-link" target='_blank'>View prototype</a>
         </div>
   </section
-<!-- COVER PHOTO-->
+<!-- COVER PHOTO -->
     <div class="cover-photo-container">
       <img src="./images/runga-cover3.png">
     </div>
@@ -54,6 +62,69 @@
     <div class="process-img">
       <img src="./images/runga-process.png">
     </div>
+<!--Research-->
+
+  <div class="title3">Let's start<span class="lighter-color">—discover & strategize</span></div>
+  <div class="body">
+    <p>As with any early stage idea, I like to begin by asking lots of questions:</P>
+    <p>Do most runners find it difficult to meet up with other runners? Is the challenge to find likeminded workout buddies more felt by competitive runners than casual? Females than males? Runners in suburbs vs. cities? What products already exist to help connect athletes and what are their limitations?</p>
+    <p>Through user and market research, I set out to test my assumptions and uncover some answers. My goal? Understand who I am actually building a product for and how I am going to solve their problems.</p>
+
+    <div class="title4">Surveys</span></div>
+    <div class="body">
+      <p>My first step in understanding the problem was using an online survey to gather data and collect feedback about runners’ experiences with finding a running group/buddy.</p>
+      <p>I asked a variety of open-ended questions, like: Is it challenging to find others to run with? Why, why not? Do you prefer running alone, in a group, or with a buddy? If it depends, why? If you were to meet other people you don’t know for a run, what qualifiers would you want to know beforehand to help you decide?</P>
+        <div class="process-img">
+          <img src="./images/runga-data.png">
+        </div>
+      </div>
+        <p>My survey received 66 responses. Some of the key takeaways from results were that:</p>
+        <ul>
+          <li>Most runners find it hard to schedule runs with people.</li>
+          <li>A minority of runners already belong to a running group/prefer running alone.</li>
+          <li>Most runners want to connect with others that share the same fitness ability and friend network.</li>
+          <li>When meeting up with the opposite sex for a run, safety is more of a concern for females than males.</li>
+          <li>A minority of runners care about someone’s profession and education when meeting up for a run.</li>
+          <li>Most runners find out about running groups via google search, word-of-mouth and Facebook.</li>
+        </ul>
+        <p>Results from my initial survey confirmed that most runners experience difficulty meeting up with runners, mainly due to difficulty coordinating schedules and finding convenient meeting spots. Yet, I still needed to know more about the people who would be using a product, like Runga.</p>
+       <div class="thought">Who are the runners that relate most to this problem, and what are they hoping to accomplish?</div>
+       <div class="title4">Interviews</span></div>
+       <div class="body">
+         <p>To better understand the driving factors that motivate runners to meet, the tools they use to find runners, and their frustrations with those tools, I selected 10 survey respondents and conducted a mix of phone interviews and facebook messenger follow-up chats over 3 days.</p>
+       </div>
+       <div class="title5">Some highlights:</div>
+          <div class="user-quote">"...I think for runners it’s not weird to meet up with people we don’t know. We’re a pretty trusting and welcoming community. Though, I can see how women may be a bit more cautious.”</div>
+            <hr class="line-break">
+          <div class="user-quote">"...For me, I’m pretty open to running with anyone as long as we can run at a comfortable pace. It’s a plus if I can have a good convo!”</div>
+            <hr class="line-break">
+          <div class="user-quote">"Ha - I honestly can’t believe an Uber-for-Runners app doesn’t already exist! I would totally use it. I mean there’s Strava, which is fanastic for tracking workouts, but it’s not so much meant for helping you find a workout buddy on-the-go..."
+            <hr class="line-break">
+      </section>
+    <!-- synthesis-->
+
+    <section class="content-container">
+          <div class="title3">Putting it all together<span class="lighter-color">—synthesis</span></div>
+          <div class="body">
+            <p>After so many conversations with runners, it became clear to me that the people that relate most to the problem are casual/committed runners who are already looking for ways to make running more engaging.</p>
+            <p>These people attend organized runs through Meetup. They also go to retail stores to join run clubs and meet other runners. But, scheduled runs aren’t always held at convenient times and locations, and the turnout can be unpredictable. These people are also travellers who would like to find a buddy to discover new running routes.</p>
+            <p>These people are runners who simply want to change up the monotony of running — and meeting the right people can help!</p>
+
+            <div class="title4">Personas</span></div>
+            <div class="body">
+              <p>Armed with a more robust understanding of the mental models of runners, I created personas based on real people I interviewed. By doing so, I was able to bring more empathy to my design process early on and throughout.</p>
+              <p>Creating personas also helped clarify the demographic and qualifications of my target audience:</p>
+              <p>Men & women, between 20 and 40 years old, who are already committed to running ~10-30 miles a week. While my app could be used by runners of all levels, my most loyal users would be people who are committed to running on a consistent basis. More elite runners who already belong to a training group or team could certainly use Runga, but wouldn’t be my prime user base.</p>
+  </section>
+              <section class="personas">
+                <a href="./images/Persona-Ashley.png" target="_blank">
+                  <img src="./images/Persona-Ashley.png">
+                  <a href="./images/Persona-Sam.png" target="_blank">
+                  <img src="./images/Persona-Sam.png">
+              </section>
+
   </body>
+
+
 
 </html>

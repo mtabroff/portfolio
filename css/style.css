@@ -53,10 +53,12 @@
 }
 .Navbar__Link {
   max-width: 1200px;
-  padding: 0 4%;;
-  margin-right: 25px;
+  padding: 0 15px;
 }
-
+.Navbar__Link-logo {
+  width: 50px;
+  margin-left: 0;
+}
 .Navbar__Link-logo img {
   width: 50px;
   margin-left: 0px;
@@ -66,15 +68,17 @@
   flex-direction: row;
   justify-content: center;
   padding-top: 5px;
-}
-.Navbar__Items--right {
-  margin-left:auto;
   padding-right: 6%;
 }
+
 .Navbar__Link-toggle {
   display: none;
-  padding-top: 6px;
 }
+
+.Navbar__Items--right {
+  margin-left: auto;
+}
+
 
 .Navbar__Items a {
   color: #F2F3F5;
@@ -90,11 +94,12 @@
   .Navbar {
     flex-direction: column;
   }
+
 .Navbar__Items {
     display:none;
   }
 .Navbar__Items--right {
-    margin-left:0;
+    margin-left: 0;
   }
 .Navbar__ToggleShow {
     display: flex;

@@ -51,8 +51,7 @@
 }
 .Navbar__Link {
   max-width: 1200px;
-  padding: 0 4%;;
-  margin-right: 25px;
+  padding: 0 15px;
 }
 
 .Navbar__Link-logo img {
@@ -258,7 +257,7 @@
 
 .body {
   font-family: "karla", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   padding-bottom: 30px;
   line-height: 25px;
   color: #646466;
