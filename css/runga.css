@@ -369,19 +369,22 @@ hr {
     border-width: 0;
 }
 
-.personas {
+
+.assets {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 0 auto;
 }
-.personas img {
+.assets img {
   padding-right: 15px;
   width: 450px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 900px) {
-    .personas {
+    .assets {
       flex-direction: column;
       height: 50%;
       justify-content: center;
@@ -389,5 +392,55 @@ hr {
       }
     }
   @media screen and (max-width: 440px) {
-    .personas {
-      margin-bottom: 60px; } }
+    .assets {
+      margin-bottom: 60px; }
+    }
+
+  .title6 {
+    font-family: 'karla', sans-serif;
+    font-size: 16px;
+    color: #646466;
+    margin: 10px auto;
+    line-height: 24px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .title7 {
+    font-family: 'karla', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #646466;
+    margin: 30px auto;
+    line-height: 32px;
+  }
+
+  .title8 {
+    font-family: 'karla', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #646466;
+    margin: 0px auto;
+    line-height: 24px;
+    padding-bottom: 40px;
+  }
+
+li {
+  font-family: 'karla', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #646466;
+  margin: 10px auto;
+  line-height: 24px;
+}
+
+.line-break2 {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #4E47E0;
+  align-content: center;
+  padding: 0;
+  width: 75px;
+}
