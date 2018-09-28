@@ -11,12 +11,37 @@
     padding-bottom: 15px;
   }
 
+  .body a {
+    font-weight: 400;
+  	text-decoration: none;
+  	color: #252424;
+    font-size: 14px;
+  	position: relative;
+  	transition: color 0.3s ease;
+    text-decoration: underline;
+    margin: 0 auto;
+  }
+
+  .body a:hover {
+    font-weight: 600;
+  	text-decoration: none;
+  	color: #252424;
+    font-size: 14px;
+  	position: relative;
+  	transition: color 0.3s ease;
+    text-decoration: underline;
+    margin: 0 auto;
+  }
+
+
+
   a {
   	font-weight: 400;
   	text-decoration: none;
   	color: #5049E7;
   	position: relative;
   	transition: color 0.3s ease;
+    text-decoration: underline;
   }
 
   	&:hover {
@@ -266,7 +291,7 @@
 .protolink {
   padding-top: 4em;
   font-family: "work sans", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
   text-align: left;
   margin-bottom: 20px;
@@ -277,7 +302,9 @@
 }
 
 .protolink a:hover {
-  color: #A0A9FF;
+  color:  #252424;
+  font-weight: 600;
+  font-size: 14px;
 }
 a.text-link:after {
     content: '';
@@ -516,6 +543,26 @@ ul li .bolder{
   margin: 15px auto;
   line-height: 24px;
 }
+
+
+
+hr {
+    unicode-bidi: isolate;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    overflow: hidden;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    border-width: 0;
+}
+
+
+
+
+
+
 
 /*FOOTER*/
 
