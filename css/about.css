@@ -140,7 +140,7 @@ animation-delay: 3.3s;
 
 .Topnav {
   background-color: black;
-  height: 60px;
+  height: 65px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -170,7 +170,7 @@ animation-delay: 3.3s;
 }
 .Navbar__Link {
   max-width: 1200px;
-  font-size: 13px;
+  font-size: 14px;
   text-transform: uppercase;
   padding: 0 15px;
   color: #9B9B9B;
