@@ -58,15 +58,15 @@ animation-delay: 0.8s;
 }
 
 .three {
--webkit-animation-delay: 2.3s;
--moz-animation-delay: 2.3s;
-animation-delay: 2.3s;
+-webkit-animation-delay: 2.0s;
+-moz-animation-delay: 2.0s;
+animation-delay: 2.0s;
 }
 
 .four {
--webkit-animation-delay: 3.9s;
--moz-animation-delay: 3.9s;
-animation-delay: 3.9s;
+-webkit-animation-delay: 3.3s;
+-moz-animation-delay: 3.3s;
+animation-delay: 3.3s;
 }
 
 /*=== Animations start here  ===*/
@@ -132,32 +132,32 @@ animation-delay: 3.9s;
 
 
 
-
 /*NAVIGATION*/
 
-.header {
-  height: 70px;
-}
 
 .Topnav {
   background-color: black;
-  height: 60px;
+  height: 65px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-shadow: 0 8px 20px #D5D6D8;
+  -webkit-transform: translate(0, -5px)
 }
 .logo {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 .logo img {
   width: 30px;
+  margin-top: 9px;
 }
 
 
-
 .hero {
-  height: 600px;
+  height: 620px;
 }
 @media screen and (max-width: 480px) {
   .hero {
@@ -175,6 +175,8 @@ animation-delay: 3.9s;
 }
 .Navbar__Link {
   max-width: 1200px;
+  font-size: 14px;
+  margin-bottom: 20px;
   padding: 0 15px;
   color: #9B9B9B;
 }
@@ -201,8 +203,8 @@ animation-delay: 3.9s;
 }
 
 .Navbar__Items a:hover {
-  color: #A0A9FF;
-  weight: 600;
+  color: #97A0FB;
+  font-weight: 500;
 }
 
 
@@ -338,7 +340,7 @@ animation-delay: 3.9s;
 }
 
 .button a:hover {
-  color: #A0A9FF;
+  color: #97A0FB;
 }
 
 @media screen and (max-width: 580px) {

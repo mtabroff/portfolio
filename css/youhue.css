@@ -11,33 +11,11 @@
     padding-bottom: 15px;
   }
 
-  .body a {
-    font-weight: 400;
-  	text-decoration: underline;
-  	color: #252424;
-    font-size: 14px;
-  	position: relative;
-  	transition: color 0.3s ease;
-    margin: 0 auto;
-  }
-
-  .body a:hover {
-    font-weight: 600;
-  	text-decoration: none;
-  	color: #252424;
-    font-size: 14px;
-  	position: relative;
-  	transition: color 0.3s ease;
-    text-decoration: underline;
-    margin: 0 auto;
-  }
-
-
-
   a {
   	font-weight: 400;
+    font-size: 14px;
   	text-decoration: none;
-  	color: #5049E7;
+  	color: #333;
   	position: relative;
   	transition: color 0.3s ease;
     text-decoration: underline;
@@ -57,11 +35,128 @@
   	}
 }
 
+/* add simple fade in and down when load */
+
+/* add simple fade in and down when load */
+
+
+/*=== Trigger  ===*/
+.animate {
+ -webkit-animation-duration: 1s;
+ animation-duration: 1s;
+ -webkit-animation-fill-mode: both;
+ animation-fill-mode: both;
+}
+
+/*=== Optional Delays, change values here  ===*/
+.one {
+-webkit-animation-delay: 0.4s;
+-moz-animation-delay: 0.4s;
+animation-delay: 0.4s;
+}
+
+.two {
+-webkit-animation-delay: 0.8s;
+-moz-animation-delay: 0.8s;
+animation-delay: 0.8s;
+}
+
+.three {
+-webkit-animation-delay: 2.3s;
+-moz-animation-delay: 2.3s;
+animation-delay: 2.3s;
+}
+
+.four {
+-webkit-animation-delay: 3.3s;
+-moz-animation-delay: 3.3s;
+animation-delay: 3.3s;
+}
+
+/*=== Animations start here  ===*/
+/*=== FADE IN  ===*/
+@-webkit-keyframes fadeIn {
+ from {
+   opacity: 0;
+ }
+
+ to {
+   opacity: 1;
+ }
+}
+@keyframes fadeIn {
+ from {
+   opacity: 0;
+ }
+
+ to {
+   opacity: 1;
+ }
+}
+
+.fadeIn {
+ -webkit-animation-name: fadeIn;
+ animation-name: fadeIn;
+}
+
+
+/*=== FADE IN DOWN ===*/
+@-webkit-keyframes fadeInDown {
+ from {
+   opacity: 0;
+   -webkit-transform: translate3d(0, -100%, 0);
+   transform: translate3d(0, -100%, 0);
+ }
+
+ to {
+   opacity: 1;
+   -webkit-transform: none;
+   transform: none;
+ }
+}
+@keyframes fadeInDown {
+ from {
+   opacity: 0;
+   -webkit-transform: translate3d(0, -100%, 0);
+   transform: translate3d(0, -100%, 0);
+ }
+
+ to {
+   opacity: 1;
+   -webkit-transform: none;
+   transform: none;
+ }
+}
+
+.fadeInDown {
+ -webkit-animation-name: fadeInDown;
+ animation-name: fadeInDown;
+}
+
+
+
+
 
 /*NAVIGATION*/
-
 .header {
-  height: 70px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 3px;
+  background: #fff;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 3px;
+  background: #FF5568;
+  width: 0%;
 }
 
 .Topnav {
@@ -70,25 +165,21 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-shadow: 0 8px 20px #D5D6D8;
+  -webkit-transform: translate(0, -5px)
 }
 .logo {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 .logo img {
-  width: 30px;
+  width: 27px;
+  margin-top: 9px;
 }
 
 
-
-.hero {
-  height: 600px;
-}
-@media screen and (max-width: 480px) {
-  .hero {
-    height: 550px;
-}
-}
 
 .Navbar {
   margin-top: 30px;
@@ -98,10 +189,13 @@
   font-family: 'work sans',sans-serif;
 
 }
-.Navbar__Link {
+.Navbar__Link a {
   max-width: 1200px;
+  font-size: 13px;
+  text-transform: uppercase;
   padding: 0 15px;
   color: #9B9B9B;
+  text-decoration: none;
 }
 
 .Navbar__Items {
@@ -122,7 +216,6 @@
 
 .Navbar__Items a {
   color: #8C8C8C;
-  text-decoration: none;
 
 }
 
@@ -308,6 +401,7 @@
   font-size: 14px;
   text-align: left;
   margin-bottom: 20px;
+  text-decoration: underline;
 }
 
 .protolink a {
