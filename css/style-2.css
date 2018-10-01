@@ -33,7 +33,90 @@
   	}
 }
 
-/* add simple fade in and down when load */
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0.4;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*NAVIGATION*/
+
+header {
+  height: 70px;
+  background: black;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.Topnav {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.logo img {
+  width: 30px;
+}
+
+.menu-float-center {
+    display: inline-block;
+    font-family: 'Work Sans',sans-serif;
+    font-weight: 400;
+    margin-bottom: 1.45rem;
+
+}
+
+
+
+/*=== Basic box styling  ===*/
+.box {
+ background: #23a3d3;
+ width: 150px;
+ height: 70px;
+ padding: 20px;
+ text-align: center;
+ color: white;
+ border-radius: 7px;
+ float: left;
+ margin: 4px;
+ font-family: 'helvetica';
+ text-transform: uppercase;
+}
 
 
 /*=== Trigger  ===*/
@@ -52,9 +135,9 @@ animation-delay: 0.4s;
 }
 
 .two {
--webkit-animation-delay: 0.8s;
--moz-animation-delay: 0.8s;
-animation-delay: 0.8s;
+-webkit-animation-delay: 1.7s;
+-moz-animation-delay: 1.7s;
+animation-delay: 1.7s;
 }
 
 .three {
@@ -64,9 +147,9 @@ animation-delay: 2.3s;
 }
 
 .four {
--webkit-animation-delay: 3.9s;
--moz-animation-delay: 3.9s;
-animation-delay: 3.9s;
+-webkit-animation-delay: 3.3s;
+-moz-animation-delay: 3.3s;
+animation-delay: 3.3s;
 }
 
 /*=== Animations start here  ===*/
@@ -133,29 +216,79 @@ animation-delay: 3.9s;
 
 
 
-/*NAVIGATION*/
 
-.header {
-  height: 70px;
+
+
+
+
+
+
+
+
+.introduction {
+  background-color: white;
+   margin: 12rem 0;
+}
+.content {
+  padding:1rem 0 3rem;
+width: 84%;
+max-width: 1500px;
+margin-left: auto;
+margin-right: auto;
 }
 
-.Topnav {
-  background-color: black;
-  height: 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+delay-one{
+  animation-delay: 0.4s;
 }
-.logo {
-  display: flex;
-  justify-content: center;
+
+.delay-two{
+  animation-delay: 0.75s;
 }
-.logo img {
-  width: 30px;
+
+div {
+  display: block;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 
 
+
+
+
+#story{
+  font-size: 2.1875rem;
+  font-weight: 300;
+  margin-top:0;
+  font-family: "Work Sans", sans-serif;
+  display: inline-block;
+  width:90%;
+}
+#story h2 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-size: 52px;
+  margin-top: 60px;
+
+}
+
+#story h3{
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size:20px;
+  margin-top: 60px;
+
+}
+
+
+
+/*HERO CONTENT*/
 .hero {
   height: 600px;
 }
@@ -165,89 +298,8 @@ animation-delay: 3.9s;
 }
 }
 
-.Navbar {
-  margin-top: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'work sans',sans-serif;
-
-}
-.Navbar__Link {
-  max-width: 1200px;
-  padding: 0 15px;
-  color: #9B9B9B;
-}
-
-.Navbar__Items {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-top: 5px;
-  margin-bottom: 30px;
-  padding-right: 0;
-  color: #656565;
-  font-family: 'work sans', sans-serif;
-}
-
-.Navbar__Link-toggle {
-  display: none;
-}
 
 
-.Navbar__Items a {
-  color: #8C8C8C;
-
-}
-
-.Navbar__Items a:hover {
-  color: #A0A9FF;
-  weight: 600;
-}
-
-
-@media only screen and (max-width: 768px) {
-  .Navbar__Items,
-  .Navbar {
-    flex-direction: column;
-  }
-
-.Navbar__Items {
-    display:none;
-  }
-.Navbar__Items--center {
-    margin-left: 0;
-  }
-.Navbar__ToggleShow {
-    display: flex;
-  }
-.Navbar__Link-toggle {
-    align-self: flex-end;
-    display: initial;
-    position: absolute;
-    cursor: pointer;
-   }
-}
-
-
-
-.Navbar_Items {
-    position:absolute;
-    left:0;
-    top:36px;
-    z-index:1;
-    visibility:hidden;
-    opacity:0;
-    filter:alpha(opacity=0);
-    -webkit-transition:200ms ease;
-    -moz-transition:200ms ease;
-    -o-transition:200ms ease;
-    transition:200ms ease;
-}
-
-
-
-/*HERO CONTENT*/
 .hero-container {
   display: flex;
   flex-direction: column;

@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>About me | Melanie Tabroff | UX Designer</title>
-    <link rel='stylesheet' href='css/about.css'/>
-    <link rel="stylesheet" href="https://use.typekit.net/ftw7zhh.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>Melanie Tabroff | UX Designer</title>
+  <link rel='stylesheet' href='css/about.css'/>
+  <link rel="stylesheet" href="https://use.typekit.net/ftw7zhh.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name=”viewport” content=”width=device-width”>
-  </head>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./js/index.js" defer></script>
+  <script type="text/javascript" src="./js/scroll.js" defer></script>
+  <script src="jquery-3.3.1.min.js"></script>
+</head>
 <body>
+
+  <!--load amimate.css from CDN-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+  <!--load WOW js from CDN-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+  </script>
+
   <!-- NAVIGATION -->
 <header>
 <div class="Topnav">
-  <div class="logo">
+  <div class="logo-button">
     <a href="index.html">
       <img src="./images/Logo-m-white.png">
     </a>
@@ -42,7 +53,9 @@
 
     <!--ABOUT-->
     <div class="content-container">
+      <div class="wow fadeIn">
           <div class="project-title">me(l) in a nutshell</div>
+      </div>
         <div class="body">
           <p>My full name is Melanie Joy Tabroff (I usually go by Mel), and I love climbing trees!</p>
           <p>…actually, what makes me most happy is just being outside whenever I have the chance. When I’m not working on design projects, you can find me running along Hudson River Park, citi-biking, or power walking through my favorite neighborhoods, like a true New-Yorka!</p>
@@ -93,7 +106,21 @@
     </div>
     </section>
   </section>
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="./js/index.js"></script>
+
+  <script> new WOW().init(); </script>
+  <script>
+    wow = new WOW(
+      {
+          boxClass:     'wow',      // default
+          animateClass: 'animated', // change this if you are not using animate.css
+          offset:       0,          // default
+          mobile:       true,       // keep it on mobile
+          live:         true        // track if element updates
+        }
+      )
+     wow.init();
+  </script>
+
+
     </body>
   </html>
