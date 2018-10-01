@@ -13,12 +13,11 @@
 
   .body a {
     font-weight: 400;
-  	text-decoration: none;
+  	text-decoration: underline;
   	color: #252424;
     font-size: 14px;
   	position: relative;
   	transition: color 0.3s ease;
-    text-decoration: underline;
     margin: 0 auto;
   }
 
@@ -59,55 +58,71 @@
 }
 
 
-
-
 /*NAVIGATION*/
 
-
-
 .header {
-  background-color: white;
-  width: 100%;
+  height: 70px;
 }
-.Navbar {
-  width: 100%;
+
+.Topnav {
+  background-color: black;
+  height: 60px;
   display: flex;
-  padding-top: 25px;
-  padding-bottom: 30px;
+  flex-direction: column;
+  justify-content: center;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.logo img {
+  width: 30px;
+}
+
+
+
+.hero {
+  height: 600px;
+}
+@media screen and (max-width: 480px) {
+  .hero {
+    height: 550px;
+}
+}
+
+.Navbar {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: 'work sans',sans-serif;
-  color: white;
+
 }
 .Navbar__Link {
   max-width: 1200px;
   padding: 0 15px;
   color: #9B9B9B;
 }
-.Navbar__Link-logo {
-  width: 80px;
-}
-.Navbar__Link-logo img {
-  width: 40px;
-  margin-left: 0px;
-}
+
 .Navbar__Items {
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding-top: 5px;
+  margin-bottom: 30px;
   padding-right: 0;
+  color: #656565;
+  font-family: 'work sans', sans-serif;
 }
 
 .Navbar__Link-toggle {
   display: none;
 }
 
-.Navbar__Items--right {
-  margin-left: auto;
-}
-
 
 .Navbar__Items a {
-  color: #9B9B9B;
+  color: #8C8C8C;
+  text-decoration: none;
 
 }
 
@@ -126,7 +141,7 @@
 .Navbar__Items {
     display:none;
   }
-.Navbar__Items--right {
+.Navbar__Items--center {
     margin-left: 0;
   }
 .Navbar__ToggleShow {
@@ -139,7 +154,6 @@
     cursor: pointer;
    }
 }
-
 
 
 /* CASE STUDY */
@@ -292,7 +306,6 @@
   padding-top: 4em;
   font-family: "work sans", sans-serif;
   font-size: 14px;
-  text-decoration: none;
   text-align: left;
   margin-bottom: 20px;
 }
