@@ -562,64 +562,70 @@ hr {
 .body a:hover {
   font-weight: 600;
 }
-.body img {
-  margin-top: 30px;
-}
 
-.comp-breakdown img {
-  margin-left: 30px;
-}
 
-.feature-set img {
-  margin-left: 20px;
-  margin-bottom: 40px;
-  margin-top: 5px;
-}
-.flows img {
-  margin-top: 20px;
-  margin-bottom: 40px;
-}
-.sitemap img {
-  margin-top: 30px;
-}
+/* Case Study Assets
+––––––––––––––––––––––––––––––––––––––––––––––––––*/
+    .body img {
+      margin-top: 30px;
+    }
 
-.logo-runga img {
-  margin-top: 20px;
-}
+    .comp-breakdown img {
+      margin-left: 30px;
+    }
 
-.style-guide img {
-  margin-top: 30px;
-  margin-left: 50px;
-}
+    .feature-set img {
+      margin-left: 20px;
+      margin-bottom: 40px;
+      margin-top: 5px;
+    }
+    .flows img {
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+    .sitemap img {
+      margin-top: 30px;
+    }
 
-.med-fi img {
-  margin-left: 50px;
-  margin-bottom: 50px;
-}
+    .logo-runga img {
+      margin-top: 20px;
+    }
 
-.onboarding img {
-  margin-left: 50px;
-}
+    .style-guide img {
+      margin-top: 30px;
+      margin-left: 50px;
+    }
 
-.explore img {
-  margin-left: 100px;
-  margin-bottom: 40px;
-  margin-top: 20px;
-}
+    .med-fi img {
+      margin-left: 50px;
+      margin-bottom: 50px;
+    }
 
-.preference img {
-  margin-left: 60px;
-}
+    .onboarding img {
+      margin-left: 50px;
+    }
 
-.plan img {
-  margin-left: 50px;
-}
+    .explore img {
+      margin-left: 100px;
+      margin-bottom: 40px;
+      margin-top: 20px;
+    }
 
-.badges img {
-  margin-top: 30px;
-  margin-left: 70px;
-}
+    .preference img {
+      margin-left: 60px;
+    }
 
+    .plan img {
+      margin-left: 50px;
+    }
+
+    .badges img {
+      margin-top: 30px;
+      margin-left: 70px;
+    }
+
+/* Titles and Subtiles
+  ––––––––––––––––––––––––––––––––––––––––––––––––––*/
   .title6 {
     font-family: 'work sans', sans-serif;
     font-size: 16px;
@@ -644,24 +650,26 @@ hr {
   }
 
 
+  /* Unordered Lists
+  ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
+      li {
+        font-family: 'work sans', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #333;
+        margin: 15px auto;
+        line-height: 24px;
+      }
+      ul {
+        margin-left: 20px;
+      }
 
-li {
-  font-family: 'work sans', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #333;
-  margin: 15px auto;
-  line-height: 24px;
-}
-ul {
-  margin-left: 20px;
-}
+      ul li .bolder{
+        font-weight: 600;
 
-ul li .bolder{
-  font-weight: 600;
+      }
 
-}
 
 .line-break2 {
   display: block;
@@ -682,7 +690,8 @@ ul li .bolder{
   line-height: 24px;
 }
 
-/*FOOTER*/
+/*FOOTER
+––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 .footer {
   width: 100%;
