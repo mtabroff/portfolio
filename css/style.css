@@ -67,9 +67,9 @@
           }
 
           .four {
-          -webkit-animation-delay: 3.3s;
-          -moz-animation-delay: 3.3s;
-          animation-delay: 3.3s;
+          -webkit-animation-delay: 2.7s;
+          -moz-animation-delay: 2.7s;
+          animation-delay: 2.7s;
           }
 
 /*=== Animations start here  ===*/
@@ -271,66 +271,70 @@
 
 /* Hero Content
   ––––––––––––––––––––––––––––––––––––––––––––––––––*/
-.hero-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-  }
+      .hero-container {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+        }
 
-.hero-content {
-  text-align: center;
-}
+      .hero-content {
+        text-align: center;
+      }
+      /* This is Me - Title
+        ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+      .title1 {
+       font-weight: 600;
+       font-size: 50px;
+       padding-bottom: 20px;
+       font-family: 'work sans', sans-serif;
+       color: #19191A;
 
-.title1 {
- font-weight: 600;
- font-size: 50px;
- padding-bottom: 20px;
- font-family: 'work sans', sans-serif;
- color: #19191A;
+      }
 
-}
+      @media screen and (max-width: 480px) {
+        .title1 {
+          font-size: 40px;
+      }
+      }
+      /* UX Designer - Subtitle
+        ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+      .title2 {
+       font-size: 20px;
+       text-align: center;
+       margin-bottom: 6px;
+       font-weight: 600;
+       font-family: 'work sans', sans-serif;
+       color: #19191A;
+      }
 
-@media screen and (max-width: 480px) {
-  .title1 {
-    font-size: 40px;
-}
-}
+      @media screen and (max-width: 580px) {
+        .title2 {
+          font-size: 18px;
+      }
+      }
+      /* Blub
+        ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+      .blurb {
+       font-size: 20px;
+       font-weight: 400;
+       padding-bottom: 6em;
+       font-family: 'work sans', sans-serif;
+       color: #535252;
+       text-align: center;
+       line-height: 30px;
+        max-width: 600px;
+      }
 
-.title2 {
- font-size: 20px;
- text-align: center;
- margin-bottom: 6px;
- font-weight: 600;
- font-family: 'work sans', sans-serif;
- color: #19191A;
-}
-
-@media screen and (max-width: 580px) {
-  .title2 {
-    font-size: 18px;
-}
-}
-
-.blurb {
- font-size: 20px;
- font-weight: 400;
- padding-bottom: 6em;
- font-family: 'work sans', sans-serif;
- color: #535252;
- text-align: center;
- line-height: 30px;
-  max-width: 600px;
-}
-
-@media screen and (max-width: 580px) {
-  .blurb {
-    font-size: 18px;
-    line-height: 28px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-}
+      @media screen and (max-width: 580px) {
+        .blurb {
+          font-size: 18px;
+          line-height: 28px;
+          padding-left: 15px;
+          padding-right: 15px;
+          padding-bottom: 3em;
+      }
+    }
 
 
 /* Jump Button - Work
@@ -559,8 +563,8 @@
 
         @media screen and (max-width: 440px) {
         .connect {
-          padding-top: 80px;
-          padding-bottom: 20px;
+          padding-top: 60px;
+          padding-bottom: 30px;
         }
       }
 
