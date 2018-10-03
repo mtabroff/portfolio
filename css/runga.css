@@ -154,7 +154,7 @@ animation-delay: 3.3s;
 /* The progress bar (scroll indicator) */
 .progress-bar {
   height: 3px;
-  background: #50E3C2;
+  background: #FF5568;
   width: 0%;
 }
 
