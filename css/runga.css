@@ -539,6 +539,20 @@
           align-items: center;
         }
 
+        @media screen and (max-width: 900px) {
+          .sketch-container img {
+            width: 70%;
+            padding-left: 10px;
+            padding-right: 10px;
+           }
+          }
+        @media screen and (max-width: 440px) {
+          .sketch-container img {
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+           }
+          }
         /* Lists
          ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
