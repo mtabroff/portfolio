@@ -350,7 +350,7 @@
          .section-subtitle {
               font-family: "work sans", sans-serif;
               font-size: 16px;
-              font-style: italic;;
+              font-style: italic;
               font-weight: 400;
               color: #333;
               padding-top: 30px;
@@ -401,17 +401,7 @@
                 color:  #252424;
                 font-weight: 600;
               }
-              a.text-link:after {
-                  content: '';
-                  display: block;
-                  color: white;
-                  position: absolute;
-                  bottom: 0px;
-                  left: 0;
-                  width: 0%;
-                  border-bottom: 1px solid #4555E6;
-                  transition: 0.4s ease;
-              }
+
   }
 /* Cover Photo
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -685,7 +675,7 @@
   font-family: 'work sans', sans-serif;
   font-size: 16px;
   font-weight: 600;
-  color: #463A8F;
+  color: #4E47E0;
   line-height: 24px;
   text-align: center;
   margin: 0 auto;
