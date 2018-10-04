@@ -320,7 +320,7 @@
   ––––––––––––––––––––––––––––––––––––––––––––––––––*/
         .section-title {
           font-family: "work sans", sans-serif;
-          font-size: 22px;
+          font-size: 28px;
           font-weight: 600;
           color: #19191A;
           padding-top: 20px;
@@ -328,7 +328,7 @@
         }
         @media screen and (max-width: 900px) {
             .section-title {
-              font-size: 28px;
+              font-size: 22px;
               }
             }
 
