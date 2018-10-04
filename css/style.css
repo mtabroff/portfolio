@@ -321,7 +321,7 @@
        color: #535252;
        text-align: center;
        line-height: 30px;
-        max-width: 600px;
+        max-width: 550px;
       }
 
       @media screen and (max-width: 580px) {

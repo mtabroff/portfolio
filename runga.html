@@ -21,7 +21,6 @@
 <!-- Font
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel='stylesheet' href='css/runga.css'/>
-  <link rel="stylesheet" href="https://use.typekit.net/ftw7zhh.css">
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -55,10 +54,10 @@
 <!-- Primary Page Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<body>
 
   <!-- Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <header>
     <div class="Topnav">
       <div class="logo">
@@ -105,16 +104,25 @@
   ––––––––––––––––––––––––––––––––––––––––––––––––––-->
 <section class="content-container">
   <div class="project-title">Designing a Social Running App—simple yet badass</div>
-  <div class="intro-text">Runga is an iOS mobile app that helps connect committed runners. Users can easily discover nearby runners, join group runs, and organize their own runs. Meeting up for a workout has never been easier.</div>
-        <div class="protolink">
-          <a href="https://invis.io/ERNP5JG7BQZ" class id="text-link" target='_blank'>View prototype</a>
-        </div>
+  <div class="body">
+    <p>Runga is an iOS mobile app that helps connect committed runners. Users can easily discover nearby runners, join group runs, and organize their own runs. Meeting up for a workout has never been easier.</p>
+  </div>
 </section>
 <!-- Runga Cover Photo
     ––––––––––––––––––––––––––––––––––––––––––––––––––-->
-<section class="full-bleed image">
+<div class="full-bleed image">
   <div class="cover-photo-container">
-      <img src="./images/runga-hero.jpg">
+      <img src="./images/runga_hero.jpg">
+  </div>
+</section>
+
+  <div class="cover-photo-mobile">
+    <img src="./images/runga-cover-mobile.jpg">
+  </div>
+
+<section class="content-container">
+  <div class="protolink">
+    <a href="https://invis.io/ERNP5JG7BQZ" class id="text-link" target='_blank'>View prototype</a>
   </div>
 </section>
 
@@ -122,38 +130,49 @@
 ––––––––––––––––––––––––––––––––––––––––––––––––––-->
 <section class="content-container">
   <div class="intro-quote">Don't try to make a badass app. Make a simple app that makes your users feel badass...</div>
-  <div class="title3">A problem to solve</div>
+  <div class="section-title">A problem to solve</div>
   <div class="body">
     <p>It’s not hard to spot runners — look outside and you’ll probably see someone wearing shiny spandex breeze by you. We’re everywhere!</p>
     <p>Yet, finding the right people to run with at a time and place that’s convenient can be a challenge. Through research and validation, I discovered that there aren’t many products that help runners easily connect with like-minded runners nearby for a workout.<p>
-<div class="title3">The plan</div>
-    <div class="process-img">
-      <img src="./images/runga-process.png">
-    </div>
+<div class="section-title">The plan</div>
 </section>
+
+      <div class="process-img">
+      <img src="./images/Runga_process.png" width=60%>
+    </div>
 
 <!-- Research (Discover & Strategize)
 ––––––––––––––––––––––––––––––––––––––––––––––––––-->
 <section class="content-container">
-  <div class="title3">Let's start<span class="lighter-color">— discover & strategize</span></div>
+  <div class="section-title-above">Discover and strategize</div>
+  <div class="section-title">Understand the problem</div>
   <div class="body">
     <p>As with any early stage idea, I like to begin by asking lots of questions:</P>
     <p>Do most runners find it difficult to meet up with other runners? Is the challenge to find likeminded workout buddies more felt by competitive runners than casual? Females than males? Runners in suburbs vs. cities? What products already exist to help connect athletes and what are their limitations?</p>
     <p>Through user and market research, I set out to test my assumptions and uncover some answers. My goal? Understand who I am actually building a product for and how I am going to solve their problems.</p>
-
+ </div>
     <!-- surveys
     ––––––––––––––––––––––––––––––––––––––––––––––––––-->
-    <div class="title4">Surveys</div>
+    <div class="section-title">User research</div>
     <div class="body">
       <p>My first step in understanding the problem was using an online survey to gather data and collect feedback about runners’ experiences with finding a running group/buddy.</p>
-      <p>I asked a variety of open-ended questions, like: Is it challenging to find others to run with? Why, why not? Do you prefer running alone, in a group, or with a buddy? If it depends, why? If you were to meet other people you don’t know for a run, what qualifiers would you want to know beforehand to help you decide?</P>
-        <div class="process-img">
-          <img src="./images/runga-data.png">
+      <p>I asked a variety of open-ended questions: Is it challenging to find others to run with? Why, why not? Do you prefer running alone, in a group, or with a buddy? If it depends, why? If you were to meet other people you don’t know for a run, what qualifiers would you want to know beforehand to help you decide?</P>
+     </div>
+        <div class="data-img">
+          <img src="./images/runga-data1.png" width=80%>
         </div>
-      </div>
+        <div class="data-img">
+          <img src="./images/runga-data2.png" width=80%>
+        </div>
+        <div class="data-img">
+          <img src="./images/runga-data3.png" width=80%>
+        </div>
+
       <!-- Key takeways from survey
       ––––––––––––––––––––––––––––––––––––––––––––––––––-->
-        <p>My survey received 66 responses. Some of the key takeaways from results were that:</p>
+    <div class="body">
+        <br>
+        <p>My survey received 66 responses. Some of the key takeaways were:</p>
           <ul>
               <li>Most runners find it hard to schedule runs with people.</li>
               <li>A minority of runners already belong to a running group/prefer running alone.</li>
@@ -163,98 +182,125 @@
               <li>Most runners find out about running groups via google search, word-of-mouth, and Facebook.</li>
             </ul>
         <p>Results from my initial survey confirmed that most runners experience difficulty meeting up with runners, mainly due to difficulty coordinating schedules and finding convenient meeting spots. Yet, I still needed to know more about the people who would be using a product, like Runga.</p>
-       <div class="thought">Who are the runners that relate most to this problem, and what are they hoping to accomplish?</div>
+     </div>
+</section>
+
+     <div class="thought-container">
+       <div class="thought">Who are the runners that relate most to this problem, and what do they hope to accomplish?</div>
+     </div>
        <!-- Interviews
        ––––––––––––––––––––––––––––––––––––––––––––––––––-->
-       <div class="title4">Interviews</span></div>
+    <section class="content-container">
            <div class="body">
              <p>To better understand the driving factors that motivate runners to meet, the tools they use to find runners, and their frustrations with those tools, I selected 10 survey respondents and conducted a mix of phone interviews and facebook messenger follow-up chats over 3 days.</p>
            </div>
-       <div class="title5">Some highlights:</div>
-            <div class="user-quote">"...I think for runners it’s not weird to meet up with people we don’t know. We’re a pretty trusting and welcoming community. Though, I can see how women may be a bit more cautious.”</div>
-              <hr class="line-break">
-            <div class="user-quote">"...For me, I’m pretty open to running with anyone as long as we can run at a comfortable pace. It’s a plus if I can have a good convo!”</div>
-              <hr class="line-break">
-            <div class="user-quote">"Ha - I honestly can’t believe an Uber-for-Runners app doesn’t already exist! I would totally use it. I mean there’s Strava, which is fanastic for tracking workouts, but it’s not so much meant for helping you find a workout buddy on-the-go..."
-              <hr class="line-break">
+             <div class="center-title">Some highlights:</div>
+
+          <div class="quote-container">
+              <div class="user-quote">"...I think for runners it’s not weird to meet up with people we don’t know. We’re a pretty trusting and welcoming community. Though, I can see how women may be a bit more cautious.”</div>
+              <div class="user-quote">"...For me, I’m pretty open to running with anyone as long as we can run at a comfortable pace. It’s a plus if I can have a good convo!”</div>
+              <div class="user-quote">"Ha- I honestly can’t believe an Uber-for-Runners app doesn’t already exist! I mean there’s Strava, which is great for tracking workouts, but it’s not helpful for finding a workout buddy on-the-go..."
+          </div>
+          <br>
+            <hr class="line-break2">
   </section>
 
   <!-- Synthesis (summary or research)
   ––––––––––––––––––––––––––––––––––––––––––––––––––-->
 
     <section class="content-container">
-          <div class="title3">Putting it all together<span class="lighter-color">— synthesis</span></div>
+          <div class="section-title">Synthesis</div>
           <div class="body">
             <p>After so many conversations with runners, it became clear to me that the people that relate most to the problem are casual/committed runners who are <em>already</em> looking for ways to make running more engaging.</p>
             <p>These people attend organized runs through Meetup. They also go to retail stores to join run clubs and meet other runners. But, scheduled runs aren’t always held at convenient times and locations, and the turnout can be unpredictable. These people are also travelers who would like to find a buddy to discover new running routes.</p>
             <p>These people are runners who simply want to change up the monotony of running — and meeting the right people can help!</p>
-
+          </div>
             <!-- Personas
             ––––––––––––––––––––––––––––––––––––––––––––––––––-->
-            <div class="title4">Personas</span></div>
+              <div class="section-title">Personas</div>
             <div class="body">
-              <p>Armed with a more robust understanding of the mental models of runners, I created personas based on real people I interviewed. By doing so, I was able to bring more empathy to my design process early on and throughout.</p>
-              <p>Creating personas also helped clarify the demographic and qualifications of my target audience:</p>
-              <p>Men & women, between 20 and 40 years old, who are already committed to running ~10-30 miles a week. While my app could be used by runners of all levels, my most loyal users would be people who are committed to running on a consistent basis. More elite runners who already belong to a training group or team could certainly use Runga, but wouldn’t be my prime user base.</p>
-                  <img src="./images/runga-persona-Ashley.png" width="49%">
-                  <img src="./images/runga-persona-Sam.png"  width="49%">
-               <a href="https://docs.google.com/document/d/1H7aImtRuiElIpKQdioNVSTLoYkbouraPUd-m7eAw5-I/edit?usp=sharing" target="_blank">See personas.</a>
-            </div>
-
-
+                  <p>Armed with a more robust understanding of the mental models of runners, I created personas based on real people I interviewed. By doing so, I was able to bring more empathy to my design process early on and throughout.</p>
+                  <p>Creating personas also helped clarify the demographic and qualifications of my target audience:</p>
+                  <p>Men & women, between 20 and 40 years old, who are already committed to running ~10-30 miles a week. While my app could be used by runners of all levels, my most loyal users would be people who are committed to running on a consistent basis. More elite runners who already belong to a training group or team could certainly use Runga, but wouldn’t be my prime user base.</p>
+             </div>
+                <div class="persona-container">
+                   <div class="persona">
+                      <div class="persona-item">
+                        <img src="./images/Ashley-persona2.png" width="100%">
+                      </div>
+                      <div class="persona-item">
+                        <img src="./images/Sam-persona2.png"  width="100%">
+                      </div>
+                  </div>
+                  </div>
+          </section>
             <!-- Market Research
             ––––––––––––––––––––––––––––––––––––––––––––––––––-->
-      <div class="title3">How Runga can differentiate itself<span class="lighter-color">— market research</span></div>
+
+  <section class="content-container">
+      <div class="section-title-above">Discover and strategize Cont.</div>
+      <div class="section-title">Market research</div>
       <div class="body">
         <p>After identifying my personas, I set out to examine the tools they already use to find people to run with. My goal was to identify pain points runners experience with those existing products so that I could design around those frustrations.</p>
       </div>
+  </section>
       <div class="comp-breakdown">
-            <img src="./images/Runga-comp-breakdown.png" width="80%">
+            <img src="./images/competitor-runga.png" width="50%">
        </div>
+
     </section>
 
     <!-- User Painpoints
     ––––––––––––––––––––––––––––––––––––––––––––––––––-->
   <section class="content-container">
-     <div class="title6">The main painpoints include:</div>
+     <div class="center-title">The main painpoints include:</div>
+     <br>
+     <br>
           <div class="title7">Discovery</div>
             <div class="title6">Runners either don’t know where to look for group runs, or they feel existing resources are scattered. Tools like FB and Meetup require that you belong to a group to learn about events, which can be tough if you don’t have insider’s knowledge.</div>
+
           <div class="title7">Planning on-the-go</div>
             <div class="title6">Current tools don’t have the infrastructure to plan impromptu runs. I.e. in Strava, there is no accessible way to contact runners within the app, requiring users to exchange numbers within the commenting sections if they want to engage further.</div>
           <div class="title7">"No show" problem</div>
             <div class="title6">With apps like Facebook and Meetup, it is exceptionally easy to join an event without actually committing, rendering the RSVP feature meaningless.</div>
-            <br>
       <div class="body">
           <hr class="line-break2">
           <br>
           <br>
         <p>I set out to design a simple app for committed runners that would effectively 1. facilitate discovery
 2. provide a framework for scheduling runs, and 3. encourage social accountability.
-   </section>
+
+</section>
 
 
    <!-- Intiial Sketches
    ––––––––––––––––––––––––––––––––––––––––––––––––––-->
    <section class=content-container>
-     <div class="title3">Imagine<span class="lighter-color">— initial sketches</span></div>
+     <div class="section-title-above">Imagine</div>
+     <div class="section-title">Initial sketches</div>
        <div class="body">
          <p>During the early stage of the project, I began sketching some ideas for how Runga could potentially work. These sketches were inspired by a tennis buddy app I had discovered called Tennis buddy:</p>
        </div>
-        <img src="./images/runga-sketches.png" width=90%>
-    </section>
+  </section>
+     <div class="sketch-container">
+        <img src="./images/tennis-buddy-app.png" width=50%>
+        <br>
+        <img src="./images/sketches.png" width=50%>
+     </div>
+
     <section class=content-container>
          <div class="body">
            <br>
            <p>I loved the simple functionality of the tennis app: users can see who’s nearby, broadcast “I’m looking for a tennis buddy”, set broadcast preferences, and then wait for players to respond to their request. It was stripped of all bells and whistles and accomplished the goal of connecting tennis players without feeling like a dating app.</p>
            <p>Perhaps a similar approach could be used for runners?</p>
        </div>
-    </section>
+     </section>
 
 <!-- Create - MVP feature section
 ––––––––––––––––––––––––––––––––––––––––––––––––––-->
 <section class= "content-container">
-  <div class="title3">Create<span class="lighter-color">— mvp feature set & user stories</span>
-  </div>
+  <div class="section-title-above">Create the features</div>
+  <div class="section-title">Mvp feature set & user stories</div>
   <div class="body">
       <p>With some ideas sketched out, I set out to determine the minimum amount of features necessary to accomplish the main goals my MVP would achieve.</p>
       <p>I created user stories with my personas in mind from which I was able to establish a concise list of MVP features. These features would effectively solve a problem experienced by casual/committed runners who want an accessible and reliable way to meet up with people nearby for a workout.</p>
@@ -268,7 +314,8 @@
 <!-- Create - flows & sitemap
 ––––––––––––––––––––––––––––––––––––––––––––––––––-->
 <section class=content-container>
-  <div class="title3">Create<span class="lighter-color">— flows & Site Map</span></div>
+  <div class="section-title-above">Create the skeleton</div>
+  <div class="section-title">Flows & Site Map</span></div>
   <div class="body">
       <p>Next, I mapped out user flows for Runga, from onboarding to planning a run, using Draw.io. I went through a few iterations with these. </p>
       <p>Here is an example:</p>
@@ -283,11 +330,12 @@
 
 <!-- Branding
 ––––––––––––––––––––––––––––––––––––––––––––––––––-->
-  <div class="title3">Create the look<span class="lighter-color">— visual design</span></div>
-    <div class="title4">Brand identity</div>
+  <div class="section-title-above">Create the look</div>
+  <div class="section-title">Visual design</div>
+    <!--<div class="section-subtitle">Brand identity</div>-->
   <div class="body">
     <p>When people say they want to find a running partner/group, what they really mean is that they want to find a way to make running more engaging and motivating. I wanted the visual designs for Runga to feel engaging, motivating, and energizing. I also wanted to convey a friendly, trustworthy, and playful feel but also maintain a clean aesthetic. This was done by pairing subtly playful fonts with strong bold colors. </p>
-  <div class="title4">Name & logo</div>
+  <div class="section-subtitle">Name & logo</div>
     <p>With pencil and paper, I wrote out every word associated with running to help jumpstart the brainstorming process for naming the app. After cycling through a host of options, from the cliche “runbuds” to the more abstract “laceup”, I landed on “Runga.”</p>
     <p>(Truthfully, it came to me after a yoga class...Chatturanga was on my mind!)</p>
     <p>The name also reminded me of Renga, a collaborative form of Japanese poetry. Running, like poetry, can be thought of as a solitary activity. Yet, when done with people, it can be much more fun!</p>
@@ -303,7 +351,7 @@
 
     <!-- Color palette, typography, etc.
     ––––––––––––––––––––––––––––––––––––––––––––––––––-->
-  <div class="title4">Color palette, typography & iconography</div>
+  <div class="section-subtitle">Color palette, typography & iconography</div>
       <p>For the color palette, I chose the vibrant blue/purple as the main background color for onboarding and for the top navigation throughout the app. The blue/purple aligns well the brand values of strength and trust. It also adds a nice contrast to the white space on the screens. For the buttons, I chose the bright orange/red to contrast the deep blue. Its vibrant color communicates a strong energy. The subtle gradients, for both the buttons and top navigation, also add an energizing feel.</p>
       <p>For the font, I chose two san serif fonts: Avenir Next for headings and subheadings and Proxima Nova for body texts. Both fonts feel friendly without compromising strength. They also come with a wide range of weights, which helped facilitate the visual hierarchy of information within the app.</p>
    </div>
@@ -312,47 +360,54 @@
       <div class="style-guide">
         <img src="./images/Runga_style-guide.png" width=80%>
       </div>
+      <br>
 
 </section>
 
 <!-- Test & Refine
 ––––––––––––––––––––––––––––––––––––––––––––––––––-->
-<section class= content-container>
-  <div class="title3">Test & refine<span class="lighter-color">— wireframes</span></div>
+<section class="content-container">
+  <div class="section-title-above">Test and refine</div>
+  <div class="section-title">Wireframes</div>
   <div class="body">
     <p>Before jumping into visual design, I used Sketch to create wireframes that would be used to test the flow and functionality of the app. I used the user flows and sitemap as a reference. During the initial rounds of testing, I was curious to get feedback on the following: placement of icons, filter options, and overall feel and functionality.</p>
     <p>Below is a sample of some of my initial screens:</p>
-    <img src="./images/Runga_med-fi-wf.png" width=90%>
+    <img src="./images/Runga_med-fi-wf.png" width=100%>
     <!-- User Feedback
     ––––––––––––––––––––––––––––––––––––––––––––––––––-->
         <div class="title6">Some feedback:
              <div class="user-quote">"Feels a bit transactional…"</div>
-                <hr class="line-break">
              <div class="user-quote">“I like that you can set broadcast preferences but I feel some of these are too limiting, like FB connections only"</div>
-                <hr class="line-break">
              <div class="user-quote">“Really like the simplicity!"</div>
-                <hr class="line-break">
        </div>
      </div>
-<br>
 <!-- Updated Plan
 ––––––––––––––––––––––––––––––––––––––––––––––––––-->
 <div class="body">
   <p>Conversations with early testers helped illuminate an area of concern: the “I’m looking to run at this time…” broadcast feature provides a framework for initiating plans, yet leaves room for people to be non-committal.</p>
-  <p>Since my initial goal was to design a solution that encourages social accountability, I needed to adjust my designs to make planning runs more actionable. </p>
-    <div class="thought">If the goal is to connect runners for a workout, how can I make planning a run more actionable?</div>
-      <br>
-      <br>
+  <p>Since my initial goal was to design a solution that encourages social accountability, I needed to adjust my designs to make planning runs more actionable.</p>
+</div>
+</section>
+
+   <div class="thought-container">
+     <div class="thought">If the goal is to connect runners for a workout, how can I make planning a run more actionable?</div>
+  </div>
+
+  <section class="content-container">
+    <div class="body">
         <p>Here’s how I decided to make that happen:</p>
             <ul>
               <li>Change “I’m looking to run at this time…” to “I’m running at this time..”</li>
               <li>Make the run more official such that people actually have to “join” to connect/message each other.</li>
               <li>Allow for multiple people to join the same run, increasing social accountability and making everyone feel more safe and comfortable.</li>
             </ul>
+      </div>
 
 <!-- Wireframes Round 2
           ––––––––––––––––––––––––––––––––––––––––––––––––––-->
-  <div class="title3">Iterate with intention<span class="lighter-color">— wireframes round 2</span></div>
+<div class="section-title-above">Iterate with intention</div>
+  <div class="section-title">Wireframes round 2</div>
+  <div class="body">
       <p>With a new plan, I adjusted my screens (and user flows) to accommodate the aforementioned goals. I was curious how runners would respond to my new approach, so I tested them with the same users and asked them to explain which one they would be more excited to use and why. A majority of runners preferred the revised version because the focus was on the run itself and eliminates ambiguity around planning.</p>
       <p>Below illustrates how I revised the ‘Explore’ screen based on feedback and new goals:</p>
   </div>
@@ -369,24 +424,25 @@
 <!-- Hi-fi Mockups
 ––––––––––––––––––––––––––––––––––––––––––––––––––-->
 <section class= content-container>
-      <div class="title3">Execute<span class="lighter-color">— hi-fi mockups</span></div>
+      <div class="section-title-above">execute</div>
+      <div class="section-title">Hi-fi mockups</div>
       <div class="body">
           <p>With the visual system in place, I was ready to create my high-fidelity mockups. For each section of my app (from onboarding to planning a run to rating runs), I focused on reducing cognitive load and ensuring a visual consistency throughout the entire product.</p>
-          <div class="title4">Onboarding (get users excited)</div>
+          <div class="section-subtitle">Onboarding (get users excited)</div>
           <p>The onboarding flow for Runga was carefully crafted to get users excited about the app while offering a personalized, conversational experience through a ‘get to know you’ survey. During the wireframing stage, I tested the flow of the onboarding screens to ensure I was hitting the following criteria: explaining the value of Runga, introducing key features, and asking users for permissions by framing the ask in terms of value added to the user.</p>
           <p>The feedback was overall positive; however, I noticed that it took users a bit too long to go through the entire flow. I set out to streamline it.</p>
       </div>
       <!-- Onboarding
       ––––––––––––––––––––––––––––––––––––––––––––––––––-->
       <div class="onboarding">
-          <img src="./images/Runga_onboarding_survey.png" width=90%>
+          <img src="./images/Runga_onboarding_survey.png" width=100%>
       </div>
 
       <div class="body">
           <p>I was able to reduce the onboarding survey from 5 to 3 questions by honing in on the most important value-added questions. I also reduced the number of clicks users would have to take to proceed to the next question by changing the UI of the buttons.</p>
        </div>
         <div class="onboarding">
-          <img src="./images/Runga_onboarding-tutorial.png" width=90%>
+          <img src="./images/Runga_onboarding-tutorial.png" width=100%>
         </div>
       </div>
       <div class="body">
@@ -394,46 +450,47 @@
       </div>
       <!-- Explore
       ––––––––––––––––––––––––––––––––––––––––––––––––––-->
-      <div class="title4">Explore (make discovery simple)<!--<span class="lighter-color2">— make discovery simple</span>--></div>
+      <div class="section-subtitle">Explore (make discovery simple)<!--<span class="lighter-color2">— make discovery simple</span>--></div>
         <div class="body">
             <p>The goal of the ‘Explore’ feed was to solve the problem of discovery. Runners would be able to easly see runs happening nearby, join and go! The biggest challenge from a UX perspective was optimizing the visual hierarchy of information to allow for successful browsing.</p>
             <p>For the top navigation, this meant providing an intuitive filter/sort system to allow users to easily find what they’re looking for in less time.</p>
       </div>
       <div class="explore">
-        <img src="./images/Runga_explore-hifi.png" width=60%>
+        <img src="./images/Runga_explore-hifi.png" width=70%>
       <div>
 
       <div class="body">
          <p>For the run card, this meant providing just enough information to inform the user about the essential details for the run (who, what, when, and where) without creating information overload. This also meant displaying the text on the screen in a way that facilitates easy browsing.</p>
          <p>To help determine which designs accomplished this, I conducted a series of preference tests. Below is an example:</p>
       <div class="preference">
-          <img src="./images/Runga_preference-test.png" width=70%>
+          <img src="./images/Runga_preference-test.png" width=80%>
       </div>
       <!-- Plan-a-run
       ––––––––––––––––––––––––––––––––––––––––––––––––––-->
-      <div class="title4">Plan-a-run (help runners plan)</div>
+      <div class="section-subtitle">Plan-a-run (help runners plan)</div>
         <div class=body>
             <p>The goal of the plan-a-run feature was to give runners an easy framework to plan a run with people nearby, yet detailed enough to require intention. I wanted to ensure that the plan itself included sufficient detail such that participants would understand what’s expected and feel comfortable joining.</p>
             <p>After initial testing, I realized that the current form was too long. I set out to simplify it by reducing unnecessary steps and cleaning up the UI.</p>
           </div>
       <div class="plan">
-          <img src="./images/Runga_plan-a-run.png" width=80%>
+          <img src="./images/Runga_plan-a-run.png" width=90%>
       </div>
 
       <!-- Badges & ratings
       ––––––––––––––––––––––––––––––––––––––––––––––––––-->
 
-        <div class="title4">Badges & ratings (increase accountability)</div>
+        <div class="section-subtitle">Badges & ratings (increase accountability)</div>
         <p>In order to increase accountability, I gave runners the ability to rate each other and leave reviews. These ratings and reviews can be found on the runners’ profile pages. The presence of reviews helps runners decide whether to join a run by reducing feelings of uncertainty around the safety and reliability of a runner.</p>
         <p>In addition to user-generated reviews and ratings, I also added a badge system to gamify the running experience to help drive engagement. For example, if runners host 5 runs they receive a “5 Runga Runs” badge. If they use the app enough, they could potentially earn an “automatic entry to NYC marathon” badge. This slot-machine style reward system is effective in its ability to motivate users to attain predictable and unpredictable rewards. </p>
 
        <div class="badges">
-          <img src="./images/Runga_badges.png" width=80%>
+          <img src="./images/Runga_badges.png" width=90%>
       </div>
 
 <!-- Key Learnings
   ––––––––––––––––––––––––––––––––––––––––––––––––––-->
-  <div class="title3">Evaluate<span class="lighter-color">— key learnings & next steps</span></div>
+  <div class="section-title-above">evaluate</div>
+  <div class="section-title">Key learnings & next steps</span></div>
   <div class="body">
       <p>Creating Runga from concept to prototype was a challenging yet rewarding experience, one that has taught me to:</p>
           <ul>
@@ -449,7 +506,7 @@
   <div>
     <!-- Next Steps
     ––––––––––––––––––––––––––––––––––––––––––––––––––-->
-      <div class="title4">Next Steps</div>
+      <div class="section-subtitle">Next Steps</div>
       <p>In order to create a dynamic experience, my next step is to turn my mockups into an interactive and animated prototype. I will then test specific interactions, like rating a run and leaving a review, to fully optimize the experience for runners and revise my designs accordingly.</p>
     <br>
     <br>
@@ -468,7 +525,7 @@
       </div>
       </div>
 </section>
-
+</section>
 <!-- End Document
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   </body>
