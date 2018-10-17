@@ -204,7 +204,7 @@
 
 
       .Navbar__Items a {
-        color: #8C8C8C;
+        color: #585858;
 
       }
 
@@ -342,7 +342,6 @@
         .button {
           font-size: 18px;
           font-family: 'work sans', sans-serif;
-          color: #9B9B9B;
           padding-bottom:40px;
 
         }
@@ -351,7 +350,7 @@
           margin-top: 30px;
           margin-bottom: 20px;
           font-family: 'work sans', sans-serif;
-          color: #9B9B9B;
+          color: #7670FE;
         }
 
         .button a:hover {
