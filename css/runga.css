@@ -144,178 +144,178 @@
 
 /*Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.header {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  width: 100%;
-}
+      .header {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+      }
 
 /* The progress container (white background)
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.progress-container {
-  width: 100%;
-  height: 3px;
-  background: #fff;
-}
+        .progress-container {
+          width: 100%;
+          height: 3px;
+          background: #fff;
+        }
 
 /* The progress bar (scroll indicator)
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.progress-bar {
-  height: 3px;
-  background: #FF5568;
-  width: 0%;
-}
+      .progress-bar {
+        height: 3px;
+        background: #FF5568;
+        width: 0%;
+      }
 
-.Topnav {
-  background-color: black;
-  height: 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  box-shadow: 0 8px 20px #D5D6D8;
-  -webkit-transform: translate(0, -5px)
-}
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.logo img {
-  width: 27px;
-  margin-top: 9px;
-}
+      .Topnav {
+        background-color: black;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 0 8px 20px #D5D6D8;
+        -webkit-transform: translate(0, -5px)
+      }
+      .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      .logo img {
+        width: 27px;
+        margin-top: 9px;
+      }
 
 /* Navigation menu
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.Navbar {
-  margin-top: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'work sans',sans-serif;
+      .Navbar {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'work sans',sans-serif;
 
-}
-.Navbar__Link a {
-  max-width: 1200px;
-  font-size: 13px;
-  text-transform: uppercase;
-  padding: 0 15px;
-  color: #9B9B9B;
-  text-decoration: none;
-}
+      }
+      .Navbar__Link a {
+        max-width: 1200px;
+        font-size: 13px;
+        text-transform: uppercase;
+        padding: 0 15px;
+        color: #9B9B9B;
+        text-decoration: none;
+      }
 
-.Navbar__Items {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-top: 5px;
-  margin-bottom: 30px;
-  padding-right: 0;
-  color: #656565;
-  font-family: 'work sans', sans-serif;
-}
+      .Navbar__Items {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 5px;
+        margin-bottom: 30px;
+        padding-right: 0;
+        color: #656565;
+        font-family: 'work sans', sans-serif;
+      }
 
-.Navbar__Link-toggle {
-  display: none;
-}
+      .Navbar__Link-toggle {
+        display: none;
+      }
 
 
-.Navbar__Items a {
-  color: #8C8C8C;
+      .Navbar__Items a {
+        color: #8C8C8C;
 
-}
+      }
 
-.Navbar__Items a:hover {
-  color: #A0A9FF;
-  weight: 600;
-}
+      .Navbar__Items a:hover {
+        color: #A0A9FF;
+        weight: 600;
+      }
 
 /* Hamburger menu
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-@media only screen and (max-width: 768px) {
-  .Navbar__Items,
-  .Navbar {
-    flex-direction: column;
-  }
+      @media only screen and (max-width: 768px) {
+        .Navbar__Items,
+        .Navbar {
+          flex-direction: column;
+        }
 
-.Navbar__Items {
-    display:none;
-  }
-.Navbar__Items--center {
-    margin-left: 0;
-  }
-.Navbar__ToggleShow {
-    display: flex;
-  }
-.Navbar__Link-toggle {
-    align-self: flex-end;
-    display: initial;
-    position: absolute;
-    cursor: pointer;
-   }
-}
+      .Navbar__Items {
+          display:none;
+        }
+      .Navbar__Items--center {
+          margin-left: 0;
+        }
+      .Navbar__ToggleShow {
+          display: flex;
+        }
+      .Navbar__Link-toggle {
+          align-self: flex-end;
+          display: initial;
+          position: absolute;
+          cursor: pointer;
+         }
+      }
 
 
 /* Case study container
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.main-container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 6%;
-}
+      .main-container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 6%;
+      }
 
-.content-container {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: flex-start;
-  max-width: 680px;
-  margin: 0 auto;
-}
+      .content-container {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width: 680px;
+        margin: 0 auto;
+      }
 
-        @media screen and (max-width: 1000px) {
-          .content-container {
-            display: block;
-            padding: 0px 20px;
-        	}
-        }
-        @media screen and (max-width: 440px) {
-          .content-container {
-            display: block;
-            padding: 0px 20px;
-        	}
-        }
+              @media screen and (max-width: 1000px) {
+                .content-container {
+                  display: block;
+                  padding: 0px 20px;
+              	}
+              }
+              @media screen and (max-width: 440px) {
+                .content-container {
+                  display: block;
+                  padding: 0px 20px;
+              	}
+              }
 
 /*Project Titles
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
-.project-title {
-  padding-top: 50px;
-  padding-bottom: 1em;
-  font-family: "work sans", sans-serif;
-  line-height: 45px;
-  font-weight: 600;
-  font-size: 40px;
-  text-align: left;
-  color: #333;
-}
+      .project-title {
+        padding-top: 50px;
+        padding-bottom: 1em;
+        font-family: "work sans", sans-serif;
+        line-height: 45px;
+        font-weight: 600;
+        font-size: 40px;
+        text-align: left;
+        color: #333;
+      }
 
-        @media screen and (max-width: 900px){
-        .project-title {
-            font-size: 36px;
-          }
-        }
+              @media screen and (max-width: 900px){
+              .project-title {
+                  font-size: 36px;
+                }
+              }
 
-        @media screen and (max-width: 440px) {
-          .project-title {
-        		  font-size: 34px;
-              line-height: 40px;
-        	}
-        }
+              @media screen and (max-width: 440px) {
+                .project-title {
+              		  font-size: 34px;
+                    line-height: 40px;
+              	}
+              }
 
 /* Section titles & subtitles
   ––––––––––––––––––––––––––––––––––––––––––––––––––*/
@@ -377,8 +377,8 @@
               }
 
 
-    /* Links
-    ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+  /* Links
+  ––––––––––––––––––––––––––––––––––––––––––––––––––*/
             .protolink {
               padding-top: 3em;
               display: block;
@@ -459,8 +459,8 @@
 
 
 
-  /* Intro quote
-    ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+/* Intro quote
+––––––––––––––––––––––––––––––––––––––––––––––––––*/
           .intro-quote {
             font-family: 'Raleway', sans-serif;
             font-size: 24px;
@@ -479,8 +479,8 @@
             }
 
 
-  /* process
-   ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+/* process
+ ––––––––––––––––––––––––––––––––––––––––––––––––––*/
               .process-img-container {
                 display: flex;
                 flex-direction: column;
@@ -523,8 +523,8 @@
 
 
 
-  /* Lists
-   ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+/* Lists
+––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
         ul {
             list-style-type: circle;
@@ -541,8 +541,8 @@
           }
 
 
-    /* Unordered Lists
-    –––––––––––––––––––––––––––––––––––––––––––––––––*/
+  /* Unordered Lists
+  –––––––––––––––––––––––––––––––––––––––––––––––––*/
 
             li {
               font-family: 'work sans', sans-serif;

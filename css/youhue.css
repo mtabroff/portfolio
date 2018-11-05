@@ -48,33 +48,31 @@
                   color: #333;
                 }
 
+    	&:hover {
+    		cursor: pointer;
+        font-weight: bold;
+        color: #333;
 
+    	}
 
-  	&:hover {
-  		cursor: pointer;
-      font-weight: bold;
-      color: #333;
+    	&.text-link:hover:after {
+    		width: 100%;
+    		z-index: 100;
+    	}
 
-  	}
+        .logo-yh img {
+          margin-bottom: 20px;
+          margin-top: 20px;
+          margin-left: 100px;
 
-  	&.text-link:hover:after {
-  		width: 100%;
-  		z-index: 100;
-  	}
+        }
 
-    .logo-yh img {
-      margin-bottom: 20px;
-      margin-top: 20px;
-      margin-left: 100px;
+        .logo-yh-2 img {
+          margin-bottom: 20px;
+          margin-top: 5px;
+          margin-left: 60px;
 
-    }
-
-    .logo-yh-2 img {
-      margin-bottom: 20px;
-      margin-top: 5px;
-      margin-left: 60px;
-
-    }
+        }
 
         .footer {
           width: 100%;
@@ -111,11 +109,21 @@
 
         }
 
+        .link-out a {
+          font-size: 14px;
+          font-family: "work sans", sans-serif;
+          color: black;
+        }
 
 
 
 
     }
+
+
+
+
+
 
 
 /* Animations
@@ -220,118 +228,118 @@
   ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 
-.Topnav {
-  background-color: black;
-  height: 65px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  box-shadow: 0 8px 20px #D5D6D8;
-  -webkit-transform: translate(0, -5px)
-}
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.logo img {
-  width: 30px;
-  margin-top: 9px;
-}
+    .Topnav {
+      background-color: black;
+      height: 65px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      box-shadow: 0 8px 20px #D5D6D8;
+      -webkit-transform: translate(0, -5px)
+    }
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    .logo img {
+      width: 30px;
+      margin-top: 9px;
+    }
 
 
 /* Navigation Menu
   ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
-.header {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  width: 100%;
-}
+    .header {
+      position: fixed;
+      top: 0;
+      z-index: 1;
+      width: 100%;
+    }
 
 /* Progress bar container
   ––––––––––––––––––––––––––––––––––––––––––––––––––*/
-.progress-container {
-  width: 100%;
-  height: 3px;
-  background: #fff;
-}
+      .progress-container {
+        width: 100%;
+        height: 3px;
+        background: #fff;
+      }
 
 /* Progress bar scroll indicator
   ––––––––––––––––––––––––––––––––––––––––––––––––––*/
-.progress-bar {
-  height: 3px;
-  background: #FF5568;
-  width: 0%;
-}
+      .progress-bar {
+        height: 3px;
+        background: #FF5568;
+        width: 0%;
+      }
 
 /* Top navigation with Logo
   ––––––––––––––––––––––––––––––––––––––––––––––––––*/
-.Topnav {x
-  background-color: black;
-  height: 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  box-shadow: 0 8px 20px #D5D6D8;
-  -webkit-transform: translate(0, -5px)
-}
-  .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .logo img {
-    width: 27px;
-    margin-top: 9px;
-  }
+      .Topnav {x
+        background-color: black;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 0 8px 20px #D5D6D8;
+        -webkit-transform: translate(0, -5px)
+      }
+        .logo {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+        }
+        .logo img {
+          width: 27px;
+          margin-top: 9px;
+        }
 
 /* Navigation Menu options
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
-    .Navbar {
-      margin-top: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'work sans',sans-serif;
+          .Navbar {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'work sans',sans-serif;
 
-    }
-    .Navbar__Link a {
-      max-width: 1200px;
-      font-size: 13px;
-      text-transform: uppercase;
-      padding: 0 15px;
-      color: #9B9B9B;
-      text-decoration: none;
-    }
+          }
+          .Navbar__Link a {
+            max-width: 1200px;
+            font-size: 13px;
+            text-transform: uppercase;
+            padding: 0 15px;
+            color: #9B9B9B;
+            text-decoration: none;
+          }
 
-    .Navbar__Items {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      padding-top: 5px;
-      margin-bottom: 30px;
-      padding-right: 0;
-      color: #656565;
-      font-family: 'work sans', sans-serif;
-    }
+          .Navbar__Items {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-top: 5px;
+            margin-bottom: 30px;
+            padding-right: 0;
+            color: #656565;
+            font-family: 'work sans', sans-serif;
+          }
 
-    .Navbar__Link-toggle {
-      display: none;
-    }
+          .Navbar__Link-toggle {
+            display: none;
+          }
 
-    .Navbar__Items a {
-      color: #8C8C8C;
+          .Navbar__Items a {
+            color: #8C8C8C;
 
-    }
+          }
 
-    .Navbar__Items a:hover {
-      color: #A0A9FF;
-      weight: 600;
-    }
+          .Navbar__Items a:hover {
+            color: #A0A9FF;
+            weight: 600;
+          }
 
 
     /* Hamburger menu
@@ -361,11 +369,43 @@
         }
 
 
-          /* Section titles & subtitles
-            ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+  /* data assets
+  ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+        .data {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+          .data img {
+            max-width: 70%;
+            border-radius: 8px;
+        }
+        }
+        @media screen and (max-width: 440px) {
+          .data {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+          }
+        }
+        @media screen and (max-width: 440px) {
+          .data img {
+            align-items: flex-start;
+            max-width: 95%;
+            margin-bottom: 30px;
+            margin-top: 30px;
+          }
+        }
+
+
+
+    /* Section titles & subtitles
+    ––––––––––––––––––––––––––––––––––––––––––––––––––*/
                   .section-title {
                     font-family: "work sans", sans-serif;
-                    font-size: 28px;
+                    font-size: 22px;
                     font-weight: 600;
                     color: #19191A;
                     padding-top: 20px;
@@ -405,23 +445,18 @@
                       }
 
 
-
-
-
-
                    .italic-subtitle {
                           font-family: "work sans", sans-serif;
-                          font-size: 16px;
+                          font-size: 18px;
                           font-style: italic;;
                           font-weight: 400;
                           color: #333;
-                          padding-top: 30px;
                           padding-bottom: 10px;
                           margin-bottom: 10px
                       }
 
-                      /* Special titles
-                        ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+        /* Special titles
+    ––––––––––––––––––––––––––––––––––––––––––––––––––*/
                       .center-title {
                         font-family: 'work sans', sans-serif;
                         font-size: 16px;
@@ -441,11 +476,20 @@
                       .quote-container {
                         margin-bottom: 70px;
                       }
+
+                      .data-title {
+                        margin: 0 auto;
+                        font-family: 'Work sans', sans-serif;
+                        font-size: 16px;
+                        font-weight: 600;
+                        text-align: center;
+                        color: #141313;
+                      }
                       .user-quote {
                         font-family: 'Raleway', sans-serif;
                         font-size: 16px;
                         font-style: italic;
-                        color: #463A8F;
+                        color: #404041;
                         text-align: center;
                         line-height: 28px;
                         padding-top: 50px;
@@ -456,7 +500,8 @@
                       @media screen and (max-width: 440px) {
                         .user-quote {
                           padding-left: 10px;
-                          padding-right: 10px;
+                          padding
+                          -right: 10px;
                         }
                       }
 
@@ -465,12 +510,19 @@
                         font-family: 'work sans', sans-serif;
                         font-size: 16px;
                         font-weight: 600;
-                        color: #5049E7;
+                        color: #5525C4;
                         line-height: 24px;
                         text-align: center;
                         margin: 0 auto;
                         padding-left: 20px;
                         padding-right: 20px;
+                      }
+
+                       .line-break {
+                        border-top: 1px solid #5525C4;
+                        width: 80px;
+                        margin-right: auto;
+                        margin: 20px auto;
                       }
 
 
@@ -511,15 +563,15 @@
                 padding: 0px 20px;
             	}
         }
-        /* Project title
-          –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Project title
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
           .project-title {
             padding-top: 50px;
             padding-bottom: 1em;
             font-family: "work sans", sans-serif;
             line-height: 45px;
             font-weight: 600;
-            font-size: 40px;
+            font-size: 38px;
             text-align: left;
             color: #333;
           }
@@ -537,27 +589,27 @@
                   	}
                   }
 
-            /* body
-              ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+  /* body
+  ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
               .body {
                   font-family: "work sans", sans-serif;
                   font-size: 16px;
                   padding-top: 10px;
                   padding-bottom: 30px;
-                  line-height: 25px;
+                  line-height: 28px;
                   color: #333;
                 }
                     @media screen and (max-width: 440px) {
                       .body {
-                        font-size: 14px;
+                        font-size: 16px;
+                        line-height: 28px;
                       }
                     }
 
 
-
-        /* Cover Photo
-        –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Cover Photo
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
                 .cover-photo-container {
                     flex-basis: 50%;
@@ -606,8 +658,8 @@
                     }
                   }
 
-          /* Links
-          ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+  /* Links
+  ––––––––––––––––––––––––––––––––––––––––––––––––––*/
               .protolink {
                 padding-top: 3em;
                 font-family: "work sans", sans-serif;
@@ -756,6 +808,8 @@
 
 /* Project Assets
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
       .style-guide-4 {
         display: flex;
         align-items: flex-start;
@@ -824,22 +878,12 @@
       margin-bottom: 40px;
     }
 
-    .personas img {
-      width: 80%;
-      margin: 40px 0px 40px 50px;
-
+    @media screen and (max-width: 900px) {
+    .personas {
+      display: none;
     }
+  
 
-
-    .data-img {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .data-img img {
-      margin-bottom: 5px;
-      width: 100%;
-    }
 
 
     .color-palette img {
@@ -865,7 +909,7 @@
 
         @media screen and (max-width: 440px) {
           ul  {
-              padding-left: 20px;
+              padding-left: 15px;
            }
           }
 
@@ -883,7 +927,7 @@
 
             @media screen and (max-width: 440px) {
               li  {
-                font-size: 14px;
+                font-size: 16px;
                }
               }
 
@@ -936,14 +980,14 @@
         color: #49494A;
         text-align: center;
         line-height: 28px;
-        margin: 40px 0px;
+        margin: 20px 0px;
         padding-right: 60px;
         padding-left: 50px;
       }
 
       @media screen and (max-width: 440px) {
             .user-quote {
-                    margin-bottom: 60px;
+                    margin-bottom: 30px;
                     padding: 0;
                   }
               }
