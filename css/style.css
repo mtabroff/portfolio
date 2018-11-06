@@ -34,6 +34,25 @@
   		width: 100%;
   		z-index: 100;
   	}
+    .button a {
+      font-size: 18px;
+      font-weight: 500;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      font-family: 'work sans', sans-serif;
+      color: #555556;
+      /*background: -webkit-linear-gradient(45deg, #813F8C , #5B46DA);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;*/
+    }
+
+
+    @media screen and (max-width: 580px) {
+      .button {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    }
 }
 
 /* Animations
@@ -144,8 +163,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-shadow: 0 8px 20px #D5D6D8;
-  -webkit-transform: translate(0, -5px)
+  /*box-shadow: 0 8px 20px #D5D6D8;
+  -webkit-transform: translate(0, -5px)*/
 }
 .logo {
   display: flex;
@@ -204,12 +223,12 @@
 
 
       .Navbar__Items a {
-        color: #585858;
+        color: #8C8C8C;
 
       }
 
       .Navbar__Items a:hover {
-        color: #97A0FB;
+        color: #333;
         font-weight: 500;
       }
 
@@ -260,7 +279,7 @@
       }
       .avatar img {
         align-self: center;
-        width: 50%;
+        width: 55%;
         margin-top: 20px;
         margin-bottom: 30px;
       }
@@ -283,7 +302,7 @@
         ––––––––––––––––––––––––––––––––––––––––––––––––––*/
       .title1 {
        font-weight: 600;
-       font-size: 50px;
+       font-size: 42px;
        padding-bottom: 20px;
        font-family: 'work sans', sans-serif;
        color: #19191A;
@@ -311,8 +330,8 @@
           font-size: 18px;
       }
       }
-      /* Blub
-        ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+  /* Blub
+  ––––––––––––––––––––––––––––––––––––––––––––––––––*/
       .blurb {
        font-size: 20px;
        font-weight: 400;
@@ -320,7 +339,7 @@
        font-family: 'work sans', sans-serif;
        color: #535252;
        text-align: center;
-       line-height: 30px;
+       line-height: 35px;
         max-width: 550px;
       }
 
@@ -339,10 +358,25 @@
   ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 
+
+
+  scroll-container {
+    display: block;
+    width: 350px;
+    height: 200px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+  scroll-page {
+
+    height: 100%;
+  }
+
         .button {
           font-size: 18px;
           font-family: 'work sans', sans-serif;
           padding-bottom:40px;
+          }
 
         }
         .button a {
@@ -350,11 +384,13 @@
           margin-top: 30px;
           margin-bottom: 20px;
           font-family: 'work sans', sans-serif;
-          color: #7670FE;
+          background: -webkit-linear-gradient(#eee, #603C66);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
 
         .button a:hover {
-          color: #97A0FB;
+          color: #333;
         }
 
         @media screen and (max-width: 580px) {
