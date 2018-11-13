@@ -9,7 +9,7 @@
 
 *, html {
   -webkit-font-smoothing: antialiased;
-  
+
 }
 
 
@@ -41,7 +41,7 @@
          font-size: 16px;
          padding-top: 10px;
          padding-bottom: 0px;
-         line-height: 25px;
+         line-height: 32px;
          color: #333;
        }
 
@@ -50,7 +50,7 @@
             font-size: 16px;
             padding-top: 10px;
             padding-bottom: 10px;
-            line-height: 25px;
+            line-height: 32px;
             color: #333;
         }
 
@@ -311,7 +311,7 @@
     /* Hamburger menu
     ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
-              @media only screen and (max-width: 768px) {
+              /*@media only screen and (max-width: 768px) {
                 .Navbar__Items, .Navbar {
                   flex-direction: column;
                 }
@@ -332,7 +332,7 @@
                     position: absolute;
                     cursor: pointer;
                    }
-            }
+            }*/
 
 
             /* Section titles & subtitles
@@ -425,7 +425,7 @@
                                                 font-size: 16px;
                                                 padding-top: 10px;
                                                 padding-bottom: 30px;
-                                                line-height: 28px;
+                                                line-height: 32px;
                                                 color: #333;
                                               }
                                                   @media screen and (max-width: 440px) {
@@ -442,23 +442,6 @@
 
       /* Special titles/quotes
       ––––––––––––––––––––––––––––––––––––––––––––––––––*/
-
-                      .intro-quote {
-                        font-family: 'Raleway', sans-serif;
-                        font-size: 24px;
-                        color: #4E47E0;
-                        line-height: 32px;
-                        font-style: italic;
-                        font-weight: 400;
-                        margin: 50px auto;
-                        padding-bottom: 10px;
-                      }
-                      @media screen and (max-width: 440px) {
-                        .intro-quote {
-                          font-size: 20px;
-                          line-height: 28px;
-                        }
-                        }
 
 
                               .center-title {
@@ -486,9 +469,9 @@
                                 font-family: 'Raleway', sans-serif;
                                 font-size: 16px;
                                 font-style: italic;
-                                color: #404041;
+                                color: #333;
                                 text-align: center;
-                                line-height: 28px;
+                                line-height: 32px;
                                 padding-top: 30px;
                                 padding-right: 60px;
                                 padding-left: 50px;
@@ -502,17 +485,6 @@
                               }
 
 
-                              .title7 {
-                                font-family: 'work sans', sans-serif;
-                                font-size: 16px;
-                                font-weight: 600;
-                                color: #5525C4;
-                                line-height: 24px;
-                                text-align: center;
-                                margin: 0 auto;
-                                padding-left: 20px;
-                                padding-right: 20px;
-                              }
 
                                .line-break {
                                 border-top: 1px solid #5525C4;
@@ -570,7 +542,7 @@
                                     overflow: hidden;
                                     position: relative;
                                     margin: 20px auto;
-                                    border: 1px solid white;
+
                                 }
                                 .cover-photo-container img {
                                   position: relative;
@@ -653,7 +625,7 @@
             margin-right: 10px;
             padding-right: 30px;
             padding-left: 70px;
-            margin-bottom: 60px;
+            margin-bottom: 40px;
         }
 
         @media screen and (max-width: 440px) {
@@ -671,8 +643,8 @@
               font-size: 16px;
               font-weight: 400;
               color: #333;
-              margin: 15px auto;
-              line-height: 24px;
+              margin: 10px auto;
+              line-height: 32px;
             }
 
             @media screen and (max-width: 440px) {
@@ -749,9 +721,9 @@
         font-family: 'Raleway', sans-serif;
         font-size: 16px;
         font-style: italic;
-        color: #4E47E0;
+        color: #49494A;
         text-align: center;
-        line-height: 28px;
+        line-height: 32px;
         padding-top: 50px;
         padding-right: 60px;
         padding-left: 50px;
@@ -768,14 +740,15 @@
 
         .title7 {
           font-family: 'work sans', sans-serif;
-          font-size: 16px;
+          font-size: 18px;
           font-weight: 600;
           color: #4E47E0;
-          line-height: 24px;
-          text-align: center;
+          line-height: 35px;
+          text-align: left;
           margin: 0 auto;
           padding-left: 20px;
           padding-right: 20px;
+          padding-bottom: 10px;
         }
 
         .title6 {
@@ -784,7 +757,7 @@
           color: #333;
           margin-top: 20px;
           margin-bottom: 50px;
-          line-height: 24px;
+          line-height: 32px;
           text-align: center;
           padding-left: 20px;
           padding-right: 20px;

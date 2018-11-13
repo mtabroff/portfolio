@@ -233,7 +233,7 @@
       }
 
 
-  @media only screen and (max-width: 768px) {
+  /*--@media only screen and (max-width: 768px) {
             .Navbar__Items,
             .Navbar {
               flex-direction: column;
@@ -255,7 +255,7 @@
                 cursor: pointer;
                }
   }
-
+*/
  .Navbar_Items {
     position:absolute;
     left:0;
@@ -302,7 +302,7 @@
         ––––––––––––––––––––––––––––––––––––––––––––––––––*/
       .title1 {
        font-weight: 600;
-       font-size: 42px;
+       font-size: 45px;
        padding-bottom: 20px;
        font-family: 'work sans', sans-serif;
        color: #19191A;
@@ -317,9 +317,9 @@
       /* UX Designer - Subtitle
         ––––––––––––––––––––––––––––––––––––––––––––––––––*/
       .title2 {
-       font-size: 20px;
+       font-size: 24px;
        text-align: center;
-       margin-bottom: 6px;
+       margin-bottom: 15px;
        font-weight: 600;
        font-family: 'work sans', sans-serif;
        color: #19191A;
@@ -339,8 +339,8 @@
        font-family: 'work sans', sans-serif;
        color: #535252;
        text-align: center;
-       line-height: 35px;
-        max-width: 550px;
+       line-height: 36px;
+        max-width: 650px;
       }
 
       @media screen and (max-width: 580px) {
@@ -373,7 +373,7 @@
   }
 
         .button {
-          font-size: 18px;
+          font-size: 16px;
           font-family: 'work sans', sans-serif;
           padding-bottom:40px;
           }
