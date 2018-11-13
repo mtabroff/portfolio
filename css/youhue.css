@@ -21,6 +21,22 @@
   	transition: color 0.3s ease;
   }
 
+
+      .background-full {
+        background-color: #FAFAFA;
+        background-size: cover;
+      -webkit-background-size: cover;
+        -moz-background-size: cover;
+      -o-background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+
+              }
+
+
   ul {
       list-style-type: circle;
       margin-right: 10px;
@@ -51,7 +67,6 @@
                 line-height: 32px;
                 color: #333;
             }
-
 
 
     	&:hover {
@@ -311,31 +326,22 @@
           }
 
 
-/* Hamburger menu
+/* backgrounds
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
-          @media only screen and (max-width: 768px) {
-            .Navbar__Items, .Navbar {
-              flex-direction: column;
-            }
+.background-full {
+  background-color: #FAFAFA;
+  background-size: cover;
+  -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+  display: flex;
+   justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
-            .Navbar__Items {
-                display:none;
-              }
-
-            .Navbar__Items--center {
-                margin-left: 0;
-              }
-            .Navbar__ToggleShow {
-                display: flex;
-              }
-            .Navbar__Link-toggle {
-                align-self: flex-end;
-                display: initial;
-                position: absolute;
-                cursor: pointer;
-               }
-        }
 
 
   /* data assets

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="376px" viewBox="0 0 512 376" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>tick</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Revised-case-study-assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-882.000000, -692.000000)" fill="#26B1F2">
+            <g id="tick" transform="translate(882.000000, 691.000000)">
+                <path d="M504.502,8.496 C494.505,-1.502 478.297,-1.502 468.298,8.496 L161.594,315.203 L43.702,197.311 C33.705,187.313 17.497,187.314 7.498,197.311 C-2.5,207.308 -2.5,223.516 7.498,233.514 L143.492,369.506 C153.486,379.503 169.706,379.496 179.696,369.506 L504.502,44.7 C514.5,34.703 514.499,18.494 504.502,8.496 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>
