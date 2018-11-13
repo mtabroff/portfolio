@@ -1,3 +1,6 @@
+
+/* Main Document Styling
+––––––––––––––––––––––––––––––––––––––––––––––––––*/
 *{
  margin: 0;
  padding: 0;
@@ -34,7 +37,8 @@
 }
 
 
-/* add simple fade in and down when load */
+/* Animations
+––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 
 /*=== Trigger  ===*/
@@ -170,98 +174,89 @@ animation-delay: 3.3s;
           }
 
 
-/*NAVIGATION
-  ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+          /* Header
+            ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
 
-        .Topnav {
-          background-color: black;
-          height: 65px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          /*box-shadow: 0 8px 20px #D5D6D8;
-          -webkit-transform: translate(0, -5px)*/
-        }
-        .logo {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-        }
-        .logo img {
-          width: 27px;
-          margin-top: 9px;
-        }
-
-      .Navbar {
-        margin-top: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'work sans',sans-serif;
-
-      }
-      .Navbar__Link a {
-        max-width: 1200px;
-        font-size: 14px;
-        text-transform: uppercase;
-        padding: 0 15px;
-        color: #9B9B9B;
-      }
-
-      .Navbar__Items {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding-top: 5px;
-        margin-bottom: 30px;
-        padding-right: 0;
-        color: #656565;
-        font-family: 'work sans', sans-serif;
-      }
-
-/*Hamburger menu
-  ––––––––––––––––––––––––––––––––––––––––––––––––––*/
-      .Navbar__Link-toggle {
-          display: none;
-        }
-
-
-        .Navbar__Items a {
-          color: #8C8C8C;
-
-        }
-
-        .Navbar__Items a:hover {
-          color: #333;
-          weight: 600;
-        }
-
-  /*
-        @media only screen and (max-width: 768px) {
-          .Navbar__Items,
-          .Navbar {
-            flex-direction: column;
-          }
-
-        .Navbar__Items {
-            display:none;
-          }
-        .Navbar__Items--center {
-            margin-left: 0;
-          }
-        .Navbar__ToggleShow {
+          .Topnav {
+            background-color: black;
+            height: 65px;
             display: flex;
+            flex-direction: column;
+            justify-content: center;
           }
-        .Navbar__Link-toggle {
-            align-self: flex-end;
-            display: initial;
-            position: absolute;
-            cursor: pointer;
-           }
-        }
-*/
+          .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+          }
+          .logo img {
+            width: 30px;
+            margin-top: 9px;
+          }
+
+
+
+          /* Navigation Menu
+            ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+                .Navbar {
+                  margin-top: 30px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-family: 'work sans',sans-serif;
+
+                }
+                .Navbar__Link a {
+                  max-width: 1200px;
+                  font-size: 14px;
+                  margin-bottom: 20px;
+                  padding: 0 15px;
+                  color: #9B9B9B;
+                }
+
+                .Navbar__Items {
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: center;
+                  padding-top: 5px;
+                  margin-bottom: 30px;
+                  padding-right: 0;
+                  color: #656565;
+                  font-family: 'work sans', sans-serif;
+                }
+
+
+                .Navbar__Items a {
+                  color: #8C8C8C;
+
+                }
+
+                .Navbar__Items a:hover {
+                  color: #333;
+                  font-weight: 500;
+                }
+
+
+           .Navbar_Items {
+              position:absolute;
+              left:0;
+              top:36px;
+              z-index:1;
+              visibility:hidden;
+              opacity:0;
+              filter:alpha(opacity=0);
+              -webkit-transition:200ms ease;
+              -moz-transition:200ms ease;
+              -o-transition:200ms ease;
+              transition:200ms ease;
+          }
+
+
+
+
+
 /* body
   ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 

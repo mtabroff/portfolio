@@ -308,33 +308,6 @@
               }
 
 
-    /* Hamburger menu
-    ––––––––––––––––––––––––––––––––––––––––––––––––––*/
-
-              /*@media only screen and (max-width: 768px) {
-                .Navbar__Items, .Navbar {
-                  flex-direction: column;
-                }
-
-                .Navbar__Items {
-                    display:none;
-                  }
-
-                .Navbar__Items--center {
-                    margin-left: 0;
-                  }
-                .Navbar__ToggleShow {
-                    display: flex;
-                  }
-                .Navbar__Link-toggle {
-                    align-self: flex-end;
-                    display: initial;
-                    position: absolute;
-                    cursor: pointer;
-                   }
-            }*/
-
-
             /* Section titles & subtitles
             ––––––––––––––––––––––––––––––––––––––––––––––––––*/
                           .section-title {
@@ -503,11 +476,6 @@
     /* Case Study Container
       –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-                .main-container {
-                  max-width: 1100px;
-                  margin: 0 auto;
-                  padding: 0 6%;
-                }
 
 
                  .content-container {
@@ -530,6 +498,12 @@
                         display: block;
                         padding: 0px 20px;
                       }
+                }
+
+                .main-container {
+                  max-width: 1100px;
+                  margin: 0 auto;
+                  padding: 0 6%;
                 }
 
 

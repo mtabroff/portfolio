@@ -8,7 +8,8 @@
 }
 
 *, html {
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+ }
 
   p {
     padding-bottom: 15px;
@@ -34,6 +35,7 @@
   		width: 100%;
   		z-index: 100;
   	}
+
     .button a {
       font-size: 18px;
       font-weight: 500;
@@ -41,9 +43,7 @@
       margin-bottom: 20px;
       font-family: 'work sans', sans-serif;
       color: #555556;
-      /*background: -webkit-linear-gradient(45deg, #813F8C , #5B46DA);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;*/
+
     }
 
 
@@ -53,7 +53,7 @@
         margin-bottom: 10px;
     }
     }
-}
+
 
 /* Animations
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
@@ -163,8 +163,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /*box-shadow: 0 8px 20px #D5D6D8;
-  -webkit-transform: translate(0, -5px)*/
 }
 .logo {
   display: flex;
@@ -177,16 +175,7 @@
   margin-top: 9px;
 }
 
-/* HERO
-  ––––––––––––––––––––––––––––––––––––––––––––––––––*/
-.hero {
-  height: 620px;
-}
-@media screen and (max-width: 480px) {
-  .hero {
-    height: 550px;
-  }
-}
+
 
 /* Navigation Menu
   ––––––––––––––––––––––––––––––––––––––––––––––––––*/
@@ -198,7 +187,7 @@
         font-family: 'work sans',sans-serif;
 
       }
-      .Navbar__Link {
+      .Navbar__Link a {
         max-width: 1200px;
         font-size: 14px;
         margin-bottom: 20px;
@@ -217,10 +206,6 @@
         font-family: 'work sans', sans-serif;
       }
 
-      .Navbar__Link-toggle {
-        display: none;
-      }
-
 
       .Navbar__Items a {
         color: #8C8C8C;
@@ -233,29 +218,6 @@
       }
 
 
-  /*--@media only screen and (max-width: 768px) {
-            .Navbar__Items,
-            .Navbar {
-              flex-direction: column;
-            }
-
-            .Navbar__Items {
-                display:none;
-              }
-            .Navbar__Items--center {
-                margin-left: 0;
-              }
-            .Navbar__ToggleShow {
-                display: flex;
-              }
-            .Navbar__Link-toggle {
-                align-self: flex-end;
-                display: initial;
-                position: absolute;
-                cursor: pointer;
-               }
-  }
-*/
  .Navbar_Items {
     position:absolute;
     left:0;
@@ -279,8 +241,7 @@
       }
       .avatar img {
         align-self: center;
-        width: 55%;
-        margin-top: 20px;
+        margin-top: 30px;
         margin-bottom: 30px;
       }
 
