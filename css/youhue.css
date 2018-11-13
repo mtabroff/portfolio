@@ -21,20 +21,14 @@
   	transition: color 0.3s ease;
   }
 
+  .container-fill {
+    display: flex;
+    flex-direction: column;
+    background-color: #FAFAFA;
+    padding-top: 20px;
 
-      .background-full {
-        background-color: #FAFAFA;
-        background-size: cover;
-      -webkit-background-size: cover;
-        -moz-background-size: cover;
-      -o-background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 30px;
-      margin-bottom: 30px;
+  }
 
-              }
 
 
   ul {
@@ -328,19 +322,14 @@
 
 /* backgrounds
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
-
-.background-full {
-  background-color: #FAFAFA;
-  background-size: cover;
-  -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
+.container-fill {
   display: flex;
-   justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  flex-direction: column;
+  background-color: #FAFAFA;
+  padding-top: 20px;
+
 }
+
 
 
 
