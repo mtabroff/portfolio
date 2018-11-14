@@ -484,6 +484,7 @@
                                         @media screen and (max-width: 900px){
                                         .project-title {
                                             font-size: 36px;
+                                            text-align: left;
                                           }
                                         }
 
@@ -491,6 +492,7 @@
                                           .project-title {
                                         		  font-size: 34px;
                                               line-height: 40px;
+                                              text-align: left;
                                         	}
                                         }
 

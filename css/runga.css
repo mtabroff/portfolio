@@ -380,12 +380,14 @@
                                                 @media screen and (max-width: 900px){
                                                 .project-title {
                                                     font-size: 36px;
+                                                    text-align: left;
                                                   }
                                                 }
 
                                                 @media screen and (max-width: 440px) {
                                                   .project-title {
                                                       font-size: 34px;
+                                                      text-align: left;
                                                       line-height: 40px;
                                                   }
                                                 }
