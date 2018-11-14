@@ -30,6 +30,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script type="text/javascript" src="./js/index.js" defer></script>
   <script type="text/javascript" src="./js/scroll.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
   <script src="jquery-3.3.1.min.js"></script>
 
 <!-- Animations
@@ -140,13 +141,17 @@
               <div class="body">
                   <div class="center-title">The old website and marketing materials were:</div>
                   <br>
-                  <ul>
-                      <li><span class="bolder">Not optimized for lead generation</span></li>
+                  <ul class="checklist">
+                      <li class="checkmark">
+                        <span class="bolder">Not optimized for lead generation</span></li>
                       <p>Lacked clear CTAs to sign up for the pilot program</p>
-                      <li><span class="bolder">Exhibited Information overload</span></li>
+                      <li class="checkmark">
+                        <span class="bolder">Exhibited Information overload</span></li>
                       <p>Amount of information (while quality research) felt overwhelming and difficult to skim</p>
-                      <li><span class="bolder">Lacked visuals to support content</span></li>
+                        <li class="checkmark">
+                          <span class="bolder">Lacked visuals to support content</span></li>
                       <p>Not easy to quickly understand what is YouHue and how it works</p>
+                   </ul>
                       <br>
                </div>
           <div class="section-title">Opportunity</div>
@@ -190,11 +195,11 @@
         <div class="data-container">
           <div class="data-1">
                <div class="data-title">Do you track student wellbeing?</div>
-               <div class="data"><img src="./images/yh-data1.png"> </div>
+               <div class="data"><img src="./images/yh-data1.png" width="100%"> </div>
           </div>
             <div class="data-2">
               <div class="data-title">How do you track it?</div>
-              <div class="data2"><img src="./images/yh-data2.png"></div>
+              <div class="data2"><img src="./images/yh-data2.png" width="100%"></div>
           </div>
         </div>
           <br>
@@ -242,7 +247,7 @@
             <p>I crafted <a href="https://docs.google.com/document/d/1akC9c2K6ombachBvfAPiGqYTAIYNPcP5Ec28IGJ76i0/edit?usp=sharing" target="_blank"> personas</a> based on the people I interviewed to remind me throughout the design process about who I was designing the landing page for and why.</p>
           </div>
          <br>
-      </div>
+
           <div class="image-container">
             <img src="./images/personas-yh.png" width=100%>
           </div>
@@ -251,7 +256,7 @@
             </div>
           <br>
           <br>
-
+    </div>
 
 
   <!-- Market Research
@@ -280,7 +285,7 @@
       </div>
     </div>
              <div class="image-container">
-                <img src="./images/yh-storyboard-doc1.png" width=100%>
+                <img src="./images/yh-storyboard-doc1.png" width=70%>
               </div>
               <div class="image-mobile">
                 <img src="./images/yh-storyboard-doc.png" width=100%>
@@ -299,10 +304,10 @@
         </div>
 
             <div class="image-container">
-               <img src="./images/yh-wireframes.png" width=100%>
+               <img src="./images/yh-wireframes-hero.png" width=100%>
              </div>
              <div class="image-mobile">
-                <img src="./images/yh-wireframes.png" width=100%>
+                <img src="./images/yh-wireframes-hero.png" width=100%>
               </div>
 
           <br>
@@ -321,11 +326,10 @@
               <br>
               <br>
 
+
              <div class="italic-subtitle">Feature sections</div>
              <div class="body">
                   <p>One of the primary goals behind the redesign was conveying the value of the app to educators in a compelling way without overloading them with information. I set out to accomplish this by simplifying the copy and utilizing visuals to aid in storytelling.
-                  <p>For the purpose of the first round of testing, I set out to determine whether the copy alone was clear and compelling enough before designing the visuals to support it.</p>
-                  <p>I chose to separate the feature section into two parts: explaining how the app helps students in one section and how the data from the app helps teachers in another.</p>
                   <p> The feedback from testers was overall positive, in that they felt it was easy to understand what YouHue is and how it works. However, there was enough confusion over the 'Key-topic Analysis' feature that I knew I either had to add a ‘learn more’ CTA to give educators a way to find out more information, or provide an example with visuals to support the copy.</p>
                  <br>
               </div>
@@ -378,7 +382,7 @@
               <li>Use consistent iconography to illustrate key features</li>
                 <li>Demystify data by using simple illustrations</li>
                   <li>Show real people using product to convey trust and legitimacy</li>
-                    <li>Add box shadow for a nice contrast to flat design elements</li>
+                    <li>Add box shadows for a nice contrast to flat design elements</li>
              </ol>
           </div>
         </div>
@@ -388,7 +392,7 @@
     <br>
     <br>
 <div class="content-container">
-   <div class="italic-subtitle">Styleguide</div>
+   <div class="italic-subtitle">Style guide</div>
    <div class="body">
       <p>I wanted the visuals to complement YouHue’s refined brand strategy while utilizing the product brand guidelines created by the designers of the app. I accomplished this by making subtle yet visible adjustments to the color palette, logo, and typography.<p>
 
@@ -397,11 +401,14 @@
                  <p>I modified the color palette  to reflect the newly identified brand characteristics: energetic, trustworthy, playful, smart and caring.</p>
                  <p>The most apparent change was adjusting the YouHue brand color from a dark violet to a bold, energizing blue-violet. I also added subtle purple gradients for the background to attract attention and communicate a soft vibrancy.</p>
             </div>
+            <div class="center-title">original layout vs. modified</div>
              <div class="image-container">
-               <img src="./images/yh-colors.png" width="100%">
+               <img src="./images/yh-colors1.png" width="100%">
+               <img src="./images/yh-colors2.png" width="100%">
             </div>
               <div class="image-mobile">
-                   <img src="./images/yh-colors-mobile.png" width="100%">
+                   <img src="./images/yh-colors1.png" width="100%">
+                    <img src="./images/yh-colors1.png" width="100%">
               </div>
             <br>
             <br>
@@ -410,12 +417,14 @@
 
       <div class="italic-subtitle">Logo modification</div>
         <div class="body">I took the existing logo and adjusted it slightly to make room for a tagline “Reflect. Learn. Grow.” I used the Fibonacci Square to establish proportionality between the graphic mark, the name “YouHue” and the tagline. I then altered the colors to correspond with the new color pallette.</div>
+ </div>
            <div class="image-container">
              <img src="./images/yh-logo.png" width="80%">
           </div>
           <div class="image-mobile">
             <img src="./images/yh-logo.png" width="100%">
           </div>
+  <div class="content-container">
         <div class="italic-subtitle">Typography</div>
         <div class="body">The font Omnes was used as primary typeface for the old marketing materials and website copy. Omnes, while it conveys the brand characteristics of care and friendliness, can be difficult to read as body text. I paired Omnes with Proxima Nova to aid in legibility and readability while also conveying a mature yet friendly message.</div>
             <div class="image-container">
@@ -427,6 +436,7 @@
           <br>
           <br>
   </div>
+</div>
 
 
           <!-- Final result

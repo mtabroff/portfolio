@@ -30,6 +30,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script type="text/javascript" src="./js/index.js" defer></script>
   <script type="text/javascript" src="./js/scroll.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
   <script src="jquery-3.3.1.min.js"></script>
 
 <!-- Animations
@@ -194,6 +195,11 @@
           <div class="body">
             <p>Through outreach on teacher Facebook groups, I collected survey responses from 74 educators around the world. I set out to learn about their behaviors, e.g. do teachers already track student wellbeing? If so, how? Why would collecting this data be of value to them?</p>
            <!--<p>I also wanted to understand educators’ preconceptions with similar tools by asking open-ended questions:  Do teachers use similar mood-tracking/journalling apps? What about these products do they find useful? frustrating?</p>-->
+           <canvas id="trackChart" width="1600" height="900"></canvas>
+
+
+
+
         <div class="data-container">
           <div class="data-1">
                <div class="data-title">Do you track student wellbeing?</div>
