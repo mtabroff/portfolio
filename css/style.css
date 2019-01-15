@@ -291,6 +291,14 @@
           font-size: 18px;
       }
       }
+
+      @media screen and (max-width: 580px) {
+        .title2 {
+          font-size: 18px;
+          margin-left: 10px;
+          margin-right: 10px;
+      }
+      }
   /* Blub
   ––––––––––––––––––––––––––––––––––––––––––––––––––*/
       .blurb {
