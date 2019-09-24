@@ -241,8 +241,8 @@
       }
       .avatar img {
         align-self: center;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 32px;
+        margin-bottom: 32px;
       }
 
 
@@ -264,7 +264,7 @@
       .title1 {
        font-weight: 600;
        font-size: 48px;
-       padding-bottom: 20px;
+       padding-bottom: 24px;
        font-family: 'work sans', sans-serif;
        color: #19191A;
 
@@ -280,7 +280,7 @@
       .title2 {
        font-size: 28px;
        text-align: center;
-       margin-bottom: 15px;
+       padding-bottom: 18px;
        font-weight: 600;
        font-family: 'work sans', sans-serif;
        color: #19191A;
@@ -309,7 +309,7 @@
        color: #434343;
        text-align: center;
        line-height: 36px;
-        max-width: 650px;
+      max-width: 650px;
       }
 
       @media screen and (max-width: 580px) {
@@ -350,7 +350,7 @@
         }
         .button a {
           font-size: 18px;
-          margin-top: 30px;
+          margin-top: 0px;
           margin-bottom: 24px;
           font-family: 'work sans', sans-serif;
           background: -webkit-linear-gradient(#eee, #603C66);
@@ -381,7 +381,7 @@
       }
 
       .main-container {
-          max-width: 1100px;
+          max-width: 1200px;
           margin: 0 auto;
           padding: 0 6%;
           }
