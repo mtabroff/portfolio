@@ -240,8 +240,8 @@
         justify-content: center;
       }
       .avatar img {
-        align-self: left;
-        max-width: 180px;
+        align-self: center;
+        max-width: 175px;
         margin-top: 32px;
         margin-bottom: 32px;
       }
