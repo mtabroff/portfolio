@@ -179,7 +179,7 @@
 
 /* Navigation Menu
   ––––––––––––––––––––––––––––––––––––––––––––––––––*/
-      .Navbar {
+      *.Navbar {
         margin-top: 30px;
         display: flex;
         align-items: center;
@@ -231,7 +231,7 @@
     -o-transition:200ms ease;
     transition:200ms ease;
 }
-
+/*
 
 /* Avatar
   ––––––––––––––––––––––––––––––––––––––––––––––––––*/
@@ -240,19 +240,29 @@
         justify-content: center;
       }
       .avatar img {
-        align-self: center;
+        align-self: left;
+        max-width: 180px;
         margin-top: 32px;
         margin-bottom: 32px;
       }
 
+/*.hero-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 6%;
+      }
 
-
+        @media screen and (max-width: 440px) {
+          .work .main-container {
+            padding: 0px;
+          }
+        }
+*/
 /* Hero Content
-  ––––––––––––––––––––––––––––––––––––––––––––––––––*/
-      .hero-container {
+  ––––––––––––––––––––––––––––––––––––––––––––––––––.hero-container {
               display: flex;
               flex-direction: column;
-              justify-content: center;
+              justify-content: left;
               align-items: center;
         }
 
@@ -263,22 +273,24 @@
         ––––––––––––––––––––––––––––––––––––––––––––––––––*/
       .title1 {
        font-weight: 600;
-       font-size: 48px;
+       font-size: 54px;
        padding-bottom: 24px;
        font-family: 'work sans', sans-serif;
        color: #19191A;
+       text-align: center;
 
       }
 
       @media screen and (max-width: 480px) {
         .title1 {
-          font-size: 40px;
+          font-size: 54px;
       }
       }
       /* UX Designer - Subtitle
         ––––––––––––––––––––––––––––––––––––––––––––––––––*/
       .title2 {
-       font-size: 28px;
+       font-size: 32px;
+       line-height: normal;
        text-align: center;
        padding-bottom: 18px;
        font-weight: 600;
@@ -288,39 +300,46 @@
 
       @media screen and (max-width: 580px) {
         .title2 {
-          font-size: 20px;
+          font-size: 24px;
+          line-height: 36px;
+
       }
       }
 
       @media screen and (max-width: 580px) {
         .title2 {
-          font-size: 18px;
-          margin-left: 10px;
-          margin-right: 10px;
+          font-size: 24px;
+
       }
       }
   /* Blub
   ––––––––––––––––––––––––––––––––––––––––––––––––––*/
-      .blurb {
-       font-size: 20px;
-       font-weight: 400;
-       padding-bottom: 6em;
-       font-family: 'work sans', sans-serif;
-       color: #434343;
-       text-align: center;
-       line-height: 36px;
-      max-width: 650px;
-      }
+  .blurb {
+   text-align: center;
+   font-size: 24px;
+   font-weight: 400;
+   padding-bottom: 4em;
+   font-family: 'work sans', sans-serif;
+   color: #434343;
+   line-height: 36px;
 
-      @media screen and (max-width: 580px) {
-        .blurb {
-          font-size: 18px;
-          line-height: 28px;
-          padding-left: 15px;
-          padding-right: 15px;
-          padding-bottom: 3em;
-      }
-    }
+  }
+
+  @media screen and (max-width: 580px) {
+    .blurb {
+      font-size: 20px;
+      line-height: 36px;
+      padding: 0, 0, 0, 0;
+      font-weight: 400;
+      padding-bottom: 4em;
+      font-family: 'work sans', sans-serif;
+      color: #434343;
+      text-align: center;
+      line-height: 36px;
+      max-width: 800px;
+
+  }
+}
 
 
 /* Jump Button - Work
@@ -342,9 +361,11 @@
   }
 
         .button {
+          text-align: center;
           font-size: 18px;
           font-family: 'work sans', sans-serif;
           padding-bottom:40px;
+          margin: 0 auto;
           }
 
         }

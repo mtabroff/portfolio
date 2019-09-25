@@ -36,7 +36,11 @@
   	}
 }
 
+/*project-title
+––––––––––––––––––––––––––––––––––––––––––––––––––*/
+.project-title {
 
+}
 /* Animations
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
@@ -188,7 +192,7 @@ animation-delay: 3.3s;
           .logo {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: left;
             width: 100%;
           }
           .logo img {
@@ -348,14 +352,25 @@ animation-delay: 3.3s;
 
 
 
-
-
-.img-container {
+*.img-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  max-width: 780px;
+  max-width: 1000px;
+  margin: auto;
+  object-fit: cover;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/*.img-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 880px;
   margin: auto;
   object-fit: cover;
   overflow: hidden;
@@ -374,11 +389,11 @@ animation-delay: 3.3s;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 200px;
+  height: 300px;
 
 }
 }
-
+*/
 
 .img-item img {
   min-width: 0;
