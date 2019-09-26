@@ -156,86 +156,93 @@
 /* Header
   ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
+  /*------------- NAV -------------*/
+            nav {
+              display: block;
+              box-shadow: 0px 2px 8px 0px rgba(206,210,212, 0.5);
+              position: absolute;
+              top: 0;
+              width: 100%;
+              height: 62px;
+              right: 0;
+              z-index: 1000;
+              overflow: hidden;
+              -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+              transition: height .3s, background .4s, -webkit-transform .4s;
+              transition: transform .4s, height .3s, background .4s;
+              transition: transform .4s, height .3s, background .4s, -webkit-transform .4s;
+              -webkit-animation: firstFadeInAndDrop .5s;
+              animation: firstFadeInAndDrop .5s; }
 
-.Topnav {
-  background-color: black;
-  height: 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.logo img {
-  width: 25px;
-  margin-top: 9px;
-}
+            /* on intial load fade in the menu */
+            @-webkit-keyframes firstFadeInAndDrop {
+              0% {
+                -webkit-transform: translate(0, -70px); }
+              100% {
+                -webkit-transform: translate(0, 0); } }
+            @keyframes firstFadeInAndDrop {
+              0% {
+                -webkit-transform: translate(0, -70px);
+                        transform: translate(0, -70px); }
+              100% {
+                -webkit-transform: translate(0, 0);
+                        transform: translate(0, 0); } }
+            /* when hidden it goes up */
+            nav.invisible {
+              -webkit-transform: translate(0, -80px);
+              transform: translate(0, -80px);
+              transition: -webkit-transform .3s;
+              transition: transform .3s;
+              transition: transform .3s, -webkit-transform .3s; }
 
+            /* when shown & detached position is fixed */
+            nav.detached {
+              position: fixed;
+              /*background: rgba(0,0,0,.9);*/
+              transition: height .3s, background .4s, opacity .3s, -webkit-transform .3s;
+              transition: transform .3s, height .3s, background .4s, opacity .3s;
+              transition: transform .3s, height .3s, background .4s, opacity .3s, -webkit-transform .3s; }
 
-
-/* Navigation Menu
-  ––––––––––––––––––––––––––––––––––––––––––––––––––*/
-      *.Navbar {
-        margin-top: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'work sans',sans-serif;
-
-      }
-      .Navbar__Link a {
-        max-width: 1200px;
-        font-size: 14px;
-        margin-bottom: 20px;
-        padding: 0 15px;
-        color: #9B9B9B;
-      }
-
-      .Navbar__Items {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding-top: 5px;
-        margin-bottom: 30px;
-        padding-right: 0;
-        color: #656565;
-        font-family: 'work sans', sans-serif;
-      }
-
-
-      .Navbar__Items a {
-        color: #8C8C8C;
-
-      }
-
-      .Navbar__Items a:hover {
-        color: #333;
-        font-weight: 500;
-      }
+            .invisible {
+              visibility: visible; }
 
 
- .Navbar_Items {
-    position:absolute;
-    left:0;
-    top:36px;
-    z-index:1;
-    visibility:hidden;
-    opacity:0;
-    filter:alpha(opacity=0);
-    -webkit-transition:200ms ease;
-    -moz-transition:200ms ease;
-    -o-transition:200ms ease;
-    transition:200ms ease;
-}
-/*
+
+
+
+          .primary-nav {
+            background-color: white;
+            padding: 20px 0;
+            width: 100%;
+            position: fixed;
+            z-index: 50;
+            top: 0; }
+
+          .nav-items {
+            display: flex;
+            justify-content: center
+           }
+
+           .Navbar__Link a {
+             max-width: 1200px;
+             font-family: 'work sans', sans-serif;
+             font-size: 16px;
+             font-weight: 600;
+             text-transform: none;
+             padding: 0 15px;
+             color: #343434;
+             text-decoration: none;
+           }
+
+           .Navbar__Link a:hover {
+             color: #343434;
+           }
 
 /* Avatar
   ––––––––––––––––––––––––––––––––––––––––––––––––––*/
       .avatar {
+        padding-top: 64px;
         display: flex;
         justify-content: center;
       }
@@ -246,29 +253,6 @@
         margin-bottom: 32px;
       }
 
-/*.hero-content {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 6%;
-      }
-
-        @media screen and (max-width: 440px) {
-          .work .main-container {
-            padding: 0px;
-          }
-        }
-*/
-/* Hero Content
-  ––––––––––––––––––––––––––––––––––––––––––––––––––.hero-container {
-              display: flex;
-              flex-direction: column;
-              justify-content: left;
-              align-items: center;
-        }
-
-      .hero-content {
-        text-align: center;
-      }
       /* This is Me - Title
         ––––––––––––––––––––––––––––––––––––––––––––––––––*/
       .title1 {
@@ -314,31 +298,31 @@
       }
   /* Blub
   ––––––––––––––––––––––––––––––––––––––––––––––––––*/
-  .blurb {
-   text-align: center;
-   font-size: 24px;
-   font-weight: 400;
-   padding-bottom: 4em;
-   font-family: 'work sans', sans-serif;
-   color: #434343;
-   line-height: 36px;
+        .blurb {
+         text-align: center;
+         font-size: 24px;
+         font-weight: 400;
+         padding-bottom: 4em;
+         font-family: 'work sans', sans-serif;
+         color: #434343;
+         line-height: 36px;
 
-  }
+        }
 
-  @media screen and (max-width: 580px) {
-    .blurb {
-      font-size: 20px;
-      line-height: 36px;
-      padding: 0, 0, 0, 0;
-      font-weight: 400;
-      padding-bottom: 4em;
-      font-family: 'work sans', sans-serif;
-      color: #434343;
-      text-align: center;
-      line-height: 36px;
+        @media screen and (max-width: 580px) {
+          .blurb {
+            font-size: 20px;
+            line-height: 36px;
+            padding: 0, 0, 0, 0;
+            font-weight: 400;
+            padding-bottom: 4em;
+            font-family: 'work sans', sans-serif;
+            color: #434343;
+            text-align: center;
+            line-height: 36px;
 
-  }
-}
+        }
+      }
 
 
 /* Jump Button - Work

@@ -127,44 +127,19 @@
           color: black;
         }
 
-
-
     }
 
 
 
-    /* Header
-      ––––––––––––––––––––––––––––––––––––––––––––––––––*/
-
-
-          .Topnav {
-            background-color: black;
-            height: 65px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-          }
-          .logo {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-          }
-          .logo img {
-            width: 30px;
-            margin-top: 9px;
-          }
-
-
     /* Navigation Menu
-      ––––––––––––––––––––––––––––––––––––––––––––––––––*/
-
+      ––––––––––––––––––––––––––––––––––––––––––––––––––
           .header {
             position: fixed;
+            background-color: black;
             top: 0;
             z-index: 1;
             width: 100%;
-          }
+          }*/
 
     /* Progress bar container
       ––––––––––––––––––––––––––––––––––––––––––––––––––*/
@@ -173,6 +148,7 @@
             height: 3px;
             background: #fff;
           }
+
 
     /* Progress bar scroll indicator
       ––––––––––––––––––––––––––––––––––––––––––––––––––*/
@@ -186,47 +162,90 @@
 
     /* Navigation Menu options
     ––––––––––––––––––––––––––––––––––––––––––––––––––*/
-              .Navbar {
-                margin-top: 30px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-family: 'work sans',sans-serif;
+    /* Header
+      ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
-              }
-              .Navbar__Link a {
-                max-width: 1200px;
-                font-size: 14px;
-                text-transform: uppercase;
-                padding: 0 15px;
-                color: #9B9B9B;
-                text-decoration: none;
-              }
+      /*------------- NAV -------------*/
+                nav {
+                  display: block;
+                  box-shadow: 0px 2px 8px 0px rgba(206,210,212, 0.5);
+                  position: absolute;
+                  top: 0;
+                  width: 100%;
+                  height: 62px;
+                  right: 0;
+                  z-index: 1000;
+                  overflow: hidden;
+                  -webkit-transform: translate(0, 0);
+                  transform: translate(0, 0);
+                  transition: height .3s, background .4s, -webkit-transform .4s;
+                  transition: transform .4s, height .3s, background .4s;
+                  transition: transform .4s, height .3s, background .4s, -webkit-transform .4s;
+                  -webkit-animation: firstFadeInAndDrop .5s;
+                  animation: firstFadeInAndDrop .5s; }
 
-              .Navbar__Items {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                padding-top: 5px;
-                margin-bottom: 30px;
-                padding-right: 0;
-                color: #656565;
-                font-family: 'work sans', sans-serif;
-              }
+                /* on intial load fade in the menu */
+                @-webkit-keyframes firstFadeInAndDrop {
+                  0% {
+                    -webkit-transform: translate(0, -70px); }
+                  100% {
+                    -webkit-transform: translate(0, 0); } }
+                @keyframes firstFadeInAndDrop {
+                  0% {
+                    -webkit-transform: translate(0, -70px);
+                            transform: translate(0, -70px); }
+                  100% {
+                    -webkit-transform: translate(0, 0);
+                            transform: translate(0, 0); } }
+                /* when hidden it goes up */
+                nav.invisible {
+                  -webkit-transform: translate(0, -80px);
+                  transform: translate(0, -80px);
+                  transition: -webkit-transform .3s;
+                  transition: transform .3s;
+                  transition: transform .3s, -webkit-transform .3s; }
 
-              .Navbar__Link-toggle {
-                display: none;
-              }
+                /* when shown & detached position is fixed */
+                nav.detached {
+                  position: fixed;
+                  /*background: rgba(0,0,0,.9);*/
+                  transition: height .3s, background .4s, opacity .3s, -webkit-transform .3s;
+                  transition: transform .3s, height .3s, background .4s, opacity .3s;
+                  transition: transform .3s, height .3s, background .4s, opacity .3s, -webkit-transform .3s; }
 
-              .Navbar__Items a {
-                color: #8C8C8C;
+                .invisible {
+                  visibility: visible; }
 
-              }
 
-              .Navbar__Items a:hover {
-                color: #333;
-                weight: 600;
-              }
+
+
+                  .primary-nav {
+                    background-color: white;
+                    padding: 20px 0;
+                    width: 100%;
+                    position: fixed;
+                    z-index: 50;
+                    top: 0; }
+
+                  .nav-items {
+                    display: flex;
+                    justify-content: center;
+                   }
+
+                   .Navbar__Link a {
+                     max-width: 1200px;
+                     font-family: 'work sans', sans-serif;
+                     font-size: 16px;
+                     font-weight: 600;
+                     text-transform: none;
+                     padding: 0 15px;
+                     color: #343434;
+                     text-decoration: none;
+                   }
+
+                   .Navbar__Link a:hover {
+                     color: #343434;
+                   }
 
 
     /* backgrounds
@@ -254,7 +273,7 @@
       }
 
       .project-title {
-      	font-family: $classica;
+      	font-family: 'work sans' sans-serif;
       	font-size: 36px;
       	font-weight: 700;
       	line-height: 1;
@@ -265,7 +284,7 @@
       		color: $medium;
       		font-weight: 400;
 
-      		@media screen and (max-width: $break-med) {
+      		@media screen and (max-width: 768px) {
       			display: block;
       			font-size: 28px;
       			line-height: 1.5;
@@ -318,48 +337,6 @@
 
       }
 
-      .fav-albums {
-      	display: inline-block;
-
-      	.year {
-      		display: inline-block;
-      		font-family: $classica;
-      		font-size: 32px;
-      		font-weight: 700;
-      		line-height: 1;
-      		color: $dark;
-      		position: relative;
-
-      		&:after {
-      			content: '';
-      			display: block;
-      			color: white;
-      			position: absolute;
-      			bottom: 0px;
-      			left: 0;
-      			width: 0%;
-      			border-bottom: 1px solid $dark;
-      			transition: 0.4s ease;
-      		}
-      	}
-
-      	img {
-      		margin-top: 24px;
-      		margin-bottom: 80px;
-      		transition: all 0.4s ease;
-      	}
-
-      	&:hover img {
-      		box-shadow: 0 10px 20px #c7cad1;
-      		transform: translate(0, -5px);
-      	}
-
-      	&:hover .year:after {
-      		width: 100%;
-      		z-index: 100;
-      	}
-      }
-
 
       .project-caption {
       	font-size: 14px;
@@ -389,14 +366,14 @@
       .m-tb-40 {
       	margin: 40px 0;
 
-      	@media screen and (max-width: $break-med) {
+      	@media screen and (max-width: 768px) {
       		margin: 20px 0;
       	}
 
-      	@media screen and (max-width: $break-sml) {
-      		margin: 10px 0;
+      	@media screen and (max-width: 440px) {
+	         margin: 10px 0;
       	}
-      }
+
 
       .m-b-40 {
       	margin-bottom: 40px;
