@@ -123,7 +123,24 @@
     }
 
 
+    .img-responsive {
+      max-width: 100%;
+      height: auto; }
 
+    .m-tb-40 {
+      margin: 40px 0; }
+      @media screen and (max-width: 900px) {
+        .m-tb-40 {
+          margin: 20px 0; } }
+      @media screen and (max-width: 440px) {
+        .m-tb-40 {
+          margin: 10px 0; } }
+
+    .m-b-40 {
+      margin-bottom: 40px; }
+
+    .mb-80 {
+      margin-bottom: 80px; }
 
 
 
