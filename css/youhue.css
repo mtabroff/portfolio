@@ -87,11 +87,10 @@
         .footer-content {
           width: 80%;
           display: flex;
-          padding: 20px;
           flex-direction: column;
           align-items: center;
-          justify-content:center;
           margin-bottom: 30px;
+          padding: 20px;
           border-top: 1px solid #E7E7E7;
         }
 
@@ -125,7 +124,8 @@
 
     .img-responsive {
       max-width: 100%;
-      height: auto; }
+      height: auto;
+    }
 
     .m-tb-40 {
       margin: 40px 0; }
@@ -644,6 +644,8 @@
 
 
 
+
+
 /* Case Study Container
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -768,7 +770,7 @@
 
         }
 
-        @media screen and (max-width: 550px) {
+        @media screen and (max-width: 660px) {
           .image-container img  {
             display: none;
           }
@@ -777,12 +779,18 @@
      .image-mobile {
        max-width: 100%;
         margin: 0 auto;
-
+        border: 2px solid #AAD3E4;
+        border-radius: 5px;
+        margin-bottom: 8px;
      }
-        @media screen and (min-width: 550px) {
-            .image-mobile img  {
+
+        @media screen and (min-width: 880px) {
+            .image-mobile  {
             display: none;
           }
+
+
+
 
 
 
@@ -932,6 +940,7 @@
               .footer-content {
                 width: 80%
                 display: flex;
+                justify-content: center;
                 padding: 20px;
                 flex-direction: column;
                 align-items: center;
