@@ -846,6 +846,19 @@
 
 /* Lists
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+  ol {
+    margin-right: 10px;
+    padding-right: 30px;
+    padding-left: 70px;
+    margin-bottom: 40px;
+  }
+
+  ol li {
+    font-weight: bold;
+    margin: 15px 5px;
+  }
+
+
 
         ul {
             list-style-type: circle;
