@@ -235,6 +235,9 @@
 
 /* Avatar
   ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+
+
       .avatar {
         display: flex;
         justify-content: center;
@@ -246,7 +249,9 @@
         margin-bottom: 32px;
       }
 
-/*.hero-content {
+      
+
+.hero {
       max-width: 1200px;
       margin: 0 auto;
       padding: 0 6%;
@@ -257,7 +262,7 @@
             padding: 0px;
           }
         }
-*/
+
 /* Hero Content
   ––––––––––––––––––––––––––––––––––––––––––––––––––.hero-container {
               display: flex;
