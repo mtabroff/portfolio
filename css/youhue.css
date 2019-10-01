@@ -429,6 +429,25 @@
 
     /* Section titles & subtitles
     ––––––––––––––––––––––––––––––––––––––––––––––––––*/
+                    .new-style-1 {
+                      color: #607D90;
+                      font-weight: bold;
+                    }
+
+                  .new-style {
+                    color: #607D90;
+                    font-weight: bold;
+                  }
+
+                  .title-med {
+                    font-family: "work sans", sans-serif;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #19191A;
+                    padding-top: 20px;
+                    padding-bottom: 10px;
+                  }
+
                   .section-title {
                     font-family: "work sans", sans-serif;
                     font-size: 22px;
