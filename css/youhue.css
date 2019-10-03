@@ -368,7 +368,7 @@
                 .data-container {
                 flex-direction: column;
                 justify-content: center;
-                align-items: flex-startr;
+                align-items: flex-start;
                 }
               }
 
