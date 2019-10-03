@@ -159,7 +159,13 @@
           }
 
 
+.next-container {
+  margin: 0 auto;
+}
 
+.button-next {
+  font: 10px;
+}
     /* Navigation Menu options
     ––––––––––––––––––––––––––––––––––––––––––––––––––*/
     /* Header
@@ -236,7 +242,7 @@
                      max-width: 1200px;
                      font-family: 'work sans', sans-serif;
                      font-size: 16px;
-                     font-weight: 600;
+                     font-weight: 500;
                      text-transform: none;
                      padding: 0 15px;
                      color: #343434;
