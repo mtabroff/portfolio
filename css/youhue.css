@@ -863,13 +863,6 @@
 
 
 
-
-
-
-
-
-
-
         .image-container {
           display: flex;
           justify-content: center;
@@ -893,10 +886,24 @@
         margin-bottom: 8px;
      }
 
-        @media screen and (min-width: 660px) {
-            .image-mobile  {
-            display: none;
-          }
+     @media screen and (min-width: 660px) {
+         .image-mobile  {
+         display: none;
+       }
+
+     .image-mobile1 {
+       max-width: 100%;
+        margin: 0 auto;
+        border: 2px solid #AAD3E4;
+        border-radius: 5px;
+        margin-bottom: 8px;
+     }
+     @media screen and (min-width: 660px) {
+         .image-mobile1  {
+         display: none;
+       }
+
+
 
 
 .image-description {
