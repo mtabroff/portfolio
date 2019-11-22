@@ -341,14 +341,14 @@
 
 /* backgrounds
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
-.container-fill {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  background-color: #FAFAFA;
-  padding-top: 20px;
+    .container-fill {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: #FAFAFA;
+      padding-top: 20px;
 
-}
+    }
 
 
 
@@ -881,8 +881,6 @@
      .image-mobile {
        max-width: 100%;
         margin: 0 auto;
-        border: 2px solid #AAD3E4;
-        border-radius: 5px;
         margin-bottom: 8px;
      }
 
