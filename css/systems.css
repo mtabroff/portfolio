@@ -1,8 +1,22 @@
+/* Main Document Styling
+––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   
+   *, html {
+     -webkit-font-smoothing: antialiased;
+    }
+   
+
 /* Layout Grid Styles */
 .main-container {
+	padding: 0 6%;
     margin: 1rem auto;
     max-width: 1200px;
-    justify-items: center;
 }
 
 /* Assets */
@@ -11,13 +25,18 @@ img {
 width: 70%;
 }
 
+/* Links */
+
+
+
+
 /* Hero styles */
 
 .hero-container {
     display: grid;
     grid-template-columns: 1.6fr 1fr;
     grid-gap: 32px;
-    height: 577px;
+    height: 540px;
 }
 
 .container > div {
@@ -31,12 +50,18 @@ width: 70%;
 
 .hero-avatar {
     display: flex;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
+    padding-bottom: 16px;
 }
 
+@media screen and (max-width: 900px) {
+    .hero-avatar {
+          display: none;
+      }
+  }
 .hero-avatar img {
-    width: 100%;
+    width: 80%;
 }
 
 /* project preview card styles */
@@ -64,6 +89,22 @@ width: 70%;
       }
   }
 
+
+
+ a {
+    font-family: 'Work San', sans-serif;
+    color: #272727;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-decoration: underline;
+    text-transform: none;
+    cursor: ne-resize;
+}
+
+a:hover {
+    text-decoration: none;
+}
 
 /* Text Styles */
 h1 {
@@ -114,6 +155,7 @@ h5 {
 }
 
 .blurb {
+    padding: 16px 0;
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -130,7 +172,7 @@ body {
     color: #272727;
 }
 
-caption {
+.caption {
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -162,26 +204,56 @@ caption {
 
 /* Buttons */
 
+.contact {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.button {
+  box-sizing: border-box;
+  margin-right: 10px;
+  padding: 4px 8px;
+  background-color: white;
+}
+
+.button:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #e96450;
+    cursor: ne-resize;
+}
+.button.Linkedin {
+    background-color: white;
+  }
+.button.Linkedin:hover {
+    background-color:#6978EF;
+  }
+  
+  .button.Medium {
+    background-color: white;
+  }
+    
+  .button.Medium:hover {
+    background-color: #3EB2A4;
+  }
+  
+  
+
+/*
 .social-links {
-    display: -webkit-box;
+    display: flex;
+    /*display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex;
-    padding-right: 0px;
-    padding-left: 0px;
-    float: none;
-    -webkit-box-align: end;
-    -webkit-align-items: flex-end;
-    -ms-flex-align: end;
-    align-items: flex-end;
     color:  #272727;
     font-size: 16px;
     letter-spacing: 1px;
     text-transform: none;
 }
+
 .social-links.linkedin {
     text-decoration: underline;
-    padding: 8px;
+    padding: 15px 32px;
 }
 
 .social-links.linkedin:hover {
@@ -190,7 +262,6 @@ caption {
 }
 .social-links.medium {
     text-decoration: underline;
-    padding: 8px;
 }
 
 .social-links.medium:hover {
@@ -200,27 +271,15 @@ caption {
 
 .social-links.email {
     text-decoration: underline;
-    padding: 8px;
 }
 
 .social-links.email:hover {
     background-color: #EE6D44;
     color: #FFFFFF;
 }
+*/
 
-a {
-    font-family: 'Work San', sans-serif;
-    color: #272727;
-    font-weight: 400;
-    letter-spacing: 0.02em;
-    text-decoration: underline;
-    text-transform: none;
-    cursor: ne-resize;
-}
 
-a:hover {
-    text-decoration: none;
-}
 .btn-card {
     font-family: 'Work San', sans-serif;
     font-style: normal;
@@ -249,15 +308,30 @@ a:hover {
 /* Footer Styles */ 
 
 .footer {
-    padding: 40px;
+    width: 100vw;
+    height: 350px;
+    padding-top: 70px;
     background: #F5F5F5;
 }
 
-.copyright-text {
+.footer-content {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-top {
+    padding-bottom: 90px;
+}
+
+.footer-bottom {
+
+}
+
+.tiny-text {
     font-family: Work Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 22px;
     /* Dark Grey */
     color: #6D787E;
