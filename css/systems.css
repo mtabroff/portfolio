@@ -25,11 +25,38 @@ img {
     width: 70%;
 }
 
-.Navbar {
-    display: none;
+
+
+nav {
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+  }
+
+  .nav-btn {
+    padding: 0px 4px;
+    text-align: center;
+    text-decoration: none;
+    width: 80px;
+  }
+ 
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-family: 'Work San', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    background: white;
 }
 
-/* Links */
+.nav-btn:hover {
+    color: white;
+    background-color: #272727;
+}
 
 
 
@@ -37,6 +64,7 @@ img {
 /* Hero styles */
 
 .hero-container {
+    margin-top: 100px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: "image"
@@ -61,19 +89,26 @@ img {
     grid-area: text;
 }
 
+@media all and (max-width: 600px) {
+    .hero-blurb h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
 .hero-avatar {
     grid-area: image;
+    margin: 0 auto;
 }
 
 .hero-avatar img {
-    float: right;
-    width: 80%;
+    width: 100%;
 }
 
 /* project preview  */
 
 .project-container {
-    margin-top: 54px;
+    margin-top: 80px;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 32px;
@@ -232,6 +267,15 @@ h5 {
     color: #272727;
     margin-bottom: 30px;
 }
+
+@media all and (max-width: 600px) {
+    .blurb {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+
 body {
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
@@ -278,11 +322,9 @@ body {
     flex-wrap: nowrap;
 }
 
-@media screen and (max-width: 900px) {
-    .contact {
-     
-      }
-  }
+.contact a {
+    color: #6D787E;
+}
 
 
 .button {
@@ -309,30 +351,6 @@ body {
 
 
 
-.btn-card {
-    font-family: 'Work San', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    padding: 12px;
-    background: #FFFFFF;
-    height: 48px;
-    box-shadow: 0px 1px 0px #272727;
-}
-
-.nav-link {
-    font-family: 'Work San', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    letter-spacing: 0.02em;
-    padding: 4px;
-    background: #272727;
-}
-
-.nav-link:hover {
-    color: #000;
-}
 
 /* Footer Styles */ 
 
