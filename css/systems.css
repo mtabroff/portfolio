@@ -25,9 +25,7 @@ img {
     width: 70%;
 }
 
-.Navbar {
-    display: none;
-}
+
 
 /* Links */
 
@@ -42,6 +40,7 @@ img {
     grid-template-areas: "image"
                          "text";
     grid-gap: 32px;
+    padding-top: 80px;
 }
 
 @media all and (min-width: 600px) {
