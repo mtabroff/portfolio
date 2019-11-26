@@ -27,8 +27,102 @@ img {
 
 
 
-/* Links */
 
+
+  
+  /* menu 
+  
+  .nav .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  menu icon
+  
+  .nav .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .nav .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .nav .menu-icon .navicon:before,
+  .nav .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .nav .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .nav .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  menu btn 
+  
+  .nav .menu-btn {
+    display: none;
+  }
+  
+  .nav .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .nav .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .nav .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .nav .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+   48em = 768px 
+  
+  @media (min-width: 48em) {
+    .nav li {
+      float: left;
+    }
+    .nav li a {
+      padding: 20px 30px;
+    }
+    .nav .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .nav .menu-icon {
+      display: none;
+    }
+  }
+  */
 
 
 
@@ -45,6 +139,8 @@ img {
 
 @media all and (min-width: 600px) {
     .hero-container {
+        display: grid;
+
         grid-template-columns: 1.6fr 1fr;
         grid-template-areas: "text image";
     }
@@ -60,19 +156,26 @@ img {
     grid-area: text;
 }
 
+@media all and (max-width: 600px) {
+    .hero-blurb h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
 .hero-avatar {
     grid-area: image;
+    margin: 0 auto;
 }
 
 .hero-avatar img {
-    float: right;
-    width: 80%;
+    width: 100%;
 }
 
 /* project preview  */
 
 .project-container {
-    margin-top: 54px;
+    margin-top: 80px;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 32px;
@@ -231,6 +334,15 @@ h5 {
     color: #272727;
     margin-bottom: 30px;
 }
+
+@media all and (max-width: 600px) {
+    .blurb {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+
 body {
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
@@ -277,11 +389,9 @@ body {
     flex-wrap: nowrap;
 }
 
-@media screen and (max-width: 900px) {
-    .contact {
-     
-      }
-  }
+.contact a {
+    color: #6D787E;
+}
 
 
 .button {
@@ -308,30 +418,6 @@ body {
 
 
 
-.btn-card {
-    font-family: 'Work San', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    padding: 12px;
-    background: #FFFFFF;
-    height: 48px;
-    box-shadow: 0px 1px 0px #272727;
-}
-
-.nav-link {
-    font-family: 'Work San', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    letter-spacing: 0.02em;
-    padding: 4px;
-    background: #272727;
-}
-
-.nav-link:hover {
-    color: #000;
-}
 
 /* Footer Styles */ 
 
