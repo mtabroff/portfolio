@@ -353,3 +353,88 @@ body {
     /* Dark Grey */
     color: #6D787E;
 }
+
+
+/* Case Study Grid */
+
+        .projectcontainer {
+            margin: 0 auto;
+            width: 50%;
+        }
+
+        .margin-100 {
+            margin-bottom: 100px;
+        }
+
+        .twoCol-left {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 20px;
+        }
+
+        .twoCol-right {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-gap: 20px;
+        }
+
+        .twoCol-center {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                background-color: #0D5C00;
+                margin: 0 auto;
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 530px) {
+            .container {
+                margin: 0 auto;
+                width: 95%;
+            }
+
+            .twoCol-left, .twoCol-right, .twoCol-center {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+
+/* Overlays */
+
+
+
+/*Project Assets */
+
+        .cover-photo-container {
+            width: 1200px;
+            margin: 0 auto;
+            padding-top: 32px;
+        } 
+
+
+        .heroproj-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 32px;
+            padding-top: 150px;
+            margin-top: 20px;
+        }
+        
+        @media all and (min-width: 600px) {
+            .hero-container {
+                display: grid;
+        
+                grid-template-columns: 2fr 1fr;
+                /*grid-template-areas: "text image";*/
+            }
+        }
+
+    .next {
+    
+    }
