@@ -378,6 +378,7 @@ body {
             display: grid;
             grid-template-columns: 2fr 1fr;
             grid-gap: 10px;
+            padding-bottom: 50px;
         }
         
         .handy-intro {
