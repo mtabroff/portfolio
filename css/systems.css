@@ -11,15 +11,9 @@
      -webkit-font-smoothing: antialiased;
     }
 
-<<<<<<< HEAD
- p {
-        margin: 20px 0;
-    }
-=======
 p {
     margin: 10px 0;
 }
->>>>>>> 298a5481e4fab7422329035a2fa715d5641b7731
 
 /* Layout Grid Styles */
 .main-container {
@@ -56,13 +50,8 @@ img {
     }
 }
 
-<<<<<<< HEAD
-.section {
-  padding: 20px 0;
-=======
 section {
     padding: 20px 0;
->>>>>>> 298a5481e4fab7422329035a2fa715d5641b7731
 }
 
 .container > div {
