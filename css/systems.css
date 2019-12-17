@@ -184,6 +184,16 @@ a:hover {
     text-decoration: none;
 }
 
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-top: 10px;
+    border-bottom: 1px solid #C9D0D3;
+}
+
+
 /* Text Styles */
 h1 {
     font-family: 'Work Sans', sans-serif;
