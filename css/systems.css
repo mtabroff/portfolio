@@ -12,7 +12,7 @@
     }
 
 p {
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 /* Layout Grid Styles */
@@ -194,7 +194,9 @@ h1 {
     display: flex;
     align-items: center;
     color: #272727;
+    margin-bottom: 5px;
 }
+
 
 h2 {
     font-family: 'Work Sans', sans-serif;
@@ -203,6 +205,7 @@ h2 {
     font-size: 40px;
     line-height: 47px;
     color: #272727;
+    margin-bottom: 5px;
 }
 
 h3 {
@@ -212,6 +215,8 @@ h3 {
     font-size: 30px;
     line-height: 35px;
     color: #272727;
+    margin-bottom: 5px;
+}
 }
 
 h4 {
@@ -221,7 +226,9 @@ h4 {
     font-size: 24px;
     line-height: 28px;
     color: #272727;
+    margin-bottom: 5px;
 }
+
 
 h5 {
     font-family: 'Work Sans', sans-serif;
@@ -230,6 +237,8 @@ h5 {
     font-size: 20px;
     line-height: 23px;
     color: #272727;
+    margin-bottom: 5x;
+}
 }
 
 .blurb {
@@ -270,6 +279,7 @@ body {
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #6D787E;
+    margin-top: 15px;
 }
 
 .quote {
@@ -427,6 +437,15 @@ body {
 
 
 /*Project Assets */
+
+.fullbleed-section-photo {
+    padding: 40px 0;
+} 
+
+
+.fullbleed-section-photo img {
+    width: 100%;
+} 
 
         .cover-photo-container {
             padding-top: 32px;
