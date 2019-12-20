@@ -276,6 +276,15 @@ h5 {
     }
 }
 
+.icon  {
+    width: 20%;
+}
+
+.callout-text {
+ font-size: 16px;
+ line-height: 16px;
+}
+
 .call-out {
     display: flex;
     align-items: center;
@@ -298,13 +307,15 @@ h5 {
     left: 10%;
     width: 80%;
     height: 40%;
-    transition: all 2s;
+    opacity: 0;
 }
 
 .call-out-chart:hover .hidden-default {
     display: block;
     background: rgba(255,255,255, 1);
     box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.2);
+    transition: opacity .5s ease-out;
+    opacity: 1;
 }
 
 @media all and (max-width: 600px) {
@@ -314,9 +325,7 @@ h5 {
 
 }
 
-.call-out-chart:hover .dim {
-    /* opacity: .2; */
-}
+
 
 .product h3 {
     position: absolute;
@@ -330,7 +339,6 @@ h5 {
     display: block;
     color: #fff;
 }
-
 
 
 
