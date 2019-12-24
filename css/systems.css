@@ -193,14 +193,51 @@ a:hover {
     text-decoration: none;
 }
 
-ul {
+.stats  {
     list-style-type: none;
 }
 
-ul li {
+
+
+ .stats li {
     margin-top: 10px;
     border-bottom: 1px solid #C9D0D3;
 }
+
+
+.jump-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+
+.jump-links a {
+  text-decoration: none;
+}
+
+@media all and (max-width: 600px) {
+    .jump-links {
+        display: none;
+    }
+}
+
+.jump-link-btn, .jump-link-btn.two, .jump-link-btn.three .jump-link-btn.four{
+    box-sizing: border-box;
+    margin-right: 10px;
+    padding: 4px;
+    background-color: white;
+    box-shadow: 0px 1px 0px #272727;
+    width: 135px;
+     
+}
+
+
+
+
+
+
+
 
 
 /* Text Styles */
@@ -342,6 +379,18 @@ h5 {
 
 
 
+
+.tiny {
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #272727;
+
+}
+
+
 hr {
     border: .5px solid;
     color: #C9D0D3;
@@ -445,7 +494,7 @@ hr {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 22px;
+    line-height: 21px;
     /* Dark Grey */
     color: #6D787E;
 }
@@ -476,6 +525,7 @@ hr {
         .handy-intro {
             grid-gap: 80px;
         }
+
 
         .twoCol-right {
             display: grid;
