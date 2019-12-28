@@ -216,7 +216,7 @@ a:hover {
   text-decoration: none;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 1000px) {
     .jump-links {
         display: none;
     }
@@ -224,13 +224,32 @@ a:hover {
 
 .jump-link-btn, .jump-link-btn.two, .jump-link-btn.three .jump-link-btn.four{
     box-sizing: border-box;
-    margin-right: 10px;
+    margin-right: 5x;
     padding: 4px;
     background-color: white;
     box-shadow: 0px 1px 0px #272727;
-    width: 135px;
+    width: 200px;
      
 }
+
+.jump-link-btn:hover {
+    background-color: #E2F9F5;
+}
+
+.jump-link-btn.two:hover {
+    background-color: #ECF6FE;
+}
+
+.jump-link-btn.four:hover {
+    background-color: #ECEEFE;
+}
+
+.jump-link-btn.three:hover {
+    background-color: #FFE6DF;
+}
+
+
+
 
 
 
@@ -398,6 +417,7 @@ hr {
     margin: 40px auto;
  }
 
+
 .caption {
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
@@ -408,6 +428,44 @@ hr {
     color: #6D787E;
     margin-top: 15px;
 }
+
+ .data-btn {
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #25877C;
+ }
+
+ .data-btn1 {
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #2376D7;
+ }
+
+ .data-btn2 {
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #5C62E6;
+ }
+
+
+ .data-btn3 {
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #DD491A;
+ }
+
 
 .quote {
     font-family: 'Work Sans', sans-serif;
