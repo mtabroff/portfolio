@@ -280,7 +280,7 @@ h2 {
     font-size: 40px;
     line-height: 47px;
     color: #272727;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 h3 {
@@ -290,7 +290,7 @@ h3 {
     font-size: 30px;
     line-height: 35px;
     color: #272727;
-    margin-bottom: 5px;
+    margin-bottom: 16px;
 }
 
 h4 {
@@ -300,7 +300,7 @@ h4 {
     font-size: 24px;
     line-height: 26px;
     color: #272727;
-    margin-bottom: 5px;
+    margin-bottom: 16px;
 }
 
 
@@ -311,7 +311,7 @@ h5 {
     font-size: 20px;
     line-height: 23px;
     color: #272727;
-    margin-bottom: 5x;
+    margin-bottom: 10x;
 }
 
 .blurb {
@@ -332,8 +332,62 @@ h5 {
     }
 }
 
+
+.box {
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 60px;
+    padding: 20px 0;
+}
+
+.box img {
+    width: 85%;
+}
+
+@media all and (max-width: 600px) {
+    .box img {
+        width: 100%;
+    }
+}
+
+
+
+
+.test-stats {
+    background-color: white;
+    box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin-bottom: 60px;
+    padding: 20px;
+}
+
+.test-assets {
+   background: #F5F5F5;
+   width: 100%;
+}
+
+
 .icon  {
-    width: 20%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FCEFE0;
+    border-radius: 50%;
+  }
+
+.icon.two {
+    background-color: #ECEEFE;
+}
+
+
+
+
+.status {
+   padding: 16px 0px; 
 }
 
 .callout-text {
@@ -427,6 +481,7 @@ hr {
     text-transform: uppercase;
     color: #6D787E;
     margin-top: 15px;
+    margin-bottom: 10px;
 }
 
  .data-btn {
@@ -554,8 +609,7 @@ hr {
     font-size: 14px;
     line-height: 21px;
     /* Dark Grey */
-    color: #6D787E;
-}
+    color: #6D787E; the }
 
 
 /* Case Study Grid */
@@ -636,7 +690,8 @@ hr {
 /*Project Assets */
 
 .fullbleed-section-photo {
-    padding: 40px 0;
+    padding-top: 5px;
+    padding-bottom: 60px;
 } 
 
 
