@@ -352,12 +352,15 @@ h5 {
     }
 }
 
+.ab-margin {
+    margin-bottom: 50px;
+}
 
 .test-stats {
     background-color: white;
     box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.2);
     width: 100%;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
     padding: 50px 40px;
 }
  
@@ -369,7 +372,7 @@ h5 {
    justify-content: space-between;
    object-fit: contain;
    padding: 16px 40px;
-   margin-bottom: 32px;
+   /* margin-bottom: 32px; */
    
 }
 .test-assets-container img {
