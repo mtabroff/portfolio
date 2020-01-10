@@ -358,8 +358,11 @@ h5 {
 
 .test-stats {
     background-color: white;
-    box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.2); */
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     /* margin-bottom: 60px; */
     padding: 50px 40px;
 }
@@ -402,9 +405,6 @@ h5 {
 
 
 
-
-
-
 .icon  {
     height: 40px;
     width: 40px;
@@ -419,11 +419,19 @@ h5 {
     background-color: #ECEEFE;
 }
 
-
-
+.test-stats p {
+    margin: 4px 0px;
+}
 
 .status {
-   padding: 16px 0px; 
+    margin-bottom: 8px;
+}
+.fa-li {
+  margin-top: 2px;
+}
+
+.status {
+   padding: 5px 0px; 
 }
 
 .callout-text {
@@ -651,7 +659,7 @@ hr {
 /* Case Study Grid */
 
 .fullbleed-bg {
-    background-color: #4252D8; 
+    background-color: #F5F5F5; 
     background-size: cover;
     display: flex;
     align-items: center;
@@ -668,10 +676,14 @@ hr {
     justify-content: center;
     margin-top: 30px;
     margin-bottom: 30px;
-    padding-top: 10px;
-
-
+    
 }
+
+.fullbleed-bg-blue .twoCol-left {
+    padding-bottom: 0;
+}
+
+
 
         .projectcontainer {
             margin: 0 auto;
