@@ -648,7 +648,7 @@ hr {
 /* Case Study Grid */
 
 .fullbleed-bg {
-    background-color: #F5F5F5; 
+    background-color: #4252D8; 
     background-size: cover;
     display: flex;
     align-items: center;
@@ -657,6 +657,18 @@ hr {
     margin-bottom: 30px;
 }
 
+.fullbleed-bg-blue {
+    background-color: #4252D8; 
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+
+
+}
 
         .projectcontainer {
             margin: 0 auto;
