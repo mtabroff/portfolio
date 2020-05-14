@@ -265,7 +265,7 @@ h1 {
     font-style: normal;
     font-weight: bold;
     font-size: 54px;
-    line-height: 63px;
+    line-height: 62px;
     display: flex;
     align-items: center;
     color: #272727;
@@ -580,10 +580,10 @@ hr {
 /* Card Styles */
 .card {
     background: #FFFFFF;
-    border: 1px solid #E8EBEB;
+    border: 1px solid #EBECEE;
     box-sizing: border-box;
     /* Image Shadow */
-    box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.1);
 }
 
 /* Buttons */
