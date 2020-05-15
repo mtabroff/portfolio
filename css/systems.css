@@ -16,7 +16,7 @@ p {
 }
 
 body {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'work sans', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -274,7 +274,7 @@ h1 {
 
 
 h2 {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'work sans', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
@@ -316,7 +316,7 @@ h5 {
 
 .blurb {
     padding: 16px 0;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'work sans', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -647,7 +647,7 @@ hr {
 }
 
 .tiny-text {
-    font-family: Work Sans;
+    font-family: 'work sans', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -761,6 +761,7 @@ hr {
 
         .cover-photo-container {
             padding-top: 32px;
+           
         } 
 
 
