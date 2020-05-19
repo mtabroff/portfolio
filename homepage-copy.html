@@ -24,7 +24,6 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel='stylesheet' href='css/systems.css'/>
   <link rel='stylesheet' href='css/nav.css'/>
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -37,6 +36,7 @@
 
   <!-- Animations
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
@@ -62,27 +62,33 @@
 
 <!-- Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-
-    <header class="header">
-        <section class= "main-container">
-          <input class="menu-btn" type="checkbox" id="menu-btn" />
-          <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-          <ul class="menu">
-            <li><a href="#MT_work">Work</a></li>
-            <li><a href="#">Experiments</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="Resume-MelanieJTabroff-2019.pdf" target="_blank">Resume</a></li>
-          </ul>
-      </section>
-    </header>
+<header class="header">
+  <section class= "main-container">
+      <div class="logo">
+        <a href="homepage-copy.html">
+            <img src="./images/m-logo-3.svg">
+          </a>
+      
+    </div>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li><a href="#MT_work">Work</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="#">Writing</a></li></li>
+        <li><a href="Resume-MelanieJTabroff-2019.pdf" target="_blank">Resume</a></li>
+      </ul>
+    </section>
+  
+</header>
+  
 
 <!-- Hero Main Content
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <section class= "main-container">
       <div class="hero-container">
         <div class ="hero-blurb">
-              <h1>I'm Melanie,<br>a Product Designer<br>in NYC</h1>
+              <h1>I'm Melanie,<br>a product designer<br></h1>
               <div class="blurb">I am an honest worker, an active listener, and a lover of making messy systems more understandable. I thrive in environments where I can collaborative with a team to solve meaningful problems. </div>    
               <div class="contact">
                   <a href="https://www.linkedin.com/in/melanietabroff/" target="blank">
@@ -96,6 +102,7 @@
                   </a> 
               </div>
         </div>
+        
             <div class="hero-avatar">
                   <img src="./images/img-avatar.jpg" >
             </div>
@@ -108,7 +115,6 @@
 <div class="project-container">
   <!-- TrialSpark
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
- 
               <div class="project-card">
                   <div class="project-preview">
                       <img src="images/trialspark/ts-cover-2.png">
@@ -132,8 +138,8 @@
                     <img src="images/trialspark/ts-cover.png">
                 </div>
                 <div class="project-details">
-                    <h2>Universal Login Experience</h2>
-                    <p><b>Coming soon.</b> Creating a universal login experience across all of TrialSpark's products</p>
+                    <h2>Universal <span style="text-decoration:line-through">Login</span> Sign In Experience</h2>
+                    <p><b>Coming soon.</b> Creating a universal sign in experience across all of TrialSpark's products</p>
                     <a href="homepage-copy.html"></a>
                       <!--<div class="case-study-btn three">View Case Study</div>-->
                     </a>
