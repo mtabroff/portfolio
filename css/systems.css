@@ -82,6 +82,18 @@ section {
     grid-area: text;
 }
 
+.hero-blurb a {
+    padding: 16px 0;
+    font-family: 'work sans', sans-serif;
+    font-style: normal;
+    font-weight: 300px;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #6D747E;
+    margin-bottom: 30px;
+
+}
 @media all and (max-width: 600px) {
     .hero-blurb h1 {
         font-size: 48px;
@@ -100,7 +112,7 @@ section {
 
 @media all and (max-width: 600px) {
     .hero-avatar {
-        display: none;
+     display: none;
     }
 }
 
@@ -289,18 +301,28 @@ a:hover {
 
 
 
+/* Lists */
+ul {
+    list-style-position: outside;
+    list-style-image: url(https://url-to-image);
+}
 
-
-
-
-
-
-
-
-
-/* Text Styles */
-h1 {
+ul li {
     font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    color: #272727;
+    margin-bottom: 5px;
+}
+
+
+
+
+h1 {
+    font-family: 'work sans', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 54px;
@@ -363,13 +385,14 @@ h5 {
     padding: 16px 0;
     font-family: 'work sans', sans-serif;
     font-style: normal;
-    font-weight: 300px;
-    font-size: 24px;
-    line-height: 36px;
+    font-weight: 400px;
+    font-size: 20px;
+    line-height: 32px;
     letter-spacing: -0.02em;
     color: #6D747E;
     margin-bottom: 30px;
 }
+*/
 
 @media all and (max-width: 600px) {
     .blurb {
