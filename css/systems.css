@@ -100,10 +100,17 @@ section {
 
 @media all and (max-width: 600px) {
     .hero-avatar {
-        display: none;
+        width: 200px;
+        margin: 0px 10px
     }
 }
 
+@media all and (max-width: 600px) {
+    .main-container {
+    margin: 1rem auto;
+    width: 90%;
+    }
+}
 /* project preview  */
 
 .project-container {
