@@ -531,7 +531,7 @@ h5 {
 
 hr {
     border: .5px solid;
-    color: #C9D0D3;
+    color: #E2E6E8;
     width: 100%;
     margin: 40px auto;
  }
@@ -618,7 +618,7 @@ hr {
     color: #6D787E;
     font-family: 'work sans', sans-serif;
     font-weight: 400px;
-    letter-spacing: -0.01em;
+
    
 }
 
@@ -701,8 +701,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding: 40px 0;
 }
 
 .fullbleed-bg-blue {
