@@ -100,8 +100,7 @@ section {
 
 @media all and (max-width: 600px) {
     .hero-avatar {
-        width: 200px;
-        margin: 0px 10px
+        display: none;
     }
 }
 
@@ -156,14 +155,30 @@ section {
     height: 320px;
 }
 
+@media screen and (max-width: 440px) {
+    .project-preview img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+      }
+  }
+
 
 .project-details {
     padding: 32px;
 }
 
 .project-details h2 {
-    margin-bottom: 24px;
+    padding-bottom: 16px;
 }
+
+@media screen and (max-width: 440px) {
+    .project-details h2 {
+        font-size: 32px;
+        line-height: 40px;
+        padding-bottom: 4px;
+      }
+  }
 
 .project-details p {
     margin-bottom: 54px;
@@ -281,6 +296,8 @@ a:hover {
 
 
 
+
+
 /* Text Styles */
 h1 {
     font-family: 'Work Sans', sans-serif;
@@ -341,15 +358,16 @@ h5 {
     margin-bottom: 10x;
 }
 
+
 .blurb {
     padding: 16px 0;
     font-family: 'work sans', sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300px;
     font-size: 24px;
     line-height: 36px;
     letter-spacing: -0.02em;
-    color: #272727;
+    color: #6D747E;
     margin-bottom: 30px;
 }
 
@@ -357,6 +375,8 @@ h5 {
     .blurb {
         font-size: 20px;
         line-height: 32px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
     }
 }
 
@@ -807,6 +827,12 @@ hr {
            
         } 
 
+        @media all and (max-width: 600px) {
+            .cover-photo-container img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
 
         .heroproj-container {
             display: grid;
