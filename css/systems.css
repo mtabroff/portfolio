@@ -59,6 +59,7 @@ img {
     grid-template-areas: "image"
                          "text";
     grid-gap: 32px;
+    margin-top: 100px;
     padding-top: 32px;
 }
 
@@ -415,7 +416,7 @@ h5 {
     color: #6D747E;*/
     margin-bottom: 30px;
 }
-*/
+
 
 @media all and (max-width: 600px) {
     .blurb {
@@ -760,7 +761,7 @@ hr {
     padding-top: 54px;
     /* Dark Grey */
     color: #6D787E;
-} .contact
+} 
 
     @media all and (max-width: 600px) {
         .tiny-text {
@@ -901,6 +902,6 @@ hr {
             }
         }
 
-    .next {
+   /* style later! .next {
     
-    }
+    }*/
