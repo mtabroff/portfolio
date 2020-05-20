@@ -741,28 +741,32 @@ hr {
     justify-content: center;
 }
 
-.footer-top {
-    padding-bottom: 90px;
-}
+
 
 .footer-bottom {
     display: flex;
     justify-content: space-between;
 }
 
+.footer-bottom .contact {
+    padding-top: 54px;
+}
 .tiny-text {
     font-family: 'work sans', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;
+    padding-top: 54px;
     /* Dark Grey */
-    color: #6D787E; the }
+    color: #6D787E;
+} .contact
 
     @media all and (max-width: 600px) {
         .tiny-text {
             font-size: 12px;
-            line-height: 20p 
+            line-height: 20px;
+            padding-top: 32px;
         }
     
     }
