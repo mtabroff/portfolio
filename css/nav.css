@@ -107,11 +107,20 @@
     
   }
   
-  .header li a.current:link,
+  .header li.current a ,
   .header .menu-btn.current:link {
     color: white;
     background-color: #292929;
   
+  }
+
+  @media (max-width: 768px) {
+    li a {
+      padding-left: 12px;
+    }
+    .logo {
+      padding-left: 0px;
+    }
   }
   
   .header .menu-btn {

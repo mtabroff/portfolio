@@ -75,7 +75,7 @@ img {
 @media all and (max-width: 600px) {
     .hero-container {
         padding-top: 0px;
-        margin-top: 50px;
+        margin-top: -10px;
     }
 }
 section {
@@ -858,6 +858,7 @@ hr {
 
 
 
+/* Overlays */
 
 
 
@@ -901,6 +902,6 @@ hr {
             }
         }
 
-   /* style later! .next {
+   /* style.next {
     
     }*/
