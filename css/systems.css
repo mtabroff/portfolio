@@ -10,7 +10,7 @@
    *, html {
      -webkit-font-smoothing: antialiased;
     }
-a
+
 
 p {
     margin: 15px 0;
@@ -27,6 +27,16 @@ body {
 }
 
 
+/* light and dark mode
+body { background: white; }
+h1 { color: black; }
+p { color: black; }
+@media only screen and (prefers-color-scheme: dark) {
+  body { background: black; }
+  h1 { color: orangered; }
+  p { color: white; }
+}
+*/
 /* Layout Grid Styles */
 .main-container {
     margin: 1rem auto;
@@ -226,6 +236,17 @@ section {
     background-color: #FFE6DF;
 }
 
+.about-list a {
+    font-family: 'Work San', sans-serif;
+    color: #6D747E;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    text-decoration: underline;
+    text-transform: none;
+    cursor: ne-resize;
+
+}
 
  a {
     font-family: 'Work San', sans-serif;
@@ -299,19 +320,18 @@ a:hover {
 
 
 
-
-
 /* Lists */
 ul {
     list-style-position: outside;
     list-style-image: url(https://url-to-image);
+    padding-left: 32px;
 }
 
 ul li {
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
     letter-spacing: -0.02em;
     color: #272727;
@@ -389,7 +409,9 @@ h5 {
     font-size: 20px;
     line-height: 32px;
     letter-spacing: -0.02em;
-    color: #6D747E;
+    color: #272727;
+    /*
+    color: #6D747E;*/
     margin-bottom: 30px;
 }
 */
