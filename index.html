@@ -16,13 +16,13 @@
 
   <!-- Favicon
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" href="./images/Favicon-black.png">
+  <link rel="icon" href="./images/hp/favicon-m.svg">
 
   <!-- Font
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel='stylesheet' href='css/style.css'/>
+  <link rel='stylesheet' href='css/systems.css'/>
+  <link rel='stylesheet' href='css/nav.css'/>
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Javascript
@@ -33,6 +33,7 @@
 
   <!-- Animations
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
@@ -58,159 +59,164 @@
 
 <!-- Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-  <header>
-    <div class="Topnav">
+<header class="header">
+  <section class= "main-container">
       <div class="logo">
         <a href="index.html">
-          <img src="./images/Logo-m-white.png">
-        </a>
-      </div>
+            <img src="./images/hp/m-logo-8.svg">
+          </a>
+      
     </div>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+      <ul class="menu">
+        <li class="current"><a href="index.html">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://medium.com/@meltabroff" target="_blank">Writing</a></li>
+        <li><a href="Resume-MelanieJTabroff-ProductDesigner.pdf" target="_blank">Resume</a></li>
+      </ul>
+    </section>
+  
 </header>
-
-<!--Navigation Menu-
-––––––––––––––––––––––––––––––––––––––––––––––––––-->
-
-    <div class="Navbar">
-           <nav class="Navbar__Items Navbar__Items--center">
-                <div class="Navbar__Link">
-                  <a href="index.html#MT_work">WORK</a>
-                </div>
-                <div class="Navbar__Link">
-                  <a href="about.html">ABOUT</a>
-                </div>
-                <div class="Navbar__Link">
-                    <a href="Resume-MelanieJTabroff-2019.pdf" target="_blank">RESUME</a>
-                </div>
-            </nav>
-
-        </div>
-
-
-
+  
 
 <!-- Hero Main Content
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<section class="hero">
-  <div class="main-container">
-
-      <div class="wow fadeIn">
-             <div class="avatar">
-               <img src="./images/img-avatar.jpg" >
-             </div>
-           </div>
-
-
-
-      <div class="wow fadeIn">
-          <div class="title1">Oh, hello</div>
-      </div>
-      <div class="wow fadeInDown two">
-            <div class="title2">I'm Melanie, a Product Designer based in NYC</div>
-      </div>
-      <div class="wow fadeIn three">
-            <div class="blurb">My design superpower is my ability to approach problems with curiosity, honesty, and creativity.</div>
-      </div>
-
-      <div class="wow fadeIn four">
-            <div class="button"><a href="index.html#MT_work">Let me show you<span class="second-color"> ↓</span></a></div>
-      </div>
-  </div>
-
-</section>
-
+<section class= "main-container">
+      <div class="hero-container">
+        <div class ="hero-blurb">
+              <h1>I'm Melanie,<br>a Product Designer<br></h1>
+              <div class="blurb">I am an <span style="font-weight: 600">honest worker</span>, an <span style="font-weight: 600">active listener</span>, and a lover of making messy systems more understandable. I thrive in environments where I can <span style="font-weight: 600">collaborate</span> with a team to solve meaningful problems. </div>    
+              <div class="contact">
+                  <a href="https://www.linkedin.com/in/melanietabroff/" target="blank">
+                    <div class="button Linkedin">LinkedIn</div>
+                  </a>
+                  <a href="https://medium.com/@meltabroff" target="blank">
+                      <div class="button Medium">Medium</div>
+                  </a>
+                  <a href="mailto:melanietabroff@gmail.com?subject=Hello there!" target="blank">
+                     <div class="button">Email</div> 
+                  </a> 
+              </div>
+        </div>
+        
+            <div class="hero-avatar">
+                  <img src="./images/about/portrait6.jpeg" >
+            </div>
+    </div>
+  
 
 <!-- Project previews
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<scroll-page id="MT_work">
-  <section class="work">
-      <div class="main-container">
-      <!--<a id="MT_work"</a>-->
+
+<div class="project-container">
+  <!-- TrialSpark
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+              <div class="project-card">
+                  <div class="project-preview">
+                      <img src="images/trialspark/ts-cover-3.png">
+                  </div>
+                  <div class="project-details">
+                      <h2>Optimizing Data Entry</h2>
+                      <p><b>Coming soon.</b> Improving data entry efficiency without compromising data quality and patient safety.</p>
+                      <a href="homepage-copy.html"></a>
+                        <!--<div class="case-study-btn">View Case Study</div>-->
+                      </a>
+                  </div>
+              </div>
+    
 
 
+  <!--TrialSpark
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+            <div class="project-card">
+                <div class="project-preview">
+                    <img src="images/trialspark/ts-signin-cover-2.png">
+                </div>
+                <div class="project-details">
+                    <h2>Universal <span style="text-decoration:line-through">Login</span> Sign-In Experience</h2>
+                    <p><b>Coming soon.</b> Creating a universal sign-in experience across all of TrialSpark's products</p>
+                    <a href="index.html"></a>
+                      <!--<div class="case-study-btn three">View Case Study</div>-->
+                    </a>
+                </div>
+            </div>
+
+                
   <!-- Handy
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <a href="handy.html">
-    <div class="project-container">
-        <div class="project-preview">
-          <img src="images/handy-preview.png">
-        </div>
-        <div class="project-details">
-          <div class="metadata">2019 · Research & UX/UI</div>
-          <div class="title">Handy HQ</div>
-          <div class="subtitle">Home Services.</div>
-          <div class="body">Handy is an online two-sided marketplace for cleaning and home services. As the lead designer for the Cleaning Growth team, I helped design and optimize the checkout flow to improve customer acquisition.</div>
-        </div>
+ 
+  <div class="project-card">
+    <div class="project-preview">
+        <img src="images/handy-assets/handy-cover-4.png">
     </div>
-  </a>
-    </scroll-page>
-
-  <!-- YOUHUE
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <a href="youhue.html">
-      <div class="project-container">
-          <div class="project-preview">
-            <img src="images/yh-preview.jpg">
-          </div>
-          <div class="project-details">
-            <div class="metadata">2018 · Design & Front-End Dev</div>
-            <div class="title">YouHue</div>
-            <div class="subtitle">Education. Health & Wellness.</div>
-            <div class="body">YouHue is a classroom mood tracking app that helps kids identity and express their emotions in schools. I redesigned and developed the product landing page to better convey the brand value.</div>
-          </div>
-      </div>
-    </a>
-
-
-
-  <!-- RUNGA
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <a href="runga.html">
-          <div class="project-container">
-            <div class="project-preview">
-              <img src="images/runga-preview.png">
-            </div>
-            <div class="project-details">
-              <div class="metadata">2017 · Design & Prototype</div>
-              <div class="title">Runga</div>
-              <div class="subtitle">Social fitness.</div>
-              <div class="body">Runga is an iOS app that helps you find people to run with nearby. Built primarily for committed runners who seek to find other likeminded athletes with similar schedules and fitness goals.</div>
-            </div>
-          </div>
+    <div class="project-details">
+        <h2>Designing for Growth</h2>
+        <p>Optimizing opportunities for new customers to commit to cleaning subscription plans.</p>
+        <a href="handy.html">
+          <div class="case-study-btn two">View Case Study</div>
         </a>
-
+    </div>
+</div>
 
   </div>
+
 </section>
 
-    <!--Main footer
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-  <section class="footer">
-    <section class="footer-container">
-      <h1 class="section-title">Let's connect</h1>
-          <!--Social–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-                    <section class="social-buttons">
-                        <a href="https://www.linkedin.com/in/melanietabroff/" target="_blank" title="Mel's Linkedin">
-                            <img src="./images/linkedin.png"></a>
-                        <a href="https://github.com/mtabroff" target="_blank" title="Mel's Github">
-                           <img src="./images/github.png"></a>
-                        <a href="https://medium.com/@meltabroff" target="_blank" title="Mel's Medium">
-                           <img src="./images/medium.png"></a>
-                        <a href="mailto:mtabroff@gmail.com" target="_blank" title="Mel's Email">
-                           <img src="./images/email.png"></a>
-                      </section>
-          </section>
 
-              <div class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i> 2018 Melanie Tabroff</div>
-              <div class="tiny-text">Designed & Developed by me, with cold brew by my side</div>
 
-      </section>
 
+
+ <!--Main footer
+ –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+ <section class="footer">
+   <div class="main-container">
+     <div class="footer-content"></div>
+        <div class="footer-top">
+           <h4>Get in touch</h4>
+           <p>Have an idea for a project to collaborate on, or want to chat about design? <a href=""mailto:mtabroff@gmail.com" target="blank">Drop me a line.</a></p>
+        </div>
+        <div class="footer-bottom">
+            <div class="tiny-text">Designed & Developed by me with lots of coffee<br><i class="fa fa-copyright" aria-hidden="true"></i> 2020 Melanie Tabroff</div>
+        
+            <div class="contact">
+                <a href="https://www.linkedin.com/in/melanietabroff/" target="blank">
+                  <div class="button Linkedin">LinkedIn</div>
+                  </a>
+                  <a href="https://medium.com/@meltabroff" target="blank">
+                    <div class="button Medium">Medium</div>
+                    </a>
+                    <a href="mailto:mtabroff@gmail.com" target="blank">
+                        <div class="button">Email</div> 
+                  </a> 
+            </div>
+       
+        </div>
+      </div>
+  </div>
+
+
+</section>
+  
 
   <!--Animations Custom Settings
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!--<script>
+function myFunction() {
+  var x = document.getElementById("myNavbar");
+  if (x.className === "nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav";
+  }
+}
+
+</script> -->
+
+
+
 <script> new WOW().init(); </script>
   <script>
     wow = new WOW(
