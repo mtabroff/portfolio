@@ -59,8 +59,7 @@ img {
     grid-template-areas: "image"
                          "text";
     grid-gap: 32px;
-    padding-top: 36px;
-    margin-top: 20px;
+    padding-top: 32px;
 }
 
 @media all and (min-width: 600px) {
@@ -120,7 +119,7 @@ section {
     width: 100%;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 780px) {
     .hero-avatar {
      display: none;
     }
@@ -135,7 +134,7 @@ section {
 /* project preview  */
 
 .project-container {
-    margin-top: 80px;
+    margin-top: 32px;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 32px;
@@ -148,6 +147,8 @@ section {
         grid-template-columns: 1fr 1fr;
     }
 }
+
+
 
 .project-card {
     display: flex;
@@ -177,7 +178,7 @@ section {
     height: 320px;
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 880px) {
     .project-preview img {
         width: 100%;
         object-fit: cover;
@@ -237,7 +238,7 @@ section {
 }
 
 .about-list a {
-    font-family: 'Work San', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     color: #6D747E;
     font-weight: 400;
     font-size: 18px;
@@ -249,7 +250,7 @@ section {
 }
 
  a {
-    font-family: 'Work San', sans-serif;
+    font-family: 'Work Sana', sans-serif;
     color: #272727;
     font-weight: 400;
     font-size: 16px;
@@ -689,6 +690,7 @@ hr {
 .contact a {
     color: #6D787E;
     font-family: 'work sans', sans-serif;
+    font-size: 18px;
     font-weight: 400px;
 
    

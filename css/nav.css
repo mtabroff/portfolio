@@ -47,12 +47,6 @@ body {
   text-decoration: none;
 }
 
-.header li a:hover,
-.header .menu-btn:hover {
-  color: white;
-  background-color: #292929;
-  
-}
 
 /* menu */
 
@@ -76,7 +70,6 @@ body {
 .header .menu-icon .navicon {
   background: #292929;
   display: block;
-  border-radius: px;
   height: 2px;
   position: relative;
   transition: background .2s ease-out;
@@ -105,6 +98,21 @@ body {
 }
 
 /* menu btn */
+
+
+.header li a:hover,
+.header .menu-btn:hover {
+  color: white;
+  background-color: #292929;
+  
+}
+
+.header li a.current:link,
+.header .menu-btn.current:link {
+  color: white;
+  background-color: #292929;
+
+}
 
 .header .menu-btn {
   display: none;
@@ -145,6 +153,8 @@ body {
     padding: 4px 12px;
     margin-left: 4px;
   }
+
+ 
   .header .menu {
     clear: none;
     float: right;
