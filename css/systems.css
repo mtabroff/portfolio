@@ -40,7 +40,11 @@ p { color: black; }
 /* Layout Grid Styles */
 
 
-
+.main-container {
+    margin: 0px auto;
+    padding-bottom: 0px;
+    width: 90%;
+    }
 
 /* Assets */
 
@@ -340,13 +344,18 @@ ul li {
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 32px;
     letter-spacing: -0.02em;
     color: #272727;
     margin-bottom: 5px;
 }
 
+@media (max-width: 768px) {
+    ul li {
+        font-size: 16px;
+    } 
+}
 
 
 
