@@ -216,11 +216,10 @@ section {
 
 .case-study-btn, .case-study-btn.two, .case-study-btn.three {
     box-sizing: border-box;
-    margin-right: 10px;
     padding: 4px;
     background-color: white;
     box-shadow: 0px 1px 0px #272727;
-    width: 135px;
+    width: 144px;
       
 }
 
@@ -228,6 +227,10 @@ section {
     background-color: #ECEEFE;
     box-shadow: 0px 1px 0px #272727;
       
+}
+
+case-study-btn a, case-study-btn.two a, case-study-btn.three a {
+    padding-right: 2px;
 }
 
 .case-study-btn.two:hover {
@@ -270,8 +273,9 @@ a:hover {
     list-style-type: none;
 }
 
-
-
+ul.stats {
+    padding-left: 0px;
+}
  .stats li {
     margin-top: 10px;
     border-bottom: 1px solid #C9D0D3;
