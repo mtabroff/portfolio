@@ -449,6 +449,10 @@ h5 {
 @media all and (max-width: 600px) {
     .box img {
         width: 100%;
+        height: 100%;
+    }
+    .box {
+        margin-bottom: 0px;
     }
 }
 
