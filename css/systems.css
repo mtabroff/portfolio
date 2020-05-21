@@ -628,8 +628,9 @@ hr {
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
-    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #6D787E;
     margin-top: 15px;
@@ -640,7 +641,8 @@ hr {
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #25877C;
  }
@@ -649,7 +651,8 @@ hr {
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #2376D7;
  }
@@ -658,7 +661,8 @@ hr {
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #5C62E6;
  }
@@ -668,7 +672,8 @@ hr {
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #DD491A;
  }
