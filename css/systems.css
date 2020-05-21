@@ -584,11 +584,10 @@ img.gif {
     background-color: #fff;
     display: none;
     position: absolute;
-    padding: 16px; 
+    padding: 12px; 
     top: 30%;
     left: 10%;
     width: 80%;
-    height: 33%;
     opacity: 0;
 }
 
@@ -600,7 +599,7 @@ img.gif {
     opacity: 1;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 800px) {
     .call-out-chart:hover .hidden-default {
         display: none;
     }
