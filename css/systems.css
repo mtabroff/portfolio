@@ -38,10 +38,9 @@ p { color: black; }
 }
 */
 /* Layout Grid Styles */
-.main-container {
-    margin: 1rem auto;
-    width: 80%;
-}
+
+
+
 
 /* Assets */
 
@@ -120,18 +119,21 @@ section {
     width: 100%;
 }
 
-@media all and (max-width: 780px) {
+@media all and (max-width: 768px) {
     .hero-avatar {
      display: none;
     }
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 768px) {
     .main-container {
-    margin: 1rem auto;
+    margin: 0px auto;
+    padding-bottom: 0px;
     width: 90%;
     }
 }
+
+
 /* project preview  */
 
 .project-container {
@@ -501,7 +503,7 @@ img.gif {
     text-align: center;
   }
 
-  @media all and (max-width: 900px) {
+  @media all and (max-width: 768px) {
     .test-assets-container {
         display: none;
     }
