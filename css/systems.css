@@ -41,7 +41,7 @@ p { color: black; }
 
 
 .main-container {
-    margin: 0 auto;
+    margin: 16px auto;
     padding: 0 4%;
     width: 90%;
     }
@@ -131,7 +131,7 @@ section {
 
 @media all and (max-width: 768px) {
     .main-container {
-    margin: 0px auto;
+    margin: 16px auto;
     padding-bottom: 0px;
     width: 90%;
     }

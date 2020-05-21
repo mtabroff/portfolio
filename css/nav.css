@@ -115,7 +115,7 @@
   }
 
   @media (max-width: 768px) {
-    li a {
+    li {
       padding-left: 12px;
     }
     .logo {
