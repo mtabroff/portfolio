@@ -860,7 +860,11 @@ hr {
                 grid-template-columns: 1fr;
             }
         }
-
+        @media (max-width: 768px) {
+            .twoCol-left, .twoCol-right, .twoCol-center {
+                grid-gap: 12px;
+            }
+        }
 
 
 /* Overlays */
