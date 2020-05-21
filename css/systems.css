@@ -247,11 +247,14 @@ case-study-btn a, case-study-btn.two a, case-study-btn.three a {
     background-color: #FFE6DF;
 }
 
+.about-list ul {
+    margin-bottom: 20px;
+}
 .about-list a {
     font-family: 'Work Sans', sans-serif;
     color: #6D747E;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 0em;
     text-decoration: underline;
     text-transform: none;
