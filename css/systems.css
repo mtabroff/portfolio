@@ -43,7 +43,7 @@ p { color: black; }
 .main-container {
     max-width: 1106px;
     margin: 0 auto;
-    padding: 0 4%;
+    padding: 2% 4%;
     width: 90%;
     }
 
@@ -255,15 +255,21 @@ case-study-btn a, case-study-btn.two a, case-study-btn.three a {
     font-family: 'Work Sans', sans-serif;
     color: #6D747E;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 0em;
     text-decoration: underline;
     text-transform: none;
     padding-left: 0px;
-    cursor: ne-resize;
+    cursor: default;
 
 }
 
+.about-list li {
+    font-family: 'Work Sans', sans-serif;
+    color: #272727;
+    font-weight: 400;
+    font-size: 18px;
+}
  a {
     font-family: 'Work Sans', sans-serif;
     color: #272727;
@@ -272,7 +278,7 @@ case-study-btn a, case-study-btn.two a, case-study-btn.three a {
     letter-spacing: 0.02em;
     text-decoration: underline;
     text-transform: none;
-    cursor: ne-resize;
+    cursor: default;
 }
 
 a:hover {
