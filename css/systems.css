@@ -247,7 +247,15 @@ case-study-btn a, case-study-btn.two a, case-study-btn.three a {
 .case-study-btn.three:hover {
     background-color: #FFE6DF;
 }
+.about-list {
+    margin-right: 100px;
+}
 
+@media (max-width: 768px) {
+    .about-list {
+        margin-right: 0px;
+}
+}
 .about-list ul {
     margin-bottom: 20px;
 }
