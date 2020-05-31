@@ -24,6 +24,37 @@ body {
     line-height: 32px;
     letter-spacing: -0.02em;
     color: #272727;
+    
+}
+
+.break-stat {
+    margin-left: 32px;
+    margin-bottom: 32px;
+    max-width: 640px;
+}
+
+.break-stat p {
+ margin-top: -4px;
+}
+
+.break-stat ul li {
+    color: #6F7D91;
+    font-size: 14px;
+    padding-top: 0px
+
+}
+.definition {
+    max-width: 768px;
+}
+
+.break-flows {
+    background:  #F8F9FA;
+    margin: 0 auto;
+}
+
+.break-flows img {
+   margin: 0 auto;
+   width: 60%;
 }
 
 
@@ -688,8 +719,9 @@ hr {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #6F7D91;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
  .data-btn {

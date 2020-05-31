@@ -104,7 +104,7 @@
       <h4 class="caption">Overview</h4>
       <p>TrialSpark is a biotech company whose mission is to bring treatment to patients faster by solving some of the biggest operational challenges of clinical trials, from recruiting subjects to standardizing the collection of data.</p>
       <p>My team, known as Trial Operations (TrialOps), worked on the company’s proprietary software called <span style="font-weight: bold">Pilot</span> used primarily by research coordinators to capture human subject data throughout a study. This data eventually gets sent to the FDA for final review.</p>
-      <p>As one of two designers on the TrialOps team, I focused on improving the data entry experience for clinical research coordinators (CRCs) and physicians (primary investigators, or PIs). This meant optimizing for efficiency without compromising patient safety and data quality. </p>
+      <!--<p>As one of two designers on the TrialOps team, I focused on improving the data entry experience for clinical research coordinators (CRCs) and physicians (primary investigators, or PIs). This meant optimizing for efficiency without compromising patient safety and data quality. </p>-->
       
     </div>
     <div> 
@@ -122,18 +122,90 @@
         </ul>
     </div>
   </div>
-<hr>
    <!-- Industry definitions-->
    <h4 class="caption">Industry Definitions</h4>
-   <div class="twoCol-left">
-     <div>
+     <div class="definition">
       <p><span style="font-weight: bold; color: #6F7D91">Clinical Research Coordinator (CRC):</span> someone with a research/medical background who facilitates and coordinates daily clinical trial activities. CRCs are responsible for  <span style="font-weight: bold">conducting patient visits</span> in accordance with the study protocol and managing the collection of patient data throughout a study.</p>
       <p><span style="font-weight: bold; color: #6F7D91">Primary Investigator (PI):</span> a physician/MD who supervises the conduct of a study at a given site. PIs are responsible for <span style="font-weight: bold">overseeing patient visits</span>, ensuring the safety and well-being of the study participant. They provide clinical judgment when necessary and sign off on paper and electronic forms where subject data is captured.  </p>
     </div>
+    <div>
+
+    </div>
+
+ <!-- stats -->
+   <!---- <div>
+        <ul>
+          <li>On average, each subject has ~20 visits in a study</li>
+          <li>Each visit has ~10-15 electronic forms that require signatures</li>
+          <li>Each visit has ~5-10 paper forms that require signatures</li>
+        </ul>
+    </div>-->
+<hr>
+<!--problem framing-->
+<div class="twoCol-center">
+  <div>
+    <h2>Problem Framing</h2>
+    <p>The FDA requires Principal Investigators (PIs) to sign off on forms that capture human data. Yet, TrialSpark PIs aren’t easily able to navigate to forms that require signoff without the help of coordinators. This is especially problematic for two reasons:</p>
+    <p>1. CRCs are blocked without these signatures, causing them to wait unnecessarily long hours after a patient visit to physically meet with PIs.</p>
+    <p>2. Remote patient visits are becoming more common, which means PIs and CRCs need to be able to execute all study tasks autonomously.</p>
+  </div>
+  <div>
+    <img src="images/trialspark/problem-framing-asset.png">
+ </div>
 </div>
 
-  <!-- insert button jump links-->
+<!-- ADD VISUAL TO EXPLAIN RELATIPONSHIP BETWEEN PI, CRC, SITE ETC-->
+<!--<div class="break-stat">
+          <h1><span style="color:#4252D8">~500</span></h1>
+          <p><span style="font-weight: bold; color: #6F7D91">clinical forms require PI signatures over the course of a study (per subject).</span> On average, 5-10 subjects are enrolled in a study at a given site.</p>
+  </div>-->
+  <div class="break-stat">
+      <h1><span style="color:#4252D8">~2-3 hrs</span></h1>
+      <p><span style="font-weight: bold; color: #6F7D91">Average amount of time CRCs wait to collect signatures after a visit per subject.</span></p>
+</div>
+<!--<div class="break-stat">
+  <h1><span style="color:#4252D8">~20 visits</span></h1>
+  <p><span style="font-weight: bold; color: #6F7D91">Average amount of visits in a given study, per subject per site.</span></p>
+</div>-->
+<!--<div class="break-stat">
+<div class="break-stat">
+  <h1><span style="color:#4252D8">~15-30 subjects</span></h1>
+  <p><span style="font-weight: bold; color: #6F7D91">Average amount of subjects each CRC is responsible for in a given study.</span></p>
+</div>
 
+    <div class="twoCol-left">
+      <div>
+        <h1><span style="color:#4252D8">~500</span></h1>
+        <p><span style="font-style: italic; color: #6F7D91">clinical forms require PI signatures in a given study</span></p>
+    </div>-->
+
+ <!-- context -->
+ <br>
+ <h4 class="caption">Context</h3>
+   <div class="definition">
+          <p>When I started at TrialSpark, physicians were not accustomed to using Pilot software independently. Instead, they relied on research coordinators to help them sign in and navigate to the appropriate forms that required action. Pilot, at the time, was simply <span style="font-weight: bold">not built to support physicians’ workflows</span>. For example, there were no visual indicators from the homepage directing physicians to the specific forms that required their review. Moreover, the system lacked simple microinteractions, like tooltips and progress indicators, to make it easier for users to understand where to go and anticipate what will happen next.</p>
+           <p><span style="font-weight: bold">Obviously this was inefficient.</span> Coordinators had to repeatedly wait long hours (5+) after a patient visit to meet with physicians to get signatures. This was especially inconvenient because TrialSpark coordinators were not permanently stationed at these sites, often having to travel to multiple sites in a day. Though securing signatures at the end of a patient visit was the ideal scenario, this was rarely feasible.</p> 
+     </div>
+          <h4>Then COVID-19 happened,</h4>
+          <p>which sparked a team-wide initiative to support and streamline remote signoff.</p>
+     </div>
+   <!-- context -->
+    </section>
+
+   <div class="break-flows">
+    <section class= "main-container">
+    <div>
+      <img src="images/trialspark/context-flow-new.png">
+   </div>
+   <div>
+    <img src="images/trialspark/context-flow-old.png">
+ </div>
+ </section>
+   </div>
+
+   <section class= "main-container">
+  <!-- insert button jump links-->
+<br>
   <div class="jump-links">
       
     <a href="trialspark-copy.html">
