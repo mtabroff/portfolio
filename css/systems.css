@@ -355,6 +355,23 @@ ul.stats {
 
 
 /* Lists */
+
+.about-list ul {
+    list-style-position: outside;
+    list-style-image: url(https://url-to-image);
+    padding-left: 32px;
+}
+
+.about-list ul li {
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #272727;
+    margin-bottom: 5px;
+}
 ul {
     list-style-position: outside;
     list-style-image: url(https://url-to-image);
