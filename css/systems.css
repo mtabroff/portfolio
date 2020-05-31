@@ -408,6 +408,7 @@ h1 {
     align-items: center;
     color: #272727;
     margin-bottom: 5px;
+    margin-top: 16px;
 }
 
 
@@ -686,7 +687,7 @@ hr {
     line-height: 20px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #6D787E;
+    color: #6F7D91;
     margin-top: 15px;
     margin-bottom: 10px;
 }
@@ -954,8 +955,14 @@ hr {
 } 
 
         .cover-photo-container {
-            padding-top: 32px;
+            margin-top: 0px;
+            padding-left: 0px;
            
+        } 
+
+        .cover-photo-container img {
+            height: 100%;
+                object-fit: cover;
         } 
 
         @media all and (max-width: 600px) {
