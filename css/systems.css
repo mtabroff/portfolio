@@ -33,7 +33,7 @@ body {
     max-width: 640px;
 }
 
-.break-stat p {
+p .break-stat p {
  margin-top: -4px;
 }
 
@@ -47,14 +47,12 @@ body {
     max-width: 768px;
 }
 
-.break-flows {
-    background:  #F8F9FA;
-    margin: 0 auto;
-}
-
-.break-flows img {
-   margin: 0 auto;
-   width: 60%;
+.help-text {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+    font-style: italic;
+    max-width: 640px;
 }
 
 
@@ -727,7 +725,7 @@ hr {
  .data-btn {
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 900;
     font-size: 14px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -737,7 +735,7 @@ hr {
  .data-btn1 {
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 900;
     font-size: 14px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -747,7 +745,7 @@ hr {
  .data-btn2 {
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 900;
     font-size: 14px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -758,7 +756,7 @@ hr {
  .data-btn3 {
     font-family: 'Work Sans', sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 900;
     font-size: 14px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -881,7 +879,7 @@ hr {
 /* Case Study Grid */
 
 .fullbleed-bg {
-    background-color: #F5F5F5; 
+    background-color: #F8F9FA; 
     background-size: cover;
     display: flex;
     align-items: center;
@@ -889,6 +887,11 @@ hr {
     padding: 40px 0;
 }
 
+.fullbleed-bg img {
+    padding-left: 16px;
+    padding-right: 16px;
+    
+}
 .fullbleed-bg-blue {
     background-color: #4252D8; 
     background-size: cover;
