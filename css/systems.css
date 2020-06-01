@@ -734,8 +734,8 @@ img.gif {
 
 
 hr {
-    border: .5px solid;
-    color: #E2E6E8;
+    border: .4px solid;
+    color: #D8DCE1;
     width: 100%;
     margin: 40px auto;
  }
@@ -927,6 +927,15 @@ hr {
 }
 .fullbleed-bg-blue {
     background-color: #4252D8; 
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.fullbleed-bg-blue10 {
+    background-color: #EBEFF9; 
     background-size: cover;
     display: flex;
     align-items: center;
