@@ -549,6 +549,39 @@ img.gif {
     margin-bottom: 50px;
 }
 
+.quote-row {
+    display: flex;
+    flex-direction: column;
+    margin-right: 32px;
+}
+
+
+.quote1, .quote2, .quote3 {
+    margin-right: 42px;
+
+    max-width: 640px;
+}
+.quote-row .quote1, .quote2,  .quote3 {
+    font-size: 16x;
+    line-height: 28px;
+    font-style: italic;
+    font-family: 'work sans', sans-serif;
+    color: #535E6D;
+}
+
+
+.user-quote {
+    font-size: 24px;
+    line-height: 32px;
+    font-style: italic;
+    font-family: 'work sans', sans-serif;
+    color: #535E6D;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+
 .test-stats {
     background-color: white;
     /* box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.2); */
@@ -898,8 +931,6 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
     
 }
 
