@@ -104,7 +104,7 @@
     <div>
       <h4 class="caption">Overview</h4>
       <p>TrialSpark is a biotech company whose mission is to bring treatment to patients faster by solving some of the biggest operational challenges of clinical trials, from recruiting subjects to standardizing the collection of data.</p>
-      <p>My team, known as Trial Operations (TrialOps), worked on the company’s proprietary software called <span style="font-weight: bold">Pilot</span> used primarily by research coordinators to capture human subject data throughout a study. This data eventually gets sent to the FDA for final review.</p>
+      <p>My team, known as Trial Operations (TrialOps), worked on the company’s proprietary software called <span style="font-weight: bold">Pilot</span> used primarily by research coordinators to capture clinical subject data throughout a study. This data eventually gets sent to the FDA for final review.</p>
       <!--<p>As one of two designers on the TrialOps team, I focused on improving the data entry experience for clinical research coordinators (CRCs) and physicians (primary investigators, or PIs). This meant optimizing for efficiency without compromising patient safety and data quality. </p>-->
       
     </div>
@@ -139,7 +139,7 @@
   <div>
     <br>
     <h2>Problem Framing</h2>
-    <p>The FDA requires Principal Investigators (PIs) to sign off on forms that capture human data. Yet, TrialSpark PIs aren’t easily able to navigate to forms that require signoff without the help of coordinators. This is problematic for two reasons:</p>
+    <p>The FDA requires Primary Investigators (PIs) to sign off on forms that capture human data. Yet, TrialSpark PIs aren’t easily able to navigate to forms that require signoff without the help of Clinical Research Coordinators (CRCs). This is problematic for two reasons:</p>
     <p>1. CRCs are blocked without these signatures, causing them to wait unnecessarily long hours after a patient visit to physically meet with PIs.</p>
     <p>2. Remote patient visits are becoming more common, which means PIs and CRCs need to be able to execute all study tasks autonomously.</p>
   </div>
@@ -164,7 +164,7 @@
           <!--<li><span style="font-weight: bold">~15 forms need PI signoff</span> per visit.</li>-->
           <li><span style="font-weight: bold">~60-100 visits</span> need PI signoff.</li>
           <li><span style="font-weight: bold">CRCs wait ~2-3hrs after each visit</span> to collect in-person signatures.</li>
-          <li><span style="font-weight: bold">120-180 hours wasted.</span></li>
+          <li><span style="font-weight: bold">120-300 hours wasted.</span></li>
         </ul>
     </div>
   </div>
@@ -189,8 +189,7 @@
       <div class="definition">
           <p><span style="font-weight: bold">Obviously this was inefficient.</span> Coordinators had to repeatedly wait long hours (5+) after a patient visit to meet with physicians to get signatures. This was especially inconvenient because TrialSpark coordinators were not permanently stationed at these sites, often having to travel to multiple sites in a day. Though securing signatures at the end of a patient visit was the ideal scenario, this was rarely feasible.</p> 
        </div>
-                <h4>Then COVID-19 happened,</h4>
-                <p>which sparked a team-wide initiative to support and streamline remote signoff.</p>
+                <p><span style="font-weight: bold">Then COVID-19 happened</span>, which sparked a team-wide initiative to support and streamline remote signoff.</p>
       </section>
 
 
@@ -219,12 +218,8 @@
   
   
 
-
-<br>
-
    <section class= "main-container">
   <!-- insert button jump links-->
-    <br>
       <div class="jump-links">
           
         <a href="trialspark-2.html#research">
@@ -259,10 +254,10 @@
 <section class="main-container">
   <!-- Research & Synthesis -->
   <div class="twoCol-left">
-    <div>
-      <h2 id="research">Research & Synthesis</h2>
-     <p>If my team was to improve the electronic signature flow, we needed to understand the regulations around PI oversight: Why are signatures necessary? To what extent can we change the status quo?</p>
-    </div>
+      <div>
+        <h2 id="research">Research & Synthesis</h2>
+      <p>If my team was to improve the electronic signature flow, we needed to understand the regulations around PI oversight: Why are signatures necessary? To what extent can we change the status quo?</p>
+      </div>
   </div>
   <div class="twoCol-center">
     <div>
@@ -318,7 +313,7 @@
   <section class="main-container">
     <br>
         <div>
-          <h3><span style="font-weight: 400; color: #EBEFF9; font-style: italic;">Solving their frustrations became my underlying motivation.
+          <h3><span style="font-weight: 400; color: #EBEFF9; font-style: italic;">Solving CRCs' frustrations became my underlying motivation.
           </span></h3>
       <br>
     </section>
@@ -331,7 +326,7 @@
         <div>
           <h2 id="ideate">Ideate & Review</h2>
           <p>Next, I began sketching and wireframing, looping in my PM and engineers early on and continuously throughout the process.</p>
-          <p>Some ideas that we pursued early on were around consolidating signoff. For example, having one signature apply to all forms for a visit rather than require PIs to sign off on multiple forms. We then discussed conditional signatures, such that a PI would only have to sign a form if it included “high-risk” data. We had several meetings with key stakeholders discussing the appropriate level of physician oversight.
+          <p>Some ideas that we pursued early on were around consolidating signoff. For example, having one signature apply to all forms for a visit rather than requiring PIs to sign off on multiple forms. We then discussed conditional signatures, such that a PI would only have to sign a form if it included “high-risk” data. We had several meetings with key stakeholders discussing the appropriate level of physician oversight.
           </p>
         </div>
       </div>
@@ -341,7 +336,7 @@
   
   <div class="twoCol-left">
     <div>
-    <p>While it would be ideal to create a visit-level/ ‘sign all’ capability to expedite signoff, we weren’t able to get buy-in from clinical team members who felt strongly that PIs need to review each form individually. Here, the ongoing battle between efficiency and thoroughness swayed towards thoroughness. 
+    <p>While it would have been ideal to create a visit-level/ ‘sign all’ capability to expedite signoff, we weren’t able to get buy-in from clinical team members who felt strongly that PIs need to review each form individually. Here, the ongoing battle between efficiency and thoroughness swayed towards thoroughness. 
     </p>
     <p>Though we weren’t aligned (just yet) on a ‘sign all’ feature, I set out to solve the known pain points with the existing flow:
     </p>
@@ -395,13 +390,13 @@
    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
    <div class="twoCol-center">
         <div class="painpoint">
-            <h4>#2 Feedback</h4>
-            <p>After signing a form, the PI does not receive any visual indicators that the signature was successfully executed and is automatically brought to the next form on the list (which doesn’t necessarily require a signature). PI then has to navigate to the side panel to find the next form that requires action. 
+            <h4>#3 Feedback</h4>
+            <p>After signing a form, PI does not receive any visual indicators that the signature was successfully executed and is automatically brought to the next form on the list (which doesn’t necessarily require a signature). PI then has to navigate to the side panel to find the next form that requires action. 
             </p>
             <p><span style="font-weight: bold; color: #2AC099;">Solution:</span></p>
             <ul>
               <li>Provide feedback to the user when a form is signed </li>
-              <li>Aggregate forms that require signature to the top of the side panel, defaulting to the next form that requires action once the previous form has been signed.</li>
+              <li>Aggregate forms that require signatures to the top of the side panel, defaulting to the next form that requires action once the previous form has been signed.</li>
             </ul>
       </div>
       <div class="control-asset-ts">
@@ -463,7 +458,7 @@
      <br>
      <h4 class="caption">Status label iterations</h4>
      <p>I went through a series of iterations to figure out the most effective visual treatment that would easily guide the user to each form that requires action. </p>
-     <P>The status labels needed to clearly show which forms need signatures and further differentiate those that are <span style="font-weight: bold">ready</span> to be signed (e.g. data is complete) from those that are <span style="font-weight: bold">not ready</span> (e.g. data is partially entered).</P>
+     <P>The status labels needed to clearly show which forms require signatures and further differentiate those that are <span style="font-weight: bold">ready</span> to be signed (e.g. data is complete) from those that are <span style="font-weight: bold">not ready</span> (e.g. data is partially entered).</P>
     </div>
   </div>
 
@@ -541,7 +536,7 @@
            <div>
              <p><span style="font-weight: bold">I like</span> that design and engineering collaborated closely and efficiently so that we could incorporate the new UI system into the feature rollout. I also like that we were able to involve CRCs in the design process, ensuring that we were addressing their pain points head on.</p>
              <p><span style="font-weight: bold">I wish</span> that we could have challenged the status quo by making more meaningful changes to the signature flow (e.g. batch signoff, sign via mobile instead of desktop, eliminating signatures altogether). However, this would have required much more time and cross-functional effort to align with clinical study team stakeholders and could have risked negatively impacting our relationship with conservative pharmaceutical companies (trial sponsors).</p>
-             <p><span style="font-weight: bold">I wonder</span> how long it would have taken us to prioritize these changes if COVID-19 had not impacted our ability to conduct in-person studies. Though CRC & PI user pain points had existed for a long time, there wasn’t a strong enough business reason to divert engineering resources towards addressing them. However, given how quickly the world around us can change the needs of a business and it’s users, it is even more important to be able to adapt quickly.</p>
+             <p><span style="font-weight: bold">I wonder</span> how long it would have taken us to prioritize these changes if COVID-19 had not impacted our ability to conduct in-person studies. Though CRC & PI user pain points had existed for a long time, there wasn’t a strong enough business reason to divert engineering resources towards addressing them. However, given how quickly the world around us can change the needs of a business and its users, it is even more important to be able to adapt quickly.</p>
          </div>
      </div>
        
