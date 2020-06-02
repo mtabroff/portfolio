@@ -168,6 +168,14 @@ section {
 }
 
 
+/* password protection  */
+@media all and (max-width: 600px) {
+	.protected {
+	  max-width: 320px;
+	}
+    }
+    
+
 /* project preview  */
 
 .project-container {
