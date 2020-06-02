@@ -616,6 +616,23 @@ img.gif {
    box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.2);
  }
 
+ @media all and (max-width: 768px) {
+ .responsive img {
+  display: none;
+ }
+}
+
+ .painpoint {
+    background-color: white;
+    /* box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.2); */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin-bottom: 60px; */
+    padding: 50px 40px;
+}
+
  .control-asset {
    padding: 0px 16px;
    text-align: center;
@@ -625,6 +642,7 @@ img.gif {
     padding: 0px 16px;
     text-align: center;
   }
+
 
   @media all and (max-width: 768px) {
     .test-assets-container {

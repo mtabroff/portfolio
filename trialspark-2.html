@@ -351,7 +351,7 @@
 <!--call-to-action
    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
    <div class="twoCol-left">
-        <div class="test-stats">
+        <div class="painpoint">
             <h4>#1 Call-to-action</h4>
             <p>Signature button is not readily accessible (user has to scroll to the bottom of the form to sign), and the relationship between ‘save and continue’ and ‘sign’ is confusing (unclear which to select first).
             </p>
@@ -373,13 +373,30 @@
       </div>
   </div>
 
+  <div class="responsive">
+  <img src="images/trialspark/sign-save.png">
+</div>
+
+ <!--Credentials-->
+ <div class="twoCol-left">
+  <div class="painpoint">
+        <h4>#2 Credentials</h4>
+        <p>The FDA requires that PIs <a href="https://florencehc.com/library-fda-esource-eregulatory-guidance/signatures/" target="_blank">re-enter their credentials</a> after each signature. Given this requirement, it was important that we built a reliable way to reset password.</p>
+  </div>
+  <div class="asset-container">
+      <div class="control-asset">
+          <img src="images/trialspark/sign-modal-blur.png">
+      </div>
+</div>
+</div>
+
 
   <!--Feedback
    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-   <div class="twoCol-left">
-        <div class="test-stats">
+   <div class="twoCol-center">
+        <div class="painpoint">
             <h4>#2 Feedback</h4>
-            <p>fter signing a form, the PI does not receive any visual indicators that the signature was successfully executed and is automatically brought to the next form on the list (which doesn’t necessarily require a signature). PI then has to navigate to the side panel to find the next form that requires action. 
+            <p>After signing a form, the PI does not receive any visual indicators that the signature was successfully executed and is automatically brought to the next form on the list (which doesn’t necessarily require a signature). PI then has to navigate to the side panel to find the next form that requires action. 
             </p>
             <p><span style="font-weight: bold; color: #2AC099;">Solution:</span></p>
             <ul>
@@ -387,17 +404,19 @@
               <li>Aggregate forms that require signature to the top of the side panel, defaulting to the next form that requires action once the previous form has been signed.</li>
             </ul>
       </div>
-       <div class="assets-container">
-            <div class="control-asset">
-                <h4 class="caption2">before</h4>
-                <img src="">
-            </div>
-            <div class="test-asset">
-                <h4 class="caption2">after</h4>
-                <img src="">
-            </div>
-      </div>
+      <div class="control-asset-ts">
+        <h4 class="caption2">before</h4>
+        <img src="images/trialspark/old-sign-block-flow.gif">
+    </div>
   </div>
+
+   
+       <div class="test-asset-ts">
+                <h4 class="caption2">after</h4>
+                <img src="images/trialspark/new-sign-block-flow.gif">
+        </div>
+      </div>
+
 
 
   
@@ -412,13 +431,14 @@
 
  <!--UI-->
 
- <!--User types-->
+ <!--User types-
+ <h4 class="caption">Other considerations</h4>
  <div class="twoCol-left">
   <div class="test-stats">
         <h4>#2 Multiple User Types</h4>
         <p>Even though my focus was on the experience of CRCs and PIs, I needed to understand the impact of feature changes on all 4 user types, including auditors (CRAs) and clinical data managers (CDMs). Given that each user type has distinct permissions and views, it was important to specify whether or not each user would see/interact with the new changes.</p>
   </div>
-  <!--<div class="asset-container">
+  <div class="asset-container">
       <div class="control-asset">
           <h4 class="caption">before</h4>
           <img src="images/trialspark/source-block-before.png">
@@ -428,20 +448,8 @@
           <img src="images/trialspark/source-block-after.png">
   </div>
 </div>-->
-</div>
 
- <!--User types-->
- <div class="twoCol-left">
-  <div class="test-stats">
-        <h4>#3 FDA Standards</h4>
-        <p>Any changes to the actual signature flow needed to be vetted by our internal QA/audit team to ensure we were complying with FDA standards. For example, the FDA requires that PIs re-enter their credentials after each signature. </p>
-  </div>
-  <div class="asset-container">
-      <div class="control-asset">
-          <img src="images/trialspark/sign-modal-blur.png">
-      </div>
-</div>
-</div>
+
 
 
 
@@ -452,9 +460,11 @@
     <div>
       <h2 id="test">Test & Iterate</h2>
      <p>I used weekly product/design syncs to validate solutions and refine accordingly. Mainly, these meetings helped ensure that what I was proposing was in-scope. I looped in CRCs during the later phase of my design work, often to uncover usability issues and opportunities for improvement.</p>
+     <h4 class="caption">Status label iterations</h4>
+     <p>I went through a series of iterations to figure out the most effective visual treatment that would easily guide the user to each form that requires action. </p>
+     <P>The status labels needed to clearly show which forms need signatures and further differentiate those that are <span style="font-weight: bold">ready</span> to be signed (e.g. data is complete) from those that are <span style="font-weight: bold">not ready</span> (e.g. data is partially entered).</P>
     </div>
   </div>
-  <img src="images/trialspark/sign-save.png">
 </section>
 <!--Refine
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
