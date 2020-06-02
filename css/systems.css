@@ -307,6 +307,13 @@ case-study-btn a, case-study-btn.two a, case-study-btn.three a {
     font-weight: 400;
     font-size: 18px;
 }
+
+.perpective li {
+    margin-top: 32px;
+    font-size: 10px;
+}
+
+
  a {
     font-family: 'Work Sans', sans-serif;
     color: #272727;
@@ -753,6 +760,20 @@ hr {
     margin-top: 0px;
     margin-bottom: 0px;
     padding-bottom: 0px;
+}
+
+.caption2 {
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #6F7D91;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 12px;
 }
 
  .data-btn {

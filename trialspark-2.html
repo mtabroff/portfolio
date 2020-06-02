@@ -130,21 +130,14 @@
       <p><span style="font-weight: bold; color: #6F7D91">Primary Investigator (PI):</span> a physician/MD who supervises the conduct of a study at a given site. PIs are responsible for <span style="font-weight: bold">overseeing patient visits</span>, ensuring the safety and well-being of the study participant. They provide clinical judgment when necessary and sign off on paper and electronic forms where subject data is captured.  </p>
     </div>
     <div>
-
     </div>
 
- <!-- stats -->
-   <!---- <div>
-        <ul>
-          <li>On average, each subject has ~20 visits in a study</li>
-          <li>Each visit has ~10-15 electronic forms that require signatures</li>
-          <li>Each visit has ~5-10 paper forms that require signatures</li>
-        </ul>
-    </div>-->
-<hr>
+
+
 <!--problem framing-->
 <div class="twoCol-center">
   <div>
+    <br>
     <h2>Problem Framing</h2>
     <p>The FDA requires Principal Investigators (PIs) to sign off on forms that capture human data. Yet, TrialSpark PIs aren’t easily able to navigate to forms that require signoff without the help of coordinators. This is problematic for two reasons:</p>
     <p>1. CRCs are blocked without these signatures, causing them to wait unnecessarily long hours after a patient visit to physically meet with PIs.</p>
@@ -155,39 +148,62 @@
  </div>
 </div>
 
-<!-- ADD VISUAL TO EXPLAIN RELATIPONSHIP BETWEEN PI, CRC, SITE ETC-->
-<!--<div class="break-stat">
-          <h1><span style="color:#4252D8">~500</span></h1>
-          <p><span style="font-weight: bold; color: #6F7D91">clinical forms require PI signatures over the course of a study (per subject).</span> On average, 5-10 subjects are enrolled in a study at a given site.</p>
-  </div>-
-  <div class="break-stat">
-      <h1><span style="color:#4252D8">~2-3 hrs</span></h1>
-      <p><span style="font-weight: bold; color: #6F7D91">Average amount of time CRCs wait to collect signatures after a visit per subject.</span></p>
+<br>
+<div class="twoCol-left">
+<div>
+  <img src="images/trialspark/perspective.png">
 </div>
--<div class="break-stat">
-  <h1><span style="color:#4252D8">~20 visits</span></h1>
-  <p><span style="font-weight: bold; color: #6F7D91">Average amount of visits in a given study, per subject per site.</span></p>
-</div>-->
-<!--<div class="break-stat">
-<div class="break-stat">
-  <h1><span style="color:#4252D8">~15-30 subjects</span></h1>
-  <p><span style="font-weight: bold; color: #6F7D91">Average amount of subjects each CRC is responsible for in a given study.</span></p>
-</div>
+ <div>
+<span style="font-weight: bold; color: #6F7D91">For a given study...</span></p>
+        <ul class="perspective">  
+          <li>TrialSpark runs ~10-15 sites.</li>
+          <li><span style="font-weight: bold">1 CRC </span> manages data for <span style="font-weight: bold">2-3 sites</span>.</li>
+          <li><span style="font-weight: bold">1 PI </span>oversees a site.</li>
+          <li><span style="font-weight: bold">~3-5 subjects</span> per site.</li>
+          <li><span style="font-weight: bold">~20 visits</span> per subject.</li>
+          <!--<li><span style="font-weight: bold">~15 forms need PI signoff</span> per visit.</li>-->
+          <li><span style="font-weight: bold">~60-100 visits</span> need PI signoff.</li>
+          <li><span style="font-weight: bold">CRCs wait ~2-3hrs after each visit</span> to collect in-person signatures.</li>
+          <li><span style="font-weight: bold">120-180 hours wasted.</span></li>
+        </ul>
+    </div>
+  </div>
 
-    <div class="twoCol-left">
-      <div>
-        <h1><span style="color:#4252D8">~500</span></h1>
-        <p><span style="font-style: italic; color: #6F7D91">clinical forms require PI signatures in a given study</span></p>
-    </div>-->
+  <!--   <ul class="perspective">  
+          <li>TrialSpark runs ~10-15 sites.</li>
+          <li>1 CRC manages 2-3 sites.</li>
+          <li><span style="font-weight: bold">1 PI </span>oversees each site.</li>
+          <li><span style="font-weight: bold">~3-5 subjects</span> per site.</li>
+          <li>~20 visits per subject.</li>
+          <li>~15 forms require signatures per visit.</li>
+          <li>CRCs <span style="font-weight: bold">wait ~2-3hrs after visit</span> to collect in-person signatures.</li>
+        </ul>-->
 
- <!-- context -->
+
  <br>
  <h4 class="caption">Context</h3>
    <div class="definition">
           <p>When I started at TrialSpark, physicians were not accustomed to using Pilot software independently. Instead, they relied on research coordinators to help them sign in and navigate to the appropriate forms that required action. Pilot, at the time, was simply <span style="font-weight: bold">not built to support physicians’ workflows</span>. For example, there were no visual indicators from the homepage directing physicians to the specific forms that required their review. Moreover, the system lacked simple microinteractions, like tooltips and progress indicators, to make it easier for users to understand where to go and anticipate what will happen next.</p>
     </div>
    <!-- context -->
+      <div class="definition">
+          <p><span style="font-weight: bold">Obviously this was inefficient.</span> Coordinators had to repeatedly wait long hours (5+) after a patient visit to meet with physicians to get signatures. This was especially inconvenient because TrialSpark coordinators were not permanently stationed at these sites, often having to travel to multiple sites in a day. Though securing signatures at the end of a patient visit was the ideal scenario, this was rarely feasible.</p> 
+       </div>
+                <h4>Then COVID-19 happened,</h4>
+                <p>which sparked a team-wide initiative to support and streamline remote signoff.</p>
+      </section>
+
+
+<!--divider message-->
+<div class="fullbleed-bg-blue">
+  <section class="main-container">
+    <br>
+        <div>
+          <h3><span style="font-weight: 400; color: #EBEFF9; font-style: italic;">How might we support and streamline remote signoff without compromising patient safety and data integrity?
+          </span></h3>
+      <br>
     </section>
+</div>
 
     <div class="fullbleed-bg">
       <section class="main-container">
@@ -200,30 +216,10 @@
   </section>
 </div>
 
-  <section class="main-container">
-      <div class="definition">
-          <p><span style="font-weight: bold">Obviously this was inefficient.</span> Coordinators had to repeatedly wait long hours (5+) after a patient visit to meet with physicians to get signatures. This was especially inconvenient because TrialSpark coordinators were not permanently stationed at these sites, often having to travel to multiple sites in a day. Though securing signatures at the end of a patient visit was the ideal scenario, this was rarely feasible.</p> 
-       </div>
-       <!---
-       <div class="break-stat">
-        <h1><span style="color:#4252D8">~2-3 hrs</span></h1>
-        <p><span style="font-weight: bold; color: #6F7D91">Average amount of time CRCs wait to collect signatures after a visit per subject.</span></p>
-  </div> -->
-                <h4>Then COVID-19 happened,</h4>
-                <p>which sparked a team-wide initiative to support and streamline remote signoff.</p>
-      </section>
   
-      <!--divider message-->
-  <div class="fullbleed-bg-blue">
-    <section class="main-container">
-      <br>
-          <div>
-            <h3><span style="color: white">How might we support and streamline remote signoff without compromising patient safety and data integrity?
-            </span></h3>
-        <br>
-      </section>
-</div>
-</div>
+  
+
+
 <br>
 
    <section class= "main-container">
@@ -300,7 +296,7 @@
       <div class="quote1"><p>One time I waited like 5 hours just to get one last signature. It was really frustrating. - CRC</p> 
           </div>
       <div class="quote2">
-          <p>I literally have to quadruple check [Pilot] to ensure that all forms have been signed off. This can mean clicking into 20 forms sometimes... There’s no way around it. - CRC</p>
+          <p>I literally have to quadruple check [Pilot] to ensure all forms have been signed off. This can mean clicking into 20 forms sometimes... There’s no way around it. - CRC</p>
       </div>
       <div class="quote3">
           <p>I don’t trust that my PI can navigate through Source without accidentally modifying data. I feel better helping him in-person so that I can answer any questions. My PI is smart, obviously, but not the most tech-savvy. - CRC</p>
@@ -322,7 +318,7 @@
   <section class="main-container">
     <br>
         <div>
-          <h3><span style="color: white">Solving their frustrations became my underlying motivation.
+          <h3><span style="font-weight: 400; color: #EBEFF9; font-style: italic;">Solving their frustrations became my underlying motivation.
           </span></h3>
       <br>
     </section>
@@ -335,31 +331,86 @@
         <div>
           <h2 id="ideate">Ideate & Review</h2>
           <p>Next, I began sketching and wireframing, looping in my PM and engineers early on and continuously throughout the process.</p>
-          <p><span style="font-weight: bold">Product Roadmap.</span> How much of the feature work will incorporate the new UI system?<p></p>
-            <p><span style="font-weight: bold">Product Strategy.</span> How would the PI’s experience change depending on the types of studies we take on?</p>
+          <p>Some ideas that we pursued early on were around consolidating signoff. For example, having one signature apply to all forms for a visit rather than require PIs to sign off on multiple forms. We then discussed conditional signatures, such that a PI would only have to sign a form if it included “high-risk” data. We had several meetings with key stakeholders discussing the appropriate level of physician oversight.
+          </p>
+        </div>
       </div>
+      <div>
+        <img src="images/trialspark/sketch.png">
+      </div>
+  
+  <div class="twoCol-left">
+    <div>
+    <p>While it would be ideal to create a visit-level/ ‘sign all’ capability to expedite signoff, we weren’t able to get buy-in from clinical team members who felt strongly that PIs need to review each form individually. Here, the ongoing battle between efficiency and thoroughness swayed towards thoroughness. 
+    </p>
+    <p>Though we weren’t aligned (just yet) on a ‘sign all’ feature, I set out to solve the known pain points with the existing flow:
+    </p>
   </div>
-  <div>
-    <img src="images/trialspark/sketch.png">
+</div>
+
+<!--call-to-action
+   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+   <div class="twoCol-left">
+        <div class="test-stats">
+            <h4>#1 Call-to-action</h4>
+            <p>Signature button is not readily accessible (user has to scroll to the bottom of the form to sign), and the relationship between ‘save and continue’ and ‘sign’ is confusing (unclear which to select first).
+            </p>
+            <p><span style="font-weight: bold; color: #2AC099;">Solution:</span></p>
+            <ul>
+              <li>Primary actions at top right of page </li>
+              <li>Clearly distinguish save vs sign (only enable one at a time) so there’s no confusion around which action is needed when.</li>
+            </ul>
+      </div>
+       <div class="assets-container">
+            <div class="control-asset">
+                <h4 class="caption2">before</h4>
+                <img src="images/trialspark/source-block-before.png">
+            </div>
+            <div class="test-asset">
+                <h4 class="caption2">after</h4>
+                <img src="images/trialspark/source-block-after.png">
+            </div>
+      </div>
   </div>
 
- <!--UI-->
- <div class="twoCol-left">
-  <div class="test-stats">
-        <h4>#1 New UI System</h4>
-        <p>Our focus on refining PI Oversight coincided with the rollout of our new UI system. This meant that any new feature would need to fit into both the current and redesigned experience. I worked closely with the lead designer for the new UI system to help shape component decisions (e.g. new navigation, status labels, popovers, copy, primary and secondary button interactions, form construction etc).</p>
-  </div>
-  <div class="asset-container">
-      <div class="control-asset">
-          <h4 class="caption">before</h4>
-          <img src="images/trialspark/source-block-before.png">
+
+  <!--Feedback
+   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+   <div class="twoCol-left">
+        <div class="test-stats">
+            <h4>#2 Feedback</h4>
+            <p>fter signing a form, the PI does not receive any visual indicators that the signature was successfully executed and is automatically brought to the next form on the list (which doesn’t necessarily require a signature). PI then has to navigate to the side panel to find the next form that requires action. 
+            </p>
+            <p><span style="font-weight: bold; color: #2AC099;">Solution:</span></p>
+            <ul>
+              <li>Provide feedback to the user when a form is signed </li>
+              <li>Aggregate forms that require signature to the top of the side panel, defaulting to the next form that requires action once the previous form has been signed.</li>
+            </ul>
       </div>
-      <div class="test-asset">
-          <h4 class="caption">after</h4>
-          <img src="images/trialspark/source-block-after.png">
+       <div class="assets-container">
+            <div class="control-asset">
+                <h4 class="caption2">before</h4>
+                <img src="">
+            </div>
+            <div class="test-asset">
+                <h4 class="caption2">after</h4>
+                <img src="">
+            </div>
+      </div>
   </div>
-</div>
-</div>
+
+
+  
+  <!----
+   <div class="twoCol-left">
+        <div>
+          <p><span style="font-weight: bold">Product Roadmap.</span> How much of the feature work will incorporate the new UI system?<p></p>
+          <p><span style="font-weight: bold">Product Strategy.</span> How would the PI’s experience change depending on the types of studies we take on?</p>
+       </div>
+  </div>--> 
+  
+
+ <!--UI-->
 
  <!--User types-->
  <div class="twoCol-left">
