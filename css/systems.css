@@ -44,7 +44,7 @@ p .break-stat p {
 
 }
 .definition {
-    max-width: 768px;
+    max-width: 600px;
 }
 
 .help-text {
@@ -168,12 +168,7 @@ section {
 }
 
 
-/* password protection  */
-@media all and (max-width: 600px) {
-	.protected {
-	  max-width: 320px;
-	}
-    }
+
     
 
 /* project preview  */
@@ -263,7 +258,7 @@ section {
     padding: 4px;
     background-color: white;
     box-shadow: 0px 1px 0px #272727;
-    width: 144px;
+    width: 148px;
       
 }
 
