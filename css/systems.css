@@ -767,7 +767,14 @@ img.gif {
     color: #272727;
 
 }
-
+.motif {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+}
+.motif img {
+    width: 100px;
+}
 
 hr {
     border: .4px solid;
@@ -788,7 +795,7 @@ hr {
     color: #6F7D91;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-bottom: 0px;
+    padding-bottom: 8px;
 }
 
 .caption2 {
