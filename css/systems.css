@@ -603,7 +603,13 @@ img.gif {
  display: flex;
  flex-direction: column;
  justify-content: center;
+ overflow: hidden;
 }
+
+.iterate-asset img {
+    padding-bottom: 10px;
+}
+
 
 .test-stats {
     background-color: white;
@@ -814,8 +820,8 @@ hr {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #6F7D91;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0 auto;
+    padding-top: 12x;
     padding-bottom: 12px;
 }
 

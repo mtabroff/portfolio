@@ -140,8 +140,8 @@
       </p>
       <p>This new model has its challenges:</p>
       <p><span style="font-weight: bold">1. Aligning CRC and PI schedules.</span> At TrialSpark, research coordinators are not permanently stationed at one site (often travelling to multiple in a week), which makes aligning schedules with PIs especially difficult. </p>
-      <p><span style="font-weight: bold">2. Working with <a href="https://www.qservegroup.com/eu/en/i420/the-research-naive-study-site--always-a-problem" style="font-weight: bold" target="_"> research naive</a> sites.</span> Doctors who participate in TrialSpark studies do not have dedicated daily research personnel (nurses, resident students, etc) to carry out the enormous workload involved in conducting studies. This puts the unfair burden on CRCs to carry out administrative and communication responsibilities normally delegated to PIs and other research staff.</p>
-      <p><span style="font-weight: bold">3. Getting PIs to use TrialSpark technology independently.</span> TrialSpark PIs are not accustomed to using clinical research software, further relying on research coordinators to help them.</p>
+      <p><span style="font-weight: bold">2. Working with <a href="https://www.qservegroup.com/eu/en/i420/the-research-naive-study-site--always-a-problem" style="font-weight: bold" target="_"> research naive</a> sites.</span> Doctors who participate in TrialSpark studies do not have dedicated daily research personnel (nurses, resident students, disease specialists etc.) to carry out the enormous workload involved in conducting studies. This puts the unfair burden on CRCs to carry out administrative and communication responsibilities normally delegated to PIs and other research staff.</p>
+      <p><span style="font-weight: bold">3. Getting PIs to use TrialSpark technology independently.</span> TrialSpark PIs are not accustomed to using clinical research software, further relying on the help of research coordinators.</p>
     </div>
   </div>
 
@@ -156,12 +156,12 @@
 <span style="font-weight: bold; color: #6F7D91">For a given study...</span></p>
         <ul class="perspective">  
           <li>TrialSpark runs ~10-15 sites.</li>
-          <li><span style="font-weight: bold">1 CRC </span> manages data for <span style="font-weight: bold">2-3 sites</span>.</li>
+          <li><span style="font-weight: bold">1 CRC </span> manages research at <span style="font-weight: bold">2-3 sites</span>.</li>
           <li><span style="font-weight: bold">1 PI </span>oversees a site.</li>
-          <li><span style="font-weight: bold">~3-5 subjects</span> per site.</li>
+          <li><span style="font-weight: bold">~3-5 subjects</span> enrolled per site.</li>
           <li><span style="font-weight: bold">~20 visits</span> per subject.</li>
-          <!--<li><span style="font-weight: bold">~15 forms need PI signoff</span> per visit.</li>-->
-          <li><span style="font-weight: bold">~60-100 visits</span> need PI signoff.</li>
+          <li><span style="font-weight: bold">~15-20 forms need PI signatures</span> per visit.</li>
+          <li><span style="font-weight: bold">~60-100 visits need PI signatures</span> per site.</li>
           <!--<li><span style="font-weight: bold">CRCs wait ~2-3hrs after each visit</span> to collect in-person signatures.</li>
           <li><span style="font-weight: bold">120-300 hours wasted.</span></li>-->
         </ul>
@@ -173,7 +173,7 @@
  <br>
  <h4 class="caption">Some more context</h3>
    <div class="definition">
-          <p>When I started at TrialSpark, physicians were not accustomed to using Pilot software independently. Instead, they relied on research coordinators to help them sign in and navigate to the appropriate forms that required action. Pilot, at the time, was simply <span style="font-weight: bold">not built to support physicians’ workflows</span>. For example, there were no visual indicators from the homepage directing physicians to the specific forms that required their review. Moreover, the system lacked simple microinteractions, like tooltips and progress indicators, to make it easier for users to understand where to go and anticipate what will happen next.</p>
+          <p>When I started at TrialSpark, physicians were not accustomed to using Pilot software independently to sign off on forms. Instead, they relied on research coordinators to help them sign in and navigate to the appropriate forms that required action. Pilot, at the time, was simply <span style="font-weight: bold">not built to support physicians’ workflows</span>. For example, there were no visual indicators from the homepage directing physicians to the specific forms that required their review. Moreover, the system lacked simple microinteractions, like tooltips and progress indicators, to make it easier for users to understand where to go and anticipate what will happen next.</p>
     </div>
    <!-- context -->
       <div class="definition">
@@ -330,12 +330,12 @@
         <div>
           <h2 id="ideate">Ideate & Review</h2>
           <p>Next, I began sketching and wireframing, looping in my PM and engineers early on and continuously throughout the process.</p>
-          <p>Some ideas that we pursued early on were around consolidating signoff. For example, having one signature apply to all forms for a visit rather than requiring PIs to sign off on multiple forms. We then discussed conditional signatures, such that a PI would only have to sign a form if it included “high-risk” data. We had several meetings with key stakeholders discussing the appropriate level of physician oversight.
+          <p>Some ideas that we pursued early on were around consolidating signoff. For example, having one signature apply to all visit forms rather than requiring PIs to sign off on multiple forms. We then discussed conditional signatures, such that a PI would only have to sign a form with “high-risk” data. We had several meetings with key stakeholders discussing the appropriate level of physician oversight.
           </p>
         </div>
       </div>
       <div>
-        <img src="../images/trialspark/sketch.png">
+        <img src="../images/trialspark/sketches.png">
       </div>
   
   <div class="twoCol-left">
@@ -351,25 +351,25 @@
    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
    <div class="twoCol-left">
         <div class="painpoint">
-            <h4>#1 Call-to-action</h4>
-            <p>Signature button is not readily accessible (user has to scroll to the bottom of the form to sign), and the relationship between ‘save and continue’ and ‘sign’ is confusing (unclear which to select first).
-            </p>
-            <p><span style="font-weight: bold; color: #2AC099;">Solution:</span></p>
-            <ul>
-              <li>Primary actions at top right of page </li>
-              <li>Clearly distinguish save vs sign (only enable one at a time) so there’s no confusion around which action is needed when.</li>
-            </ul>
-      </div>
-       <div class="assets-container">
-            <div class="control-asset">
-                <h4 class="caption2">before</h4>
-                <img src="../images/trialspark/source-block-before.png">
-            </div>
-            <div class="test-asset">
-                <h4 class="caption2">after</h4>
-                <img src="../images/trialspark/source-block-after.png">
-            </div>
-      </div>
+              <h4>#1 Call-to-action</h4>
+              <p>Signature button is not readily accessible (user has to scroll to the bottom of the form to sign), and the relationship between ‘save and continue’ and ‘sign’ is confusing (unclear which to select first).
+              </p>
+              <p><span style="font-weight: bold; color: #2AC099;">Solution:</span></p>
+              <ul>
+                <li>Position primary actions at top right of page. </li>
+                <li>Clearly distinguish save vs sign (only enable one at a time) so there’s no confusion around which action is needed when.</li>
+              </ul>
+       </div>
+        <div>
+            <div class="iterate-asset">
+                  <h4 class="caption2">before</h4>
+                  <img src="../images/trialspark/source-block-before.png">
+              </div>
+              <div class="iterate-asset">
+                  <h4 class="caption2">after</h4>
+                  <img src="../images/trialspark/source-block-after.png">
+              </div>
+       </div>
   </div>
 
   <div class="responsive">
@@ -380,14 +380,28 @@
  <div class="twoCol-left">
   <div class="painpoint">
         <h4>#2 Credentials</h4>
-        <p>The FDA requires that PIs <a href="https://florencehc.com/library-fda-esource-eregulatory-guidance/signatures/" target="_blank">re-enter their credentials</a> after each signature. Given this requirement, it was important that we built a reliable way to reset password.</p>
-  </div>
-  <div class="asset-container">
-      <div class="control-asset">
-          <img src="../images/trialspark/sign-modal-blur.png">
+        <p>The FDA requires that PIs <a href="https://florencehc.com/library-fda-esource-eregulatory-guidance/signatures/" target="_blank">re-enter their credentials</a> after each signature. Yet, the current system requires the user to click into the input field to begin typing. Additionally, if PIs forget their password, there is no easy way to reset it from the signoff modal. 
+        </p>
+        <p><span style="font-weight: bold; color: #2AC099;">Solution:</span></p>
+            <ul>
+              <li>Make the password input field active when the page loads, so that as soon as the page has loaded the user can begin typing.
+              </li>
+              <li>Include easy access to password reset flow (case study coming soon!).</li>
+            </ul>
+   </div>
+    <div>
+      <div class="iterate-asset">
+          <h4 class="caption2">before</h4>
+          <img src="../images/trialspark/old-modal.png">
       </div>
+
+    <div class="iterate-asset">
+        <h4 class="caption2">after</h4>
+          <img src="../images/trialspark/sign-modal-blur.png">
+    </div>
+  </div>
 </div>
-</div>
+
 
 
   <!--Feedback
@@ -403,21 +417,19 @@
               <li>Aggregate forms that require signatures to the top of the side panel, defaulting to the next form that requires action once the previous form has been signed.</li>
             </ul>
       </div>
-      <div class="control-asset-ts">
-        <h4 class="caption2">before</h4>
-        <img class="gif" src="../images/trialspark/old-sign-block-flow.gif">
-    </div>
-  </div>
-
-
-
-       <div class="test-asset-ts">
+      <div>
+            <div class="iterate-asset">
+              <h4 class="caption2">before</h4>
+              <img class="gif" src="../images/trialspark/old-sign-block-flow.gif">
+          </div>
+    
+       <div class="iterate-asset">
                 <h4 class="caption2">after</h4>
-
                <img class="gif" src="../images/trialspark/new-sign-flow.gif">
-
-        </div>
+       </div>
       </div>
+    </div>
+    
 
 
 
@@ -532,7 +544,7 @@
           <p>After a series of iterations, here’s what the team landed on:</p>
         </div>
     </div>
-    
+  
     <!--email-->
   <div class="twoCol-right">
       <div>
@@ -552,7 +564,7 @@
     <!--unprompted-->
        <div class="twoCol-right">
         <div>
-          <p><span style="font-weight: bold">Sign-in.</span>PI signs in, which takes him to the Subject List page (homepage). The table shows which subjects have pending signatures. PI can hover over a subject row, click on “more” and see which visits have pending signatures. </p>
+          <p><span style="font-weight: bold">Sign-in.</span> PI signs in, which takes him to the Subject List page (homepage). The table shows which subjects have pending signatures. PI can hover over a subject row, click on “more” and see which visits have pending signatures. </p>
          </div>
 
          <div>
@@ -563,7 +575,7 @@
         <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FcD2jZMyBiMsw3xuv8Mrx8h%2FTrialSpark-Portfolio-Work%3Fnode-id%3D198%253A18983%26viewport%3D950%252C543%252C0.057385269552469254%26scaling%3Dscale-down&chrome=DOCUMENTATION" allowfullscreen></iframe>
       </div> 
         <br>
-   <section class="main-container">
+
       <div>
         <h4 class="caption">Subject List</h4>
         <img src="../images/trialspark/subjectlist-final.png">
@@ -600,12 +612,14 @@
 
     <!--Main footer
  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--Main footer
+ –––––––––––––––––––––––––––––––––––––––––––––––––– -->
  <section class="footer">
   <div class="main-container">
     <div class="footer-content"></div>
        <div class="footer-top">
           <h4>Get in touch</h4>
-          <p>Have an idea for a project to collaborate on, or want to chat about design? <a href=""mailto:mtabroff@gmail.com" target="blank">Drop me a line.</a></p>
+          <p>Have an idea for a project to collaborate on, or want to chat about design? <a href="mailto:mtabroff@gmail.com" target="blank">Drop me a line.</a></p>
        </div>
        <div class="footer-bottom">
            <div class="tiny-text">Designed & Developed by me with lots of coffee<br><i class="fa fa-copyright" aria-hidden="true"></i> 2020 Melanie Tabroff</div>
@@ -630,3 +644,5 @@
 </section>
 
   </html>
+
+
