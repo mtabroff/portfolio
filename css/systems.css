@@ -1,6 +1,7 @@
 /* Main Document Styling
 ––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
+
 * {
     margin: 0;
     padding: 0;
@@ -82,7 +83,9 @@ img {
     width: 100%;
 }
 
-
+.prototype {
+    overflow: hidden;
+}
 
 /* Hero styles */
 
