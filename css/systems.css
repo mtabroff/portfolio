@@ -87,6 +87,11 @@ img {
     overflow: hidden;
 }
 
+@media all and (max-width: 600px) {
+    .prototype {
+        display: none;
+    }
+}
 /* Hero styles */
 
 .hero-container {
