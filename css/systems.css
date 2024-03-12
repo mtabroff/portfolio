@@ -23,7 +23,7 @@ body {
     font-weight: normal;
     font-size: 16px;
     line-height: 32px;
-    letter-spacing: -0.02em;
+    letter-spacing: 0;
     color: #272727;
     
 }
@@ -143,7 +143,7 @@ section {
     font-style: normal;
     font-weight: 300px;
     font-size: 20px;
-    line-height: 28px;
+    line-height: 155%;
     letter-spacing: -0.02em;
     color: #6D747E;
     margin-bottom: 30px;
@@ -151,8 +151,8 @@ section {
 }
 @media all and (max-width: 600px) {
     .hero-blurb h1 {
-        font-size: 48px;
-        line-height: 52px;
+        font-size: 24px;
+        line-height: 155%;
     }
 }
 
@@ -270,10 +270,10 @@ section {
 
 .case-study-btn, .case-study-btn.two, .case-study-btn.three {
     box-sizing: border-box;
-    padding: 4px;
+    padding: px;
     background-color: white;
     box-shadow: 0px 1px 0px #272727;
-    width: 148px;
+    width: 140px;
       
 }
 
@@ -307,23 +307,23 @@ case-study-btn a, case-study-btn.two a, case-study-btn.three a {
     margin-bottom: 20px;
 }
 .about-list a {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'work sans', sans-serif;
     color: #6D747E;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 0em;
-    text-decoration: underline;
     text-transform: none;
+    text-decoration: underline;
     padding-left: 0px;
     cursor: default;
 
 }
 
 .about-list li {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'work sans', sans-serif;
     color: #272727;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .perpective li {
@@ -333,13 +333,12 @@ case-study-btn a, case-study-btn.two a, case-study-btn.three a {
 
 
  a {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'work sans', sans-serif;
     color: #272727;
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.02em;
     text-decoration: underline;
-    text-transform: none;
     cursor: default;
 }
 
@@ -417,12 +416,12 @@ ul.stats {
 }
 
 .about-list ul li {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'work sans', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 32px;
-    letter-spacing: -0.02em;
+    font-size: 20px;
+    line-height: 155%;
+    letter-spacing: 0;
     color: #272727;
     margin-bottom: 5px;
 }
@@ -433,14 +432,14 @@ ul {
 }
 
 ul li {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'work sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
     letter-spacing: -0.02em;
     color: #272727;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
@@ -515,11 +514,10 @@ h5 {
 .blurb {
     padding: 16px 0;
     font-family: 'work sans', sans-serif;
-    font-style: normal;
     font-weight: 400px;
     font-size: 20px;
-    line-height: 32px;
-    letter-spacing: -0.02em;
+    line-height: 155%;
+    letter-spacing: 0;
     color: #272727;
     /*
     color: #6D747E;*/
@@ -530,7 +528,7 @@ h5 {
 @media all and (max-width: 600px) {
     .blurb {
         font-size: 20px;
-        line-height: 32px;
+        line-height: 150%;
         margin-bottom: 0px;
         padding-bottom: 0px;
     }
@@ -789,7 +787,7 @@ img.gif {
 
 
 .tiny {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'work sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -815,7 +813,7 @@ hr {
 
 
 .caption {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'work sans', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -829,7 +827,7 @@ hr {
 }
 
 .caption2 {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'work sans', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -843,7 +841,7 @@ hr {
 }
 
  .data-btn {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'work sans', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 14px;
@@ -853,7 +851,7 @@ hr {
  }
 
  .data-btn1 {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'work sans', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 14px;
@@ -863,7 +861,7 @@ hr {
  }
 
  .data-btn2 {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'work sans', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 14px;
@@ -874,7 +872,7 @@ hr {
 
 
  .data-btn3 {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'work sans', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 14px;
@@ -885,7 +883,7 @@ hr {
 
 
 .quote {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'work sans', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -929,7 +927,7 @@ hr {
 .button {
   box-sizing: border-box;
   margin-right: 10px;
-  padding: 4px 8px;
+  padding: 4px 0px;
 }
 
 .button:hover {

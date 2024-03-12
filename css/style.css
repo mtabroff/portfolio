@@ -509,7 +509,7 @@
           /* Project Metadata
           ––––––––––––––––––––––––––––––––––––––––––––––––––*/
            .project-container .project-details .metadata {
-                   font-family: "work sans", sans-serif;
+                   font-family: 'Inter', sans-serif;
                    color: #7D7D80;
                    font-size: 13px;
                    text-align: left;
@@ -546,7 +546,7 @@
    
                .project-container .project-details .subtitle {
                      color: #646466;
-                     font-family: "work sans", sans-serif;
+                     font-family: 'Inter', sans-serif;
                      font-size: 18px;
                      font-weight: 400;
                      margin-bottom: 24px;
@@ -566,7 +566,7 @@
    
                .project-container .project-details .body {
                    color: #646466;
-                   font-family: "work sans", sans-serif;
+                   font-family: 'Inter', sans-serif;
                    font-size: 14px;
                    line-height: 24px;
                    text-align: left;
